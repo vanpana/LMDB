@@ -14,16 +14,13 @@ Movie::Movie()
 
 Movie::Movie(string title, string genre, int year, int likes, string trailer)
 {
-    this->title = new string[title.size()];
     this->title = title;
 
-    this->genre = new string[genre.size()];
     this->genre = genre;
 
     this->year = year;
     this->likes = likes;
 
-    this->trailer = new string[trailer.size()];
     this->trailer = trailer;
 }
 
@@ -41,7 +38,5 @@ Movie::Movie(const Movie& mov)
 
 Movie::~Movie()
 {
-    delete[] this->title;
-    delete[] this->genre;
-    delete[] this->trailer;
+
 }

@@ -1,4 +1,6 @@
-#pragma once
+#ifndef ARRAY_H
+#define ARRAY_H
+
 #include <string>
 
 
@@ -15,9 +17,11 @@ public:
     DynArr();
     DynArr(int cap);
     int getPosition(string name);
-    void push(T* obj);
+    void push(T obj);
     int pop(string name);
     T* getItems();
     int getLength();
     ~DynArr();
 };
+
+#endif

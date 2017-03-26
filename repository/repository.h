@@ -1,4 +1,6 @@
-#pragma once
+#ifndef REPOSITORY_H
+#define REPOSITORY_H
+
 #include "../domain/entities.h"
 #include "../common/array.h"
 
@@ -16,7 +18,7 @@ public:
     Repository(int capacity);
 
     //getters
-    Movie* getItems() { return this->items->getItems(); }
+    Movie* getItems() { return this->items->getItems();  }
     int getLength() { return this->items->getLength(); }
 
     /*
@@ -24,7 +26,7 @@ public:
     Input: mov - Movie
     Output: mov is added to the items list
     */
-    void add(Movie *mov);
+    void add(Movie mov);
 
     /*
     Deletes a movie by name from the list.
@@ -41,7 +43,7 @@ public:
     Output: new list with updated movie
     returns: 0 if the movie does not exist, 1 if it was updated.
     */
-    int update(Movie *mov);
+    int update(Movie mov);
 
     /*
     Gets the position of a movie by name.
@@ -51,3 +53,5 @@ public:
     int getPosition(char* name);
 
 };
+
+#endif

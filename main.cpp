@@ -1,9 +1,15 @@
 #include <iostream>
+#include "repository/repository.h"
+#include "controller/controller.h"
+#include "ui/console.h"
+
 using namespace std;
 
 int main()
 {
-    std::cout<<"Hello World!";
+    Repository repo = Repository{30};
+    Controller ctrl = Controller{repo};
+    Console ui = Console(ctrl);
 
-    return 0;
+    ui.runApp();
 }

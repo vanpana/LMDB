@@ -1,6 +1,7 @@
 #include "../common/array.h"
 #include "../domain/entities.h"
 #include <string>
+using namespace std;
 
 //standard constructor
 template <class T>
@@ -29,9 +30,9 @@ int DynArr<T>::getPosition(string title)
 }
 
 template <class T>
-void DynArr<T>::push(T *obj)
+void DynArr<T>::push(T obj)
 {
-    int i = getPosition(obj->getTitle());
+    int i = getPosition(obj.getTitle());
     if (i != -1)
     {
         this->array[i] = obj;
@@ -77,4 +78,4 @@ DynArr<T>::~DynArr()
     delete[]this->array;
 }
 
-//template class DynArr<Movie>;
+template class DynArr<Movie>;
