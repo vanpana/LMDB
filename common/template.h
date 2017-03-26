@@ -1,30 +1,26 @@
 #pragma once
 #include "../domain/entities.h"
-#include "../common/array.h"
 
-class Repository
+template <class T> class Repository
 {
 private:
-    int capacity;
-    DynArr<Movie> *items;
+    T* items;
+    int length;
 
 public:
     //default constructor
     Repository();
 
-    //constructor with parameters
-    Repository(int capacity);
-
     //getters
-    Movie* getItems() { return this->items->getItems(); }
-    int getLength() { return this->items->getLength(); }
+    T* getItems() { return this->items; }
+    T* getLength() { return this->length; }
 
     /*
     Adds a given Movie to the list.
     Input: mov - Movie
     Output: mov is added to the items list
     */
-    void add(Movie *mov);
+    void add(T mov);
 
     /*
     Deletes a movie by name from the list.
@@ -32,7 +28,7 @@ public:
     Output: new list without the movie
     returns: 0 if the movie does not exist, 1 if it was deleted.
     */
-    int del(string name);
+    int delete(char* name);
 
     /*
     Updates a movie which is found by name.
@@ -41,12 +37,12 @@ public:
     Output: new list with updated movie
     returns: 0 if the movie does not exist, 1 if it was updated.
     */
-    int update(Movie *mov);
+    int update(char* name, T mov);
 
     /*
     Gets the position of a movie by name.
     Input: name - the movie to be searched
-    returns: -1 if the movie does not exist, its position else.
+    returns: -1 if the T does not exist, its position else.
     */
     int getPosition(char* name);
 
