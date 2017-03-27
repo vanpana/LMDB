@@ -13,8 +13,13 @@ class Console
 public:
     Console();
     Console(Controller ctrl);
-    string getCommand();
-    void printMenu();
+    int getInteger();
+    string getString();
+    void printModes();
+    void printMenu(int mode);
+
+    void uiAdd();
+
     void loop();
     void runApp();
     ~Console();
