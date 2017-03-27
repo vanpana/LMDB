@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <iostream>
 using namespace std;
 
 class Movie
@@ -31,4 +32,10 @@ public:
     int getYear() { return this->year; }
     int getLikes() { return this->likes; }
     string getTrailer() { return this->trailer; }
+
+    void str() {cout << "Title: " << this->getTitle() << ", Genre: " << this->getGenre() << ", Year: " << this->getYear()
+                     << ", No. of likes: " << this->getLikes() << ", Trailer link: " << this->getTrailer() << "\n"; }
+
+    //TODO Overload operators
+    void incLikes() { this->likes++; }
 };

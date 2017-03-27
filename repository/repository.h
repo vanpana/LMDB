@@ -7,15 +7,16 @@
 class Repository
 {
 private:
-    int capacity;
     DynArr<Movie> *items;
+    string filename;
+    void loadFromFile();
 
 public:
     //default constructor
     Repository();
 
     //constructor with parameters
-    Repository(int capacity);
+    Repository(int capacity, string filename);
 
     //getters
     Movie* getItems() { return this->items->getItems();  }
@@ -50,7 +51,7 @@ public:
     Input: name - the movie to be searched
     returns: -1 if the movie does not exist, its position else.
     */
-    int getPosition(char* name);
+    int getPosition(string name) { return this->items->getPosition(name); }
 
     DynArr<Movie>* getArray() { return this->items; }
 

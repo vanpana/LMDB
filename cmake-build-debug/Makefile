@@ -150,32 +150,32 @@ common/array.cpp.s:
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/array.cpp.s
 .PHONY : common/array.cpp.s
 
-common/util.o: common/util.c.o
+common/util.o: common/util.cpp.o
 
 .PHONY : common/util.o
 
 # target to build an object file
-common/util.c.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/util.c.o
-.PHONY : common/util.c.o
+common/util.cpp.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/util.cpp.o
+.PHONY : common/util.cpp.o
 
-common/util.i: common/util.c.i
+common/util.i: common/util.cpp.i
 
 .PHONY : common/util.i
 
 # target to preprocess a source file
-common/util.c.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/util.c.i
-.PHONY : common/util.c.i
+common/util.cpp.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/util.cpp.i
+.PHONY : common/util.cpp.i
 
-common/util.s: common/util.c.s
+common/util.s: common/util.cpp.s
 
 .PHONY : common/util.s
 
 # target to generate assembly for a file
-common/util.c.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/util.c.s
-.PHONY : common/util.c.s
+common/util.cpp.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/util.cpp.s
+.PHONY : common/util.cpp.s
 
 controller/controller.o: controller/controller.cpp.o
 

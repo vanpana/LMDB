@@ -18,6 +18,7 @@ public:
     int del(string title);
     int update(string title, string genre, int year, int likes, string trailer);
     int getLength() { return this->repo.getArray()->getLength(); }
+    int getPosition(string title) { return this->repo.getPosition(title); }
     Movie * getItems() { return this->repo.getArray()->getItems(); }
     DynArr<Movie>* getArray() { return this->repo.getArray(); };
     ~Controller();

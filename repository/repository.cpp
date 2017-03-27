@@ -1,18 +1,35 @@
 #include "repository.h"
-#include <iostream>
-#include <string>
+#include "../common/util.h"
+#include <fstream>
+
 using namespace std;
+
+void Repository::loadFromFile()
+{
+    ifstream f(this->filename);
+    string temp;
+    string* args;
+
+    getline(f, temp);
+    while(!f.eof())
+    {
+        args = splitString(temp);
+        add(Movie{args[0], args[1], stoi(args[2]), stoi(args[3]), args[4]});
+        getline(f, temp);
+    }
+    f.close();
+}
 
 Repository::Repository()
 {
     this->items = new DynArr<Movie>();
-    this->capacity = 0;
 }
 
-Repository::Repository(int capacity)
+Repository::Repository(int capacity, string filename)
 {
     this->items = new DynArr<Movie>{capacity};
-    this->capacity = capacity;
+    this->filename = filename;
+    loadFromFile();
 };
 
 void Repository::add(Movie mov)

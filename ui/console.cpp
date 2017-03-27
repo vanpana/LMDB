@@ -34,6 +34,8 @@ void Console::printMenu(int mode)
     else //user
     {
         cout<<"1. Get movie suggestions.\n";
+        cout<<"2. Delete watched movie.\n";
+        cout<<"3. Print your watchlist.\n";
     }
     cout<<"0. Exit\n";
 }
@@ -80,9 +82,9 @@ void Console::uiAdd()
         cout<<"Input trailer: ";
         trailer = getString();
         //TODO HTTP here
-        if (!regex_match(trailer, regex("w\{3\}\..*\..*")))
+        if (!regex_match(trailer, regex("http://w\{3\}\..*\..*")) && !regex_match(trailer, regex("https://w\{3\}\..*\..*")))
             cout<<"Invalid trailer link\n";
-    }while(!regex_match(trailer, regex("w\{3\}\..*\..*")));
+    }while(!regex_match(trailer, regex("http://w\{3\}\..*\..*")) && !regex_match(trailer, regex("https://w\{3\}\..*\..*")));
     this->ctrl.add(title, genre, year, likes, trailer);
 }
 
@@ -150,8 +152,7 @@ void Console::uiPrintAll()
         cout << "\nThe movies are:\n";
         for (int i = 0; i < this->ctrl.getLength(); i++) {
             Movie mov = this->ctrl.getItems()[i];
-            cout << mov.getTitle() << " " << mov.getGenre() << " " << mov.getYear() << " " << mov.getLikes() << " "
-                 << mov.getTrailer() << "\n";
+            mov.str();
         }
     }
 }
@@ -172,7 +173,7 @@ void Console::uiGetSuggestions()
     {
         for (int i = 0; i < suggestions->getLength(); i++)
         {
-            system("clear");
+//            system("clear");
             int option;
             Movie mov = suggestions->getItems()[i];
             do{
@@ -203,8 +204,50 @@ void Console::uiGetSuggestions()
                 break;
         }
     }
+    if (suggestions->getLength() == 0)
+        cout<<"That's all for now!\n";
 }
 
+void Console::uiDeleteSuggestion()
+{
+    //TODO Check why it is deleted from the admin repo
+    cout<<"Input title: ";
+    string title = getString();
+
+    if (this->wlist.del(title) == 0)
+        cout<<"Inexistent movie!\n";
+    else
+    {
+        cout<<"Like the movie?\n";
+        string liked;
+
+        do
+        {
+            liked = getString();
+            if (liked != "yes" && liked != "no")
+                cout<<"Invalid option\n";
+        }while(liked != "yes" && liked != "no");
+
+        if (liked == "yes")
+            this->ctrl.getItems()[this->ctrl.getPosition(title)].incLikes();
+    }
+}
+
+void Console::uiPrintSuggestions()
+{
+    int length = this->wlist.getArray()->getLength();
+
+    if (length == 0)
+        cout<<"\nThere are no movies yet!\n";
+    else
+    {
+        cout << "\nThe movies are:\n";
+        for (int i = 0; i < length; i++) {
+            Movie mov = this->wlist.getArray()->getItems()[i];
+            mov.str();
+        }
+    }
+}
 
 int Console::getInteger()
 {
@@ -272,6 +315,10 @@ void Console::loop()
                     continue;
                 if (option == 1)
                     uiGetSuggestions();
+                if (option == 2)
+                    uiDeleteSuggestion();
+                if (option == 3)
+                    uiPrintSuggestions();
             }
         }
     }

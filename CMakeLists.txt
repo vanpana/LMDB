@@ -6,8 +6,6 @@ set(CMAKE_CXX_STANDARD 11)
 set(SOURCE_FILES
         common/array.cpp
         common/array.h
-        common/util.c
-        common/util.h
         controller/controller.cpp
         controller/controller.h
         domain/entities.cpp
@@ -17,6 +15,6 @@ set(SOURCE_FILES
         ui/console.cpp
         ui/console.h
         compile.sh
-        main.cpp repository/watchlist.cpp repository/watchlist.h)
+        main.cpp repository/watchlist.cpp repository/watchlist.h common/util.cpp common/util.h)
 
 add_executable(LMDB ${SOURCE_FILES})
