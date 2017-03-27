@@ -52,6 +52,8 @@ public:
     */
     int getPosition(char* name);
 
+    DynArr<Movie>* getArray() { return this->items; }
+
 };
 
 #endif

@@ -16,6 +16,7 @@ public:
     Movie();
 
     //constructor with parameters
+    //TODO const string&
     Movie(string title, string genre, int year, int likes, string trailer);
 
     //copy constructor

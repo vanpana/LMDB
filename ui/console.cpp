@@ -74,6 +74,76 @@ void Console::uiAdd()
     this->ctrl.add(title, genre, year, likes, trailer);
 }
 
+void Console::uiUpdate()
+{
+    string title, genre, trailer;
+    int year, likes;
+
+    cout<<"Input title: ";
+    title = getString();
+
+    cout<<"Input genre: ";
+    genre = getString();
+
+    do
+    {
+        cout<<"Input year: ";
+        year = getInteger();
+        if (year == -1)
+            cout<<"Invalid input!\n";
+    }while (year == -1);
+
+    do
+    {
+        cout<<"Input likes: ";
+        likes = getInteger();
+        if (likes == -1)
+            cout<<"Invalid input!\n";
+    }while (likes == -1);
+
+
+    do
+    {
+        cout<<"Input trailer: ";
+        trailer = getString();
+        if (!regex_match(trailer, regex("http://w\{3\}\..*\..*")) && !regex_match(trailer, regex("https://w\{3\}\..*\..*")))
+            cout<<"Invalid trailer link\n";
+    }while(!regex_match(trailer, regex("http://w\{3\}\..*\..*")) && !regex_match(trailer, regex("https://w\{3\}\..*\..*")));
+
+    if (this->ctrl.update(title, genre, year, likes, trailer) == 0)
+        cout<<"Inexistent movie!\n";
+    else
+        cout<<"Updated movie!\n";
+}
+
+void Console::uiDelete()
+{
+    cout<<"Input title: ";
+    string title = getString();
+
+    if (this->ctrl.del(title) == 0)
+        cout<<"Inexistent movie!\n";
+    else
+        cout<<"Deleted movie!\n";
+}
+
+void Console::uiPrintAll()
+{
+    int length = this->ctrl.getLength();
+
+    if (length == 0)
+        cout<<"\nThere are no movies yet!\n";
+    else
+    {
+        cout << "\nThe movies are:\n";
+        for (int i = 0; i < this->ctrl.getLength(); i++) {
+            Movie mov = this->ctrl.getItems()[i];
+            cout << mov.getTitle() << " " << mov.getGenre() << " " << mov.getYear() << " " << mov.getLikes() << " "
+                 << mov.getTrailer() << "\n";
+        }
+    }
+}
+
 int Console::getInteger()
 {
     string tempS;
@@ -100,7 +170,7 @@ void Console::loop()
 {
     while(1)
     {
-        int mode = -1, option = -1;
+        int mode, option;
         do
         {
             printModes();
@@ -124,6 +194,12 @@ void Console::loop()
                     break;
                 else if (option == 1)
                     uiAdd();
+                else if (option == 2)
+                    uiUpdate();
+                else if (option == 3)
+                    uiDelete();
+                else if (option == 4)
+                    uiPrintAll();
             }
         }
     }

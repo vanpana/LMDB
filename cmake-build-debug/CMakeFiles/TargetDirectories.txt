@@ -1,3 +1,3 @@
-C:/Users/Panaite Dorinel/Documents/GitHub/LMDB/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Panaite Dorinel/Documents/GitHub/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir
-C:/Users/Panaite Dorinel/Documents/GitHub/LMDB/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir

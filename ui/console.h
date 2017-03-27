@@ -19,6 +19,9 @@ public:
     void printMenu(int mode);
 
     void uiAdd();
+    void uiUpdate();
+    void uiDelete();
+    void uiPrintAll();
 
     void loop();
     void runApp();

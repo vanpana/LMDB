@@ -1,15 +1,13 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LMDB.dir/common/array.cpp.obj"
-  "CMakeFiles/LMDB.dir/common/util.c.obj"
-  "CMakeFiles/LMDB.dir/controller/controller.cpp.obj"
-  "CMakeFiles/LMDB.dir/domain/entities.cpp.obj"
-  "CMakeFiles/LMDB.dir/repository/repository.cpp.obj"
-  "CMakeFiles/LMDB.dir/ui/console.cpp.obj"
-  "CMakeFiles/LMDB.dir/main.cpp.obj"
+  "CMakeFiles/LMDB.dir/common/array.cpp.o"
+  "CMakeFiles/LMDB.dir/common/util.c.o"
+  "CMakeFiles/LMDB.dir/controller/controller.cpp.o"
+  "CMakeFiles/LMDB.dir/domain/entities.cpp.o"
+  "CMakeFiles/LMDB.dir/repository/repository.cpp.o"
+  "CMakeFiles/LMDB.dir/ui/console.cpp.o"
+  "CMakeFiles/LMDB.dir/main.cpp.o"
   "LMDB.pdb"
-  "LMDB.exe"
-  "LMDB.exe.manifest"
-  "libLMDB.dll.a"
+  "LMDB"
 )
 
 # Per-language clean rules from dependency scanning.

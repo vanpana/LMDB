@@ -16,8 +16,8 @@ public:
     void add(string title, string genre, int year, int likes, string trailer);
     int del(string title);
     int update(string title, string genre, int year, int likes, string trailer);
-    Movie* getItems() { return this->repo.getItems();  }
-    int getLength() { return this->repo.getLength(); }
+    int getLength() { return this->repo.getArray()->getLength(); }
+    Movie * getItems() { return this->repo.getArray()->getItems(); }
     ~Controller();
 };
 
