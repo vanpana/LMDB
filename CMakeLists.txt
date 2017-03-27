@@ -17,6 +17,6 @@ set(SOURCE_FILES
         ui/console.cpp
         ui/console.h
         compile.sh
-        main.cpp)
+        main.cpp repository/watchlist.cpp repository/watchlist.h)
 
 add_executable(LMDB ${SOURCE_FILES})

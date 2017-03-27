@@ -2,6 +2,7 @@
 #define CONTROLLER_H
 
 #include "../repository/repository.h"
+#include "../repository/watchlist.h"
 #include <string>
 using namespace std;
 
@@ -18,6 +19,7 @@ public:
     int update(string title, string genre, int year, int likes, string trailer);
     int getLength() { return this->repo.getArray()->getLength(); }
     Movie * getItems() { return this->repo.getArray()->getItems(); }
+    DynArr<Movie>* getArray() { return this->repo.getArray(); };
     ~Controller();
 };
 

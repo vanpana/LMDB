@@ -285,6 +285,33 @@ repository/repository.cpp.s:
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/repository.cpp.s
 .PHONY : repository/repository.cpp.s
 
+repository/watchlist.o: repository/watchlist.cpp.o
+
+.PHONY : repository/watchlist.o
+
+# target to build an object file
+repository/watchlist.cpp.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/watchlist.cpp.o
+.PHONY : repository/watchlist.cpp.o
+
+repository/watchlist.i: repository/watchlist.cpp.i
+
+.PHONY : repository/watchlist.i
+
+# target to preprocess a source file
+repository/watchlist.cpp.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/watchlist.cpp.i
+.PHONY : repository/watchlist.cpp.i
+
+repository/watchlist.s: repository/watchlist.cpp.s
+
+.PHONY : repository/watchlist.s
+
+# target to generate assembly for a file
+repository/watchlist.cpp.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/watchlist.cpp.s
+.PHONY : repository/watchlist.cpp.s
+
 ui/console.o: ui/console.cpp.o
 
 .PHONY : ui/console.o
@@ -339,6 +366,9 @@ help:
 	@echo "... repository/repository.o"
 	@echo "... repository/repository.i"
 	@echo "... repository/repository.s"
+	@echo "... repository/watchlist.o"
+	@echo "... repository/watchlist.i"
+	@echo "... repository/watchlist.s"
 	@echo "... ui/console.o"
 	@echo "... ui/console.i"
 	@echo "... ui/console.s"

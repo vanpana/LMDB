@@ -1,11 +1,13 @@
 #include "console.h"
 #include <string>
+#include <cstdlib>
 #include <regex>
 using namespace std;
 
-Console::Console(Controller ctrl)
+Console::Console(Controller ctrl, WatchList wlist)
 {
     this->ctrl = ctrl;
+    this->wlist = wlist;
 }
 
 void Console::printModes()
@@ -31,8 +33,17 @@ void Console::printMenu(int mode)
 
     else //user
     {
-        cout<<"No options yet...\n";
+        cout<<"1. Get movie suggestions.\n";
     }
+    cout<<"0. Exit\n";
+}
+
+void Console::printSuggestionMenu(Movie mov)
+{
+    cout<<mov.getTitle()<<"\n";
+    cout<<"1. Watch trailer\n";
+    cout<<"2. Add to watchlist\n";
+    cout<<"3. Skip\n";
     cout<<"0. Exit\n";
 }
 
@@ -68,6 +79,7 @@ void Console::uiAdd()
     {
         cout<<"Input trailer: ";
         trailer = getString();
+        //TODO HTTP here
         if (!regex_match(trailer, regex("w\{3\}\..*\..*")))
             cout<<"Invalid trailer link\n";
     }while(!regex_match(trailer, regex("w\{3\}\..*\..*")));
@@ -144,12 +156,63 @@ void Console::uiPrintAll()
     }
 }
 
+void Console::uiGetSuggestions()
+{
+    string needle;
+    DynArr<Movie>* suggestions;
+
+    cout<<"Input your genre (type \"all\" for all suggestions:\n";
+    needle = getString();
+    needle.erase(remove(needle.begin(), needle.end(), '\n'), needle.end());
+
+    suggestions = this->wlist.getSuggestions(this->ctrl.getArray(), needle);
+    if (suggestions->getLength() == 0)
+        cout<<"No suggestions for this genre, sorry!";
+    else
+    {
+        for (int i = 0; i < suggestions->getLength(); i++)
+        {
+            system("clear");
+            int option;
+            Movie mov = suggestions->getItems()[i];
+            do{
+                printSuggestionMenu(mov);
+                option = getInteger();
+            }while (option<1 && option>3);
+            if (option == 1)
+            {
+                string url = "open ";
+                url += mov.getTrailer();
+                system(url.c_str());
+                i--;
+            }
+            else if (option == 2)
+            {
+                this->wlist.add(mov);
+                if (i+1 == suggestions->getLength())
+                    i = -1;
+                suggestions->pop(mov.getTitle());
+            }
+
+            else if (option == 3)
+            {
+                if (i+1 == suggestions->getLength())
+                    i = -1;
+            }
+            else if (option == 4)
+                break;
+        }
+    }
+}
+
+
 int Console::getInteger()
 {
     string tempS;
     int tempI;
-    cin>>tempS;
-    cin.ignore();
+    getline(cin, tempS);
+//    cin>>tempS;
+//    cin.ignore();
 
     for (int i = 0; i < tempS.size(); i++)
         if (!isdigit(tempS[i]))
@@ -161,8 +224,9 @@ int Console::getInteger()
 string Console::getString()
 {
     string tempS;
-    cin>>tempS;
-    cin.ignore();
+    getline(cin, tempS);
+//    cin>>tempS;
+//    cin.ignore();
     return tempS;
 }
 
@@ -185,13 +249,13 @@ void Console::loop()
             do {
                 printMenu(mode);
                 option = getInteger();
-                if (mode == 1 && (option < 0 || option > 4))
+                if ((mode == 1 && (option < 0 || option > 4)) || (mode == 1 && (option < 0 || option > 4)))
                     cout << "Invalid command!\n";
-            } while (mode == 1 && (option < 0 || option > 4));
+            } while ((mode == 1 && (option < 0 || option > 4)) || (mode == 1 && (option < 0 || option > 4)));
             if (mode == 1)
             {
                 if (option == 0)
-                    break;
+                    continue;
                 else if (option == 1)
                     uiAdd();
                 else if (option == 2)
@@ -200,6 +264,14 @@ void Console::loop()
                     uiDelete();
                 else if (option == 4)
                     uiPrintAll();
+            }
+
+            if (mode == 2)
+            {
+                if (option == 0)
+                    continue;
+                if (option == 1)
+                    uiGetSuggestions();
             }
         }
     }

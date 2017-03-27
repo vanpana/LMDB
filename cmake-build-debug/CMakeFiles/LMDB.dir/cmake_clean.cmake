@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LMDB.dir/repository/repository.cpp.o"
   "CMakeFiles/LMDB.dir/ui/console.cpp.o"
   "CMakeFiles/LMDB.dir/main.cpp.o"
+  "CMakeFiles/LMDB.dir/repository/watchlist.cpp.o"
   "LMDB.pdb"
   "LMDB"
 )

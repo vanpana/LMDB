@@ -10,10 +10,12 @@ using namespace std;
 
 int main()
 {
+    Repository admin_repo = Repository{30};
+    WatchList user_repo = WatchList{30};
 
-    Repository repo = Repository{30};
-    Controller ctrl = Controller{repo};
-    Console ui = Console(ctrl);
+    Controller admin_ctrl = Controller{admin_repo};;
+
+    Console ui = Console(admin_ctrl, user_repo);
 
     ui.runApp();
 }

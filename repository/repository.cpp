@@ -17,6 +17,7 @@ Repository::Repository(int capacity)
 
 void Repository::add(Movie mov)
 {
+    //TODO Validate here!
     this->items->push(mov);
 }
 
