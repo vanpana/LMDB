@@ -15,3 +15,21 @@ string *splitString(string temp)
 
     return args;
 }
+
+Movie *sortByGenre(Movie *list, int length)
+{
+    for (int i = 0; i < length - 1; i++)
+        for (int j = i + 1; j < length; j++)
+            if (list[i].getGenre() > list[j].getGenre())
+            {
+                Movie aux = list[i];
+                list[i] = list[j];
+                list[j] = aux;
+            }
+    return list;
+}
+
+void test_functions()
+{
+    test_ctrl_all();
+}

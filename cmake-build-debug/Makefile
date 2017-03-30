@@ -204,6 +204,33 @@ controller/controller.cpp.s:
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/controller/controller.cpp.s
 .PHONY : controller/controller.cpp.s
 
+controller/test_controller.o: controller/test_controller.cpp.o
+
+.PHONY : controller/test_controller.o
+
+# target to build an object file
+controller/test_controller.cpp.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/controller/test_controller.cpp.o
+.PHONY : controller/test_controller.cpp.o
+
+controller/test_controller.i: controller/test_controller.cpp.i
+
+.PHONY : controller/test_controller.i
+
+# target to preprocess a source file
+controller/test_controller.cpp.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/controller/test_controller.cpp.i
+.PHONY : controller/test_controller.cpp.i
+
+controller/test_controller.s: controller/test_controller.cpp.s
+
+.PHONY : controller/test_controller.s
+
+# target to generate assembly for a file
+controller/test_controller.cpp.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/controller/test_controller.cpp.s
+.PHONY : controller/test_controller.cpp.s
+
 domain/entities.o: domain/entities.cpp.o
 
 .PHONY : domain/entities.o
@@ -357,6 +384,9 @@ help:
 	@echo "... controller/controller.o"
 	@echo "... controller/controller.i"
 	@echo "... controller/controller.s"
+	@echo "... controller/test_controller.o"
+	@echo "... controller/test_controller.i"
+	@echo "... controller/test_controller.s"
 	@echo "... domain/entities.o"
 	@echo "... domain/entities.i"
 	@echo "... domain/entities.s"

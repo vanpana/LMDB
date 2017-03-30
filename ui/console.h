@@ -25,6 +25,7 @@ public:
     void uiUpdate();
     void uiDelete();
     void uiPrintAll();
+    void uiPrintAllByGenre();
 
     //User functions
     void uiGetSuggestions();

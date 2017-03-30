@@ -101,6 +101,12 @@
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/controller/controller.h">
 			<Option target="LMDB"/>
 		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/controller/test_controller.cpp">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/controller/test_controller.h">
+			<Option target="LMDB"/>
+		</Unit>
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/entities.cpp">
 			<Option target="LMDB"/>
 		</Unit>

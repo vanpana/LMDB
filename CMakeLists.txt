@@ -15,6 +15,6 @@ set(SOURCE_FILES
         ui/console.cpp
         ui/console.h
         compile.sh
-        main.cpp repository/watchlist.cpp repository/watchlist.h common/util.cpp common/util.h)
+        main.cpp repository/watchlist.cpp repository/watchlist.h common/util.cpp common/util.h controller/test_controller.cpp controller/test_controller.h)
 
 add_executable(LMDB ${SOURCE_FILES})

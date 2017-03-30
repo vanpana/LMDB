@@ -1,4 +1,5 @@
 #include "console.h"
+#include "../common/util.h"
 #include <string>
 #include <cstdlib>
 #include <regex>
@@ -29,6 +30,7 @@ void Console::printMenu(int mode)
         cout<<"2. Update movie.\n";
         cout<<"3. Delete movie.\n";
         cout<<"4. Print all movies.\n";
+        cout<<"5. Print all movies sorted by genre.\n";
     }
 
     else //user
@@ -156,6 +158,23 @@ void Console::uiPrintAll()
         }
     }
 }
+
+void Console::uiPrintAllByGenre()
+{
+    int length = this->ctrl.getLength();
+
+    if (length == 0)
+        cout<<"\nThere are no movies yet!\n";
+    else
+    {
+        Movie* sorted = sortByGenre(ctrl.getItems(), ctrl.getLength());
+        cout << "\nThe movies are:\n";
+        for (int i = 0; i < this->ctrl.getLength(); i++)
+            sorted[i].str();
+    }
+}
+
+
 
 void Console::uiGetSuggestions()
 {
@@ -292,9 +311,9 @@ void Console::loop()
             do {
                 printMenu(mode);
                 option = getInteger();
-                if ((mode == 1 && (option < 0 || option > 4)) || (mode == 1 && (option < 0 || option > 4)))
+                if ((mode == 1 && (option < 0 || option > 5)) || (mode == 2 && (option < 0 || option > 4)))
                     cout << "Invalid command!\n";
-            } while ((mode == 1 && (option < 0 || option > 4)) || (mode == 1 && (option < 0 || option > 4)));
+            } while ((mode == 1 && (option < 0 || option > 5)) || (mode == 2 && (option < 0 || option > 4)));
             if (mode == 1)
             {
                 if (option == 0)
@@ -307,6 +326,8 @@ void Console::loop()
                     uiDelete();
                 else if (option == 4)
                     uiPrintAll();
+                else if (option == 5)
+                    uiPrintAllByGenre();
             }
 
             if (mode == 2)
