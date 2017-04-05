@@ -20,5 +20,7 @@ int main()
 
     Console ui = Console(admin_ctrl, user_repo);
 
+    //cout << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
+
     ui.runApp();
 }

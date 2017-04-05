@@ -1,9 +1,11 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include "../common/counter.h"
+
 using namespace std;
 
-class Movie
+class Movie : private Counter<Movie>
 {
 private:
     string title;
@@ -13,6 +15,8 @@ private:
     string trailer;
 
 public:
+    using Counter<Movie>::GetTotal;
+    using Counter<Movie>::GetAlive;
     //default constructor
     Movie();
 

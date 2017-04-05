@@ -20,6 +20,12 @@ public:
     //constructor with parameters
     DynArr(int cap);
 
+    //copy constructor
+    DynArr(DynArr& other);
+
+    //assignment operator
+    DynArr& operator=(DynArr& other);
+
     /*
      Function to get position of a given element.
      Input: name - string: name of the element.
@@ -52,6 +58,8 @@ public:
      Output: len - int: the length of the array
      */
     int getLength();
+
+    DynArr<T>* operator+(const T v);
 
     /*
      Function to double the capacity of the array;

@@ -18,6 +18,12 @@ public:
     //constructor with parameters
     Repository(int capacity, string filename);
 
+    //copy constructor
+    Repository(const Repository& other);
+
+    //assigment operator
+    Repository& operator=(Repository& other);
+
     //getters
     Movie* getItems() { return this->items->getItems();  }
     int getLength() { return this->items->getLength(); }
@@ -54,6 +60,8 @@ public:
     int getPosition(string name) { return this->items->getPosition(name); }
 
     DynArr<Movie>* getArray() { return this->items; }
+
+    ~Repository() { /*delete[] this->items;*/ };
 
 };
 

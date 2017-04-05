@@ -150,6 +150,33 @@ common/array.cpp.s:
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/array.cpp.s
 .PHONY : common/array.cpp.s
 
+common/counter.o: common/counter.cpp.o
+
+.PHONY : common/counter.o
+
+# target to build an object file
+common/counter.cpp.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/counter.cpp.o
+.PHONY : common/counter.cpp.o
+
+common/counter.i: common/counter.cpp.i
+
+.PHONY : common/counter.i
+
+# target to preprocess a source file
+common/counter.cpp.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/counter.cpp.i
+.PHONY : common/counter.cpp.i
+
+common/counter.s: common/counter.cpp.s
+
+.PHONY : common/counter.s
+
+# target to generate assembly for a file
+common/counter.cpp.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/counter.cpp.s
+.PHONY : common/counter.cpp.s
+
 common/util.o: common/util.cpp.o
 
 .PHONY : common/util.o
@@ -378,6 +405,9 @@ help:
 	@echo "... common/array.o"
 	@echo "... common/array.i"
 	@echo "... common/array.s"
+	@echo "... common/counter.o"
+	@echo "... common/counter.i"
+	@echo "... common/counter.s"
 	@echo "... common/util.o"
 	@echo "... common/util.i"
 	@echo "... common/util.s"

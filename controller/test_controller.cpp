@@ -27,6 +27,7 @@ void test_update()
     Controller ctrl = setUp();
     ctrl.update("Pulp Fiction","asd",123,123,"asd");
     assert(ctrl.getItems()[ctrl.getPosition("Pulp Fiction")].getGenre() == "asd");
+
 }
 
 void test_ctrl_all()

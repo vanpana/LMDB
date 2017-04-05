@@ -30,12 +30,36 @@ Repository::Repository(int capacity, string filename)
     this->items = new DynArr<Movie>{capacity};
     this->filename = filename;
     loadFromFile();
-};
+}
+
+
+Repository::Repository(const Repository &other)
+{
+    this->filename = other.filename;
+    this->items = new DynArr<Movie>{10};
+    *this->items = *other.items;
+}
+
+Repository& Repository::operator=(Repository &other)
+{
+    if (this == &other)
+        return *this;
+
+    this->filename = other.filename;
+    //int capacity = other.getLength();
+    //delete[] this->items;
+
+    this->items = new DynArr<Movie>{10};
+    *this->items = *other.getArray();
+
+    return *this;
+}
 
 void Repository::add(Movie mov)
 {
     //TODO Validate here!
-    this->items->push(mov);
+    //this->items->push(mov);
+    this->items = *this->items + mov;
 }
 
 int Repository::del(string name)

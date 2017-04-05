@@ -8,6 +8,7 @@ template <class T>
 DynArr<T>::DynArr()
 {
     this->capacity = 0;
+    this->length = 0;
     this->array = new T[0];
 }
 
@@ -18,6 +19,33 @@ DynArr<T>::DynArr(int cap)
     this->capacity = cap;
     this->length = 0;
     this->array = new T[this->capacity];
+}
+
+template <class T>
+DynArr<T>::DynArr(DynArr &other)
+{
+    this->length = other.length;
+    this->capacity = other.capacity;
+    this->array = new T[this->capacity];
+    for (int i = 0; i < this->length; i++)
+        this->array[i] = other.array[i];
+}
+
+template <class T>
+DynArr<T> &DynArr<T>::operator=(DynArr &other)
+{
+    if (this == &other)
+        return *this;
+
+    this->length = other.length;
+    this->capacity = other.capacity;
+
+    delete[] this->array;
+    this->array = new T[this->capacity];
+    for (int i = 0; i < this->length; i++)
+        this->array[i] = other.array[i];
+
+    return *this;
 }
 
 template <class T>
@@ -73,6 +101,14 @@ int DynArr<T>::getLength()
     return this->length;
 }
 
+template <typename T>
+DynArr<T>* DynArr<T>::operator+(const T v)
+{
+    push(v);
+
+    return this;
+}
+
 template <class T>
 void DynArr<T>::resize()
 {
@@ -83,16 +119,14 @@ void DynArr<T>::resize()
         array[i] = this->array[i];
 
     delete[]this->array;
-    this->array = array;
+    *this->array = *array;
 }
-
 
 //destructor
 template <class T>
 DynArr<T>::~DynArr()
 {
-    delete[]this->array;
+    delete[] this->array;
 }
-
 
 template class DynArr<Movie>;
