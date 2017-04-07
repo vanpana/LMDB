@@ -11,7 +11,7 @@ using namespace std;
 
 int main()
 {
-    test_functions();
+    //test_functions();
 
     Repository admin_repo = Repository{30, "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/data/movies.csv"};
     WatchList user_repo = WatchList{30};
@@ -20,7 +20,7 @@ int main()
 
     Console ui = Console(admin_ctrl, user_repo);
 
-    //cout << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
+    cout << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
 
     ui.runApp();
 }

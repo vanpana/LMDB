@@ -21,10 +21,10 @@ public:
     DynArr(int cap);
 
     //copy constructor
-    DynArr(DynArr& other);
+    DynArr(const DynArr<T>& other);
 
     //assignment operator
-    DynArr& operator=(DynArr& other);
+    DynArr& operator=(const DynArr<T>& other);
 
     /*
      Function to get position of a given element.

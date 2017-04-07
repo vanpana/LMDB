@@ -3,13 +3,13 @@
 #include <string>
 using namespace std;
 
-//standard constructor
+//default constructor
 template <class T>
 DynArr<T>::DynArr()
 {
-    this->capacity = 0;
+    this->capacity = 10;
     this->length = 0;
-    this->array = new T[0];
+    this->array = new T[this->capacity];
 }
 
 //constructor with parameters
@@ -22,7 +22,7 @@ DynArr<T>::DynArr(int cap)
 }
 
 template <class T>
-DynArr<T>::DynArr(DynArr &other)
+DynArr<T>::DynArr(const DynArr<T>& other)
 {
     this->length = other.length;
     this->capacity = other.capacity;
@@ -32,7 +32,7 @@ DynArr<T>::DynArr(DynArr &other)
 }
 
 template <class T>
-DynArr<T> &DynArr<T>::operator=(DynArr &other)
+DynArr<T> &DynArr<T>::operator=(const DynArr<T> &other)
 {
     if (this == &other)
         return *this;

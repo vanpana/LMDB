@@ -47,7 +47,7 @@ Repository& Repository::operator=(Repository &other)
 
     this->filename = other.filename;
     //int capacity = other.getLength();
-    //delete[] this->items;
+    delete this->items;
 
     this->items = new DynArr<Movie>{10};
     *this->items = *other.getArray();

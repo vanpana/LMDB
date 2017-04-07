@@ -61,7 +61,7 @@ public:
 
     DynArr<Movie>* getArray() { return this->items; }
 
-    ~Repository() { /*delete[] this->items;*/ };
+    ~Repository() { delete this->items; };
 
 };
 
