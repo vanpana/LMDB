@@ -3,24 +3,36 @@
 #include "controller/controller.h"
 #include "ui/console.h"
 #include "common/util.h"
-#include <unistd.h>
-#include <stdlib.h>
-#include <string>
 
 using namespace std;
 
-int main()
+int main(int argc, char **argv)
 {
-    //test_functions();
+    //testing requirements
+    system("find . -name \"*.gcda\" -print0 | xargs -0 rm");
+    ::testing::InitGoogleTest(&argc, argv);
 
-    Repository admin_repo = Repository{30, "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/data/movies.csv"};
-    WatchList user_repo = WatchList{30};
+    //testing
+    RUN_ALL_TESTS();
+    cout << "\n";
 
-    Controller admin_ctrl = Controller{admin_repo};
+    cout << "Created & alive after testing: " << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
 
-    Console ui = Console(admin_ctrl, user_repo);
+    //app initialising
+    Repository *admin_repo = new Repository{30, "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/data/movies.csv"};
+    WatchList *user_repo = new WatchList{30};
+    Controller *admin_ctrl = new Controller{*admin_repo};
+    Console *ui = new Console(*admin_ctrl, *user_repo);
 
-    cout << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
+    cout << "Created & alive after initialising: " << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
 
-    ui.runApp();
+    ui->runApp();
+
+    delete ui;
+    delete admin_ctrl;
+    delete user_repo;
+    delete admin_repo;
+
+    cout << "Created & alive after exiting: " << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
+
 }

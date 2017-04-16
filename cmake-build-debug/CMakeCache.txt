@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Builds the googlemock subproject
+BUILD_GMOCK:BOOL=ON
+
+//Builds the googletest subproject
+BUILD_GTEST:BOOL=OFF
+
+//Build shared libraries (DLLs).
+BUILD_SHARED_LIBS:BOOL=OFF
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
 
@@ -193,7 +202,59 @@ LMDB_BINARY_DIR:STATIC=/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OO
 LMDB_SOURCE_DIR:STATIC=/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB
 
 //Path to a program.
+PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
+
+//Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//Value Computed by CMake
+gmock_BINARY_DIR:STATIC=/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock
+
+//Dependencies for target
+gmock_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+gmock_SOURCE_DIR:STATIC=/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googlemock
+
+//Build all of Google Mock's own tests.
+gmock_build_tests:BOOL=OFF
+
+//Dependencies for target
+gmock_main_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+googletest-distribution_BINARY_DIR:STATIC=/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master
+
+//Value Computed by CMake
+googletest-distribution_SOURCE_DIR:STATIC=/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master
+
+//Value Computed by CMake
+gtest_BINARY_DIR:STATIC=/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest
+
+//Dependencies for target
+gtest_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+gtest_SOURCE_DIR:STATIC=/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest
+
+//Build gtest's sample programs.
+gtest_build_samples:BOOL=OFF
+
+//Build all of gtest's own tests.
+gtest_build_tests:BOOL=OFF
+
+//Disable uses of pthreads in gtest.
+gtest_disable_pthreads:BOOL=OFF
+
+//Use shared (DLL) run-time lib even when Google Test is built
+// as static lib.
+gtest_force_shared_crt:BOOL=OFF
+
+//Build gtest with internal symbols hidden in shared libraries.
+gtest_hide_internal_symbols:BOOL=OFF
+
+//Dependencies for the target
+gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 
 ########################
@@ -272,6 +333,10 @@ CMAKE_GENERATOR:INTERNAL=Unix Makefiles
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Have symbol pthread_create
+CMAKE_HAVE_LIBC_CREATE:INTERNAL=1
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB
@@ -294,7 +359,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -333,6 +398,12 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding PythonInterp
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.10()]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//ADVANCED property for variable: PYTHON_EXECUTABLE
+PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
 

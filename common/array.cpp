@@ -1,6 +1,6 @@
 #include "../common/array.h"
 #include "../domain/entities.h"
-#include <string>
+
 using namespace std;
 
 //default constructor
@@ -26,6 +26,7 @@ DynArr<T>::DynArr(const DynArr<T>& other)
 {
     this->length = other.length;
     this->capacity = other.capacity;
+
     this->array = new T[this->capacity];
     for (int i = 0; i < this->length; i++)
         this->array[i] = other.array[i];
@@ -113,7 +114,7 @@ template <class T>
 void DynArr<T>::resize()
 {
     this->capacity *= 2;
-    array = new T[capacity];
+    array = new T[this->capacity];
 
     for (int i = 0; i < this->length; i++)
         array[i] = this->array[i];

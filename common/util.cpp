@@ -1,6 +1,5 @@
 #include "util.h"
-#include <iostream>
-#include <sstream>
+
 using namespace std;
 
 string *splitString(string temp)
@@ -16,20 +15,18 @@ string *splitString(string temp)
     return args;
 }
 
-Movie *sortByGenre(Movie *list, int length)
+bool genreBool(Movie a, Movie b)
 {
-    for (int i = 0; i < length - 1; i++)
-        for (int j = i + 1; j < length; j++)
-            if (list[i].getGenre() > list[j].getGenre())
-            {
-                Movie aux = list[i];
-                list[i] = list[j];
-                list[j] = aux;
-            }
-    return list;
+    return a.getGenre() > b.getGenre();
+}
+
+vector<Movie> sortByGenre(vector<Movie> items)
+{
+    sort(items.begin(), items.end(), genreBool);
+    return items;
 }
 
 void test_functions()
 {
-    test_ctrl_all();
+
 }

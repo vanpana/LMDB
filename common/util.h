@@ -3,12 +3,12 @@
 
 #include <string>
 #include "../domain/entities.h"
-#include "../controller/test_controller.h"
+#include "../tests/test_controller.h"
 
 using namespace std;
 
 string* splitString(string temp);
-Movie* sortByGenre(Movie* list, int length);
+vector<Movie> sortByGenre(vector<Movie> items);
 void test_functions();
 
 #endif //LMDB_UTIL_H

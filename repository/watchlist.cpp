@@ -1,31 +1,51 @@
+#include <vector>
 #include "watchlist.h"
+#include <vector>
+using namespace std;
 
 WatchList::WatchList(int capacity)
 {
-    this->movieList = new DynArr<Movie>{capacity};
+    vector<Movie> suggestions = vector<Movie>(10);
 }
 
 void WatchList::add(Movie mov)
 {
     //TODO Validate here!
-    this->movieList->push(mov);
+    this->movieList.push_back(mov);
+}
+
+int WatchList::getPosition(string name)
+{
+    int counter = 0;
+    for (Movie mov: movieList)
+    {
+        if (mov.getTitle() == name)
+            return counter;
+        counter++;
+    }
+    return -1;
 }
 
 int WatchList::del(string title)
 {
-    return this->movieList->pop(title);
+    int pos = getPosition(title);
+
+    if (pos == -1)
+        return 0;
+    this->movieList.erase(this->movieList.begin() + pos);
+    return 1;
 }
 
-DynArr<Movie>* WatchList::getSuggestions(DynArr<Movie>* repo, string needle)
+vector<Movie> WatchList::getSuggestions(vector<Movie> repo, string needle)
 {
     if (needle == "")
         return repo;
-    DynArr<Movie>* suggestions = new DynArr<Movie>{10};
-    for (int i = 0; i < repo->getLength(); i++)
+    vector<Movie> suggestions = vector<Movie>(10);
+    for (int i = 0; i < repo.size(); i++)
     {
-        Movie mov = repo->getItems()[i];
+        Movie mov = repo[i];
         if (mov.getGenre() == needle)
-            suggestions->push(mov);
+            suggestions.push_back(mov);
     }
 
     return suggestions;

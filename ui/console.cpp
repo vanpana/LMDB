@@ -167,7 +167,7 @@ void Console::uiPrintAllByGenre()
         cout<<"\nThere are no movies yet!\n";
     else
     {
-        Movie* sorted = sortByGenre(ctrl.getItems(), ctrl.getLength());
+        vector<Movie> sorted = sortByGenre(ctrl.getItems());
         cout << "\nThe movies are:\n";
         for (int i = 0; i < this->ctrl.getLength(); i++)
             sorted[i].str();
@@ -179,22 +179,21 @@ void Console::uiPrintAllByGenre()
 void Console::uiGetSuggestions()
 {
     string needle;
-    DynArr<Movie>* suggestions;
+    vector<Movie> suggestions;
 
     cout<<"Input your genre (type \"all\" for all suggestions:\n";
     needle = getString();
     needle.erase(remove(needle.begin(), needle.end(), '\n'), needle.end());
 
-    suggestions = this->wlist.getSuggestions(this->ctrl.getArray(), needle);
-    if (suggestions->getLength() == 0)
+    suggestions = this->wlist.getSuggestions(this->ctrl.getItems(), needle);
+    if (suggestions.size() == 0)
         cout<<"No suggestions for this genre, sorry!";
     else
     {
-        for (int i = 0; i < suggestions->getLength(); i++)
+        for (int i = 0; i < suggestions.size(); i++)
         {
-//            system("clear");
             int option;
-            Movie mov = suggestions->getItems()[i];
+            Movie mov = suggestions[i];
             do{
                 printSuggestionMenu(mov);
                 option = getInteger();
@@ -209,21 +208,21 @@ void Console::uiGetSuggestions()
             else if (option == 2)
             {
                 this->wlist.add(mov);
-                if (i+1 == suggestions->getLength())
+                if (i+1 == suggestions.size())
                     i = -1;
-                suggestions->pop(mov.getTitle());
+                suggestions.erase(suggestions.begin() + i);
             }
 
             else if (option == 3)
             {
-                if (i+1 == suggestions->getLength())
+                if (i+1 == suggestions.size())
                     i = -1;
             }
-            else if (option == 4)
-                break;
+            else if (option == 0)
+                i = suggestions.size();
         }
     }
-    if (suggestions->getLength() == 0)
+    if (suggestions.size() == 0)
         cout<<"That's all for now!\n";
 }
 
@@ -254,7 +253,7 @@ void Console::uiDeleteSuggestion()
 
 void Console::uiPrintSuggestions()
 {
-    int length = this->wlist.getArray()->getLength();
+    int length = this->wlist.getArray().size();
 
     if (length == 0)
         cout<<"\nThere are no movies yet!\n";
@@ -262,7 +261,7 @@ void Console::uiPrintSuggestions()
     {
         cout << "\nThe movies are:\n";
         for (int i = 0; i < length; i++) {
-            Movie mov = this->wlist.getArray()->getItems()[i];
+            Movie mov = this->wlist.getArray()[i];
             mov.str();
         }
     }

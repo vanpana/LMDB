@@ -78,6 +78,50 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/progress.marks"
@@ -123,275 +167,192 @@ LMDB/fast:
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/build
 .PHONY : LMDB/fast
 
-common/array.o: common/array.cpp.o
+#=============================================================================
+# Target rules for targets named gmock_main
 
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+# target to build an object file
+common/array.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/array.o
 .PHONY : common/array.o
 
-# target to build an object file
-common/array.cpp.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/array.cpp.o
-.PHONY : common/array.cpp.o
-
-common/array.i: common/array.cpp.i
-
+# target to preprocess a source file
+common/array.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/array.i
 .PHONY : common/array.i
 
-# target to preprocess a source file
-common/array.cpp.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/array.cpp.i
-.PHONY : common/array.cpp.i
-
-common/array.s: common/array.cpp.s
-
+# target to generate assembly for a file
+common/array.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/array.s
 .PHONY : common/array.s
 
-# target to generate assembly for a file
-common/array.cpp.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/array.cpp.s
-.PHONY : common/array.cpp.s
-
-common/counter.o: common/counter.cpp.o
-
+# target to build an object file
+common/counter.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/counter.o
 .PHONY : common/counter.o
 
-# target to build an object file
-common/counter.cpp.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/counter.cpp.o
-.PHONY : common/counter.cpp.o
-
-common/counter.i: common/counter.cpp.i
-
+# target to preprocess a source file
+common/counter.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/counter.i
 .PHONY : common/counter.i
 
-# target to preprocess a source file
-common/counter.cpp.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/counter.cpp.i
-.PHONY : common/counter.cpp.i
-
-common/counter.s: common/counter.cpp.s
-
+# target to generate assembly for a file
+common/counter.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/counter.s
 .PHONY : common/counter.s
 
-# target to generate assembly for a file
-common/counter.cpp.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/counter.cpp.s
-.PHONY : common/counter.cpp.s
-
-common/util.o: common/util.cpp.o
-
+# target to build an object file
+common/util.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/util.o
 .PHONY : common/util.o
 
-# target to build an object file
-common/util.cpp.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/util.cpp.o
-.PHONY : common/util.cpp.o
-
-common/util.i: common/util.cpp.i
-
+# target to preprocess a source file
+common/util.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/util.i
 .PHONY : common/util.i
 
-# target to preprocess a source file
-common/util.cpp.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/util.cpp.i
-.PHONY : common/util.cpp.i
-
-common/util.s: common/util.cpp.s
-
+# target to generate assembly for a file
+common/util.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/util.s
 .PHONY : common/util.s
 
-# target to generate assembly for a file
-common/util.cpp.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/util.cpp.s
-.PHONY : common/util.cpp.s
-
-controller/controller.o: controller/controller.cpp.o
-
-.PHONY : controller/controller.o
-
 # target to build an object file
-controller/controller.cpp.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/controller/controller.cpp.o
-.PHONY : controller/controller.cpp.o
-
-controller/controller.i: controller/controller.cpp.i
-
-.PHONY : controller/controller.i
-
-# target to preprocess a source file
-controller/controller.cpp.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/controller/controller.cpp.i
-.PHONY : controller/controller.cpp.i
-
-controller/controller.s: controller/controller.cpp.s
-
-.PHONY : controller/controller.s
-
-# target to generate assembly for a file
-controller/controller.cpp.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/controller/controller.cpp.s
-.PHONY : controller/controller.cpp.s
-
-controller/test_controller.o: controller/test_controller.cpp.o
-
-.PHONY : controller/test_controller.o
-
-# target to build an object file
-controller/test_controller.cpp.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/controller/test_controller.cpp.o
-.PHONY : controller/test_controller.cpp.o
-
-controller/test_controller.i: controller/test_controller.cpp.i
-
-.PHONY : controller/test_controller.i
-
-# target to preprocess a source file
-controller/test_controller.cpp.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/controller/test_controller.cpp.i
-.PHONY : controller/test_controller.cpp.i
-
-controller/test_controller.s: controller/test_controller.cpp.s
-
-.PHONY : controller/test_controller.s
-
-# target to generate assembly for a file
-controller/test_controller.cpp.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/controller/test_controller.cpp.s
-.PHONY : controller/test_controller.cpp.s
-
-domain/entities.o: domain/entities.cpp.o
-
+domain/entities.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/domain/entities.o
 .PHONY : domain/entities.o
 
-# target to build an object file
-domain/entities.cpp.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/domain/entities.cpp.o
-.PHONY : domain/entities.cpp.o
-
-domain/entities.i: domain/entities.cpp.i
-
+# target to preprocess a source file
+domain/entities.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/domain/entities.i
 .PHONY : domain/entities.i
 
-# target to preprocess a source file
-domain/entities.cpp.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/domain/entities.cpp.i
-.PHONY : domain/entities.cpp.i
-
-domain/entities.s: domain/entities.cpp.s
-
+# target to generate assembly for a file
+domain/entities.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/domain/entities.s
 .PHONY : domain/entities.s
 
-# target to generate assembly for a file
-domain/entities.cpp.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/domain/entities.cpp.s
-.PHONY : domain/entities.cpp.s
-
-main.o: main.cpp.o
-
+# target to build an object file
+main.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/main.o
 .PHONY : main.o
 
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
+# target to preprocess a source file
+main.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/main.i
 .PHONY : main.i
 
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
+# target to generate assembly for a file
+main.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/main.s
 .PHONY : main.s
 
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-repository/repository.o: repository/repository.cpp.o
-
+# target to build an object file
+repository/repository.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/repository.o
 .PHONY : repository/repository.o
 
-# target to build an object file
-repository/repository.cpp.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/repository.cpp.o
-.PHONY : repository/repository.cpp.o
-
-repository/repository.i: repository/repository.cpp.i
-
+# target to preprocess a source file
+repository/repository.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/repository.i
 .PHONY : repository/repository.i
 
-# target to preprocess a source file
-repository/repository.cpp.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/repository.cpp.i
-.PHONY : repository/repository.cpp.i
-
-repository/repository.s: repository/repository.cpp.s
-
+# target to generate assembly for a file
+repository/repository.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/repository.s
 .PHONY : repository/repository.s
 
-# target to generate assembly for a file
-repository/repository.cpp.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/repository.cpp.s
-.PHONY : repository/repository.cpp.s
-
-repository/watchlist.o: repository/watchlist.cpp.o
-
+# target to build an object file
+repository/watchlist.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/watchlist.o
 .PHONY : repository/watchlist.o
 
-# target to build an object file
-repository/watchlist.cpp.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/watchlist.cpp.o
-.PHONY : repository/watchlist.cpp.o
-
-repository/watchlist.i: repository/watchlist.cpp.i
-
+# target to preprocess a source file
+repository/watchlist.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/watchlist.i
 .PHONY : repository/watchlist.i
 
-# target to preprocess a source file
-repository/watchlist.cpp.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/watchlist.cpp.i
-.PHONY : repository/watchlist.cpp.i
-
-repository/watchlist.s: repository/watchlist.cpp.s
-
+# target to generate assembly for a file
+repository/watchlist.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/watchlist.s
 .PHONY : repository/watchlist.s
 
-# target to generate assembly for a file
-repository/watchlist.cpp.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/repository/watchlist.cpp.s
-.PHONY : repository/watchlist.cpp.s
-
-ui/console.o: ui/console.cpp.o
-
-.PHONY : ui/console.o
-
 # target to build an object file
-ui/console.cpp.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/console.cpp.o
-.PHONY : ui/console.cpp.o
-
-ui/console.i: ui/console.cpp.i
-
-.PHONY : ui/console.i
+tests/test_controller.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/tests/test_controller.o
+.PHONY : tests/test_controller.o
 
 # target to preprocess a source file
-ui/console.cpp.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/console.cpp.i
-.PHONY : ui/console.cpp.i
-
-ui/console.s: ui/console.cpp.s
-
-.PHONY : ui/console.s
+tests/test_controller.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/tests/test_controller.i
+.PHONY : tests/test_controller.i
 
 # target to generate assembly for a file
-ui/console.cpp.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/console.cpp.s
-.PHONY : ui/console.cpp.s
+tests/test_controller.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/tests/test_controller.s
+.PHONY : tests/test_controller.s
+
+# target to build an object file
+ui/console.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/console.o
+.PHONY : ui/console.o
+
+# target to preprocess a source file
+ui/console.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/console.i
+.PHONY : ui/console.i
+
+# target to generate assembly for a file
+ui/console.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/console.s
+.PHONY : ui/console.s
 
 # Help Target
 help:
@@ -401,7 +362,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... list_install_components"
+	@echo "... install"
+	@echo "... install/strip"
+	@echo "... install/local"
 	@echo "... LMDB"
+	@echo "... gmock_main"
+	@echo "... gmock"
+	@echo "... gtest_main"
+	@echo "... gtest"
 	@echo "... common/array.o"
 	@echo "... common/array.i"
 	@echo "... common/array.s"
@@ -411,12 +380,6 @@ help:
 	@echo "... common/util.o"
 	@echo "... common/util.i"
 	@echo "... common/util.s"
-	@echo "... controller/controller.o"
-	@echo "... controller/controller.i"
-	@echo "... controller/controller.s"
-	@echo "... controller/test_controller.o"
-	@echo "... controller/test_controller.i"
-	@echo "... controller/test_controller.s"
 	@echo "... domain/entities.o"
 	@echo "... domain/entities.i"
 	@echo "... domain/entities.s"
@@ -429,6 +392,9 @@ help:
 	@echo "... repository/watchlist.o"
 	@echo "... repository/watchlist.i"
 	@echo "... repository/watchlist.s"
+	@echo "... tests/test_controller.o"
+	@echo "... tests/test_controller.i"
+	@echo "... tests/test_controller.s"
 	@echo "... ui/console.o"
 	@echo "... ui/console.i"
 	@echo "... ui/console.s"

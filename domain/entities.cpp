@@ -1,6 +1,5 @@
 #include "entities.h"
-#include <iostream>
-#include <string>
+
 using namespace std;
 
 Movie::Movie()

@@ -3,17 +3,19 @@
 
 #include "../domain/entities.h"
 #include "../common/array.h"
+#include <vector>
+using namespace std;
 
 class Repository
 {
 private:
-    DynArr<Movie> *items;
+    vector<Movie> items;
     string filename;
     void loadFromFile();
 
 public:
     //default constructor
-    Repository();
+    Repository() { }
 
     //constructor with parameters
     Repository(int capacity, string filename);
@@ -25,8 +27,8 @@ public:
     Repository& operator=(Repository& other);
 
     //getters
-    Movie* getItems() { return this->items->getItems();  }
-    int getLength() { return this->items->getLength(); }
+    vector<Movie> getItems() { return this->items; }
+    int getLength() { return this->items.size(); }
 
     /*
     Adds a given Movie to the list.
@@ -57,11 +59,11 @@ public:
     Input: name - the movie to be searched
     returns: -1 if the movie does not exist, its position else.
     */
-    int getPosition(string name) { return this->items->getPosition(name); }
+    int getPosition(string name);
 
-    DynArr<Movie>* getArray() { return this->items; }
+    ~Repository() { };
 
-    ~Repository() { delete this->items; };
+    void saveToFile(string type);
 
 };
 

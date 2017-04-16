@@ -13,10 +13,6 @@ public:
         total++;
         alive++;
     }
-//    Counter(const Counter &c)
-//    {
-//        count++;
-//    }
     ~Counter()
     {
         alive--;
