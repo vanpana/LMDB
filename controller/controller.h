@@ -55,6 +55,8 @@ public:
      */
     vector<Movie> getItems() { return this->repo.getItems(); }
 
+    void saveToFile(string type) { this->repo.saveToFile("csv"); }
+
     //destructor
     ~Controller() {}
 };

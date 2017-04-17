@@ -280,6 +280,21 @@ domain/entities.s:
 .PHONY : domain/entities.s
 
 # target to build an object file
+domain/validator.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/domain/validator.o
+.PHONY : domain/validator.o
+
+# target to preprocess a source file
+domain/validator.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/domain/validator.i
+.PHONY : domain/validator.i
+
+# target to generate assembly for a file
+domain/validator.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/domain/validator.s
+.PHONY : domain/validator.s
+
+# target to build an object file
 main.o:
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/main.o
 .PHONY : main.o
@@ -383,6 +398,9 @@ help:
 	@echo "... domain/entities.o"
 	@echo "... domain/entities.i"
 	@echo "... domain/entities.s"
+	@echo "... domain/validator.o"
+	@echo "... domain/validator.i"
+	@echo "... domain/validator.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

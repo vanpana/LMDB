@@ -343,6 +343,12 @@
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/entities.h">
 			<Option target="LMDB"/>
 		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/validator.cpp">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/validator.h">
+			<Option target="LMDB"/>
+		</Unit>
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>

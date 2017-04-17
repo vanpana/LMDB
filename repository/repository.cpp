@@ -4,50 +4,16 @@
 
 using namespace std;
 
-void Repository::loadFromFile()
-{
-    ifstream f(this->filename);
-    string temp;
-    string* args;
-
-    getline(f, temp);
-    while(!f.eof())
-    {
-        args = splitString(temp);
-        add(Movie{args[0], args[1], stoi(args[2]), stoi(args[3]), args[4]});
-        getline(f, temp);
-    }
-    f.close();
-}
-
-void Repository::saveToFile(string type = "csv")
-{
-    if (type == "csv")
-    {
-        ofstream f(this->filename);
-
-        for (Movie i: items)
-            //donothing
-
-        f.close();
-    }
-    if (type == "html")
-    {
-        cout << "Not now";
-    }
-}
-
-Repository::Repository(int capacity, string filename)
+// REPO //
+Repository::Repository()
 {
     this->items = vector<Movie>();
-    this->filename = filename;
-    loadFromFile();
+    this->validator_class = Validator();
 }
 
 
 Repository::Repository(const Repository &other)
 {
-    this->filename = other.filename;
     this->items = other.items;
 }
 
@@ -55,8 +21,6 @@ Repository& Repository::operator=(Repository &other)
 {
     if (this == &other)
         return *this;
-
-    this->filename = other.filename;
 
     this->items = other.items;
 
@@ -99,4 +63,58 @@ int Repository::getPosition(string name)
         counter++;
     }
     return -1;
+}
+
+// FILE REPO //
+void FileRepository::loadFromFile()
+{
+    ifstream f(this->filename);
+    string temp;
+    string* args;
+
+    while(!f.eof())
+    {
+        getline(f, temp);
+        if (f.eof()) break;
+
+        args = splitString(temp);
+        add(Movie{args[0], args[1], stoi(args[2]), stoi(args[3]), args[4]});
+
+    }
+    f.close();
+}
+
+void FileRepository::saveToFile(string type)
+{
+    if (type == "csv")
+    {
+        ofstream f(this->filename);
+
+        for (Movie i: items)
+        {
+            cout << i <<"\n";
+            f << i << "\n";
+        }
+
+        f.close();
+    }
+    if (type == "html")
+    {
+        cout << "Not now";
+    }
+}
+
+FileRepository::FileRepository(const FileRepository &other) : Repository(other)
+{
+    this->filename = other.filename;
+}
+
+FileRepository& FileRepository::operator=(FileRepository &other) : Repository(other)
+{
+    if (this == &other)
+        return *this;
+
+    this->filename = other.filename;
+
+    return *this;
 }

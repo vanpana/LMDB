@@ -3,22 +3,19 @@
 
 #include "../domain/entities.h"
 #include "../common/array.h"
+#include "../domain/validator.h"
 #include <vector>
 using namespace std;
 
 class Repository
 {
-private:
+protected:
     vector<Movie> items;
-    string filename;
-    void loadFromFile();
+    Validator validator_class;
 
 public:
     //default constructor
     Repository() { }
-
-    //constructor with parameters
-    Repository(int capacity, string filename);
 
     //copy constructor
     Repository(const Repository& other);
@@ -63,8 +60,32 @@ public:
 
     ~Repository() { };
 
+
+
+};
+
+class FileRepository : Repository
+{
+private:
+    string filename;
+    void loadFromFile();
+
+public:
+    FileRepository() { }
+    FileRepository(string filename) : Repository() { this->filename = filename; loadFromFile(); };
+
+    FileRepository(const FileRepository& other);
+    FileRepository& operator=(FileRepository& other);
+
     void saveToFile(string type);
 
+//    int getLength() { return Repository::getLength(); }
+//    void add(Movie mov) { Repository::add(mov); }
+//    int del(string name) { return Repository::del(name); }
+//    int update(Movie mov) { return Repository::update(mov); }
+//    int getPosition(string name) { return Repository::getPosition(name); }
+
+    ~FileRepository() { }
 };
 
 #endif

@@ -347,6 +347,7 @@ void Console::loop()
 void Console::runApp()
 {
     loop();
+    this->ctrl.saveToFile("csv");
 }
 
 Console::~Console()
