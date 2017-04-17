@@ -21,20 +21,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f939a6d2-c1c0-403c-84d5-fe3bd53a42b1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LMDB.dir/common/util.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LMDB.dir/main.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LMDB.dir/repository/repository.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LMDB.dir/tests/test_controller.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LMDB.dir/ui/console.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/LMDB" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/controller.h" afterPath="$PROJECT_DIR$/controller/controller.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domain/validator.h" afterPath="$PROJECT_DIR$/domain/validator.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/repository.cpp" afterPath="$PROJECT_DIR$/repository/repository.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/repository.h" afterPath="$PROJECT_DIR$/repository/repository.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_controller.cpp" afterPath="$PROJECT_DIR$/tests/test_controller.cpp" />
-    </list>
+    <list default="true" id="f939a6d2-c1c0-403c-84d5-fe3bd53a42b1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -617,12 +604,12 @@
       <workItem from="1492071694958" duration="57000" />
       <workItem from="1492352482022" duration="5971000" />
       <workItem from="1492375834875" duration="7548000" />
-      <workItem from="1492429032318" duration="6715000" />
+      <workItem from="1492429032318" duration="6766000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82718000" />
+    <option name="totallyTimeSpent" value="82769000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
