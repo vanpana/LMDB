@@ -19,7 +19,7 @@ int main(int argc, char **argv)
     cout << "Created & alive after testing: " << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
 
     //app initialising
-    Repository *admin_repo = new Repository{30, "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/data/movies.csv"};
+    FileRepository *admin_repo = new FileRepository{"/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/data/movies.csv"};
     WatchList *user_repo = new WatchList{30};
     Controller *admin_ctrl = new Controller{*admin_repo};
     Console *ui = new Console(*admin_ctrl, *user_repo);

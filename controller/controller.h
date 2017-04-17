@@ -8,14 +8,14 @@ using namespace std;
 
 class Controller
 {
-    Repository repo;
+    FileRepository repo;
 
 public:
     //default constructor
     Controller() {}
 
     //constructor with parameters
-    Controller(Repository repo) { this->repo = repo; }
+    Controller(FileRepository repo) { this->repo = repo; }
 
     /*
      Function to construct an object of type Movie and send it to repository for adding.

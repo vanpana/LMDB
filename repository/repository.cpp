@@ -109,11 +109,12 @@ FileRepository::FileRepository(const FileRepository &other) : Repository(other)
     this->filename = other.filename;
 }
 
-FileRepository& FileRepository::operator=(FileRepository &other) : Repository(other)
+FileRepository& FileRepository::operator=(FileRepository& other)
 {
     if (this == &other)
         return *this;
 
+    Repository::operator=(other);
     this->filename = other.filename;
 
     return *this;

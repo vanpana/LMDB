@@ -15,7 +15,7 @@ protected:
 
 public:
     //default constructor
-    Repository() { }
+    Repository();
 
     //copy constructor
     Repository(const Repository& other);
@@ -64,7 +64,7 @@ public:
 
 };
 
-class FileRepository : Repository
+class FileRepository : public Repository
 {
 private:
     string filename;
@@ -79,6 +79,7 @@ public:
 
     void saveToFile(string type);
 
+//    vector<Movie> getItems() { return Repository::items; }
 //    int getLength() { return Repository::getLength(); }
 //    void add(Movie mov) { Repository::add(mov); }
 //    int del(string name) { return Repository::del(name); }

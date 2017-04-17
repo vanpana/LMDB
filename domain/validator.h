@@ -13,7 +13,7 @@ using namespace std;
 class Validator : exception
 {
 public:
-    Validator();
+    Validator() {}
 };
 
 
