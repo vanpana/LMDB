@@ -7,6 +7,8 @@
 
 #include <exception>
 #include <iostream>
+#include "entities.h"
+
 using namespace std;
 
 
@@ -14,6 +16,8 @@ class Validator : exception
 {
 public:
     Validator() {}
+
+    void validate_movie(const Movie& mov);
 };
 
 

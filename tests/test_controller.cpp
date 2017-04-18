@@ -27,7 +27,8 @@ public:
 TEST_F(ControllerTest, test_add)
 {
     int initlength = ctrl->getLength();
-    ctrl->add("","",0,0,"");
+    ctrl->add("Titlu","Gen",2010,700,"http://www.google.com");
+    //TODO check for exc
     ASSERT_EQ(ctrl->getLength(), initlength + 1);
 }
 

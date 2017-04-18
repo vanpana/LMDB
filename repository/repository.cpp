@@ -1,5 +1,6 @@
 #include "repository.h"
 #include "../common/util.h"
+#include "../domain/validator.h"
 #include <fstream>
 
 using namespace std;
@@ -29,8 +30,16 @@ Repository& Repository::operator=(Repository &other)
 
 void Repository::add(Movie mov)
 {
-    //TODO Validate here!
-    this->items.push_back(mov);
+    try
+    {
+        validator_class.validate_movie(mov);
+        this->items.push_back(mov);
+    }
+    catch(string err)
+    {
+        cout << err << endl;
+        throw err;
+    }
 }
 
 int Repository::del(string name)
