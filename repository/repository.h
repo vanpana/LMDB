@@ -21,7 +21,7 @@ public:
     Repository(const Repository& other) { this->items = other.items; }
 
     //assigment operator
-    Repository& operator=(Repository& other);
+    Repository& operator=(const Repository& other);
 
     //getters
     vector<Movie> getItems() { return this->items; }
@@ -32,7 +32,7 @@ public:
     Input: mov - Movie
     Output: mov is added to the items list
     */
-    void add(Movie mov);
+    void add(const Movie& mov);
 
     /*
     Deletes a movie by name from the list.
@@ -40,7 +40,7 @@ public:
     Output: new list without the movie
     returns: 0 if the movie does not exist, 1 if it was deleted.
     */
-    int del(string name);
+    int del(const string& name);
 
     /*
     Updates a movie which is found by name.
@@ -49,14 +49,14 @@ public:
     Output: new list with updated movie
     returns: 0 if the movie does not exist, 1 if it was updated.
     */
-    int update(Movie mov);
+    int update(const Movie& mov);
 
     /*
     Gets the position of a movie by name.
     Input: name - the movie to be searched
     returns: -1 if the movie does not exist, its position else.
     */
-    int getPosition(string name);
+    int getPosition(const string& name);
 
     ~Repository() { };
 
@@ -72,7 +72,7 @@ private:
 
 public:
     FileRepository() { }
-    FileRepository(string filename) : Repository() { this->filename = filename; loadFromFile(); };
+    FileRepository(const string& filename) : Repository() { this->filename = filename; loadFromFile(); };
 
     FileRepository(const FileRepository& other);
     FileRepository& operator=(FileRepository& other);

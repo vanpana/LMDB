@@ -11,7 +11,7 @@ Movie::Movie()
     this->trailer = "";
 }
 
-Movie::Movie(string title, string genre, int year, int likes, string trailer)
+Movie::Movie(const string& title, const string& genre, const int& year, const int& likes, const string& trailer)
 {
     this->title = title;
 

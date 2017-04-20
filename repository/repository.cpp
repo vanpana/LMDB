@@ -11,7 +11,7 @@ Repository::Repository()
     this->validator_class = Validator();
 }
 
-Repository& Repository::operator=(Repository &other)
+Repository& Repository::operator=(const Repository &other)
 {
     if (this == &other) return *this;
 
@@ -20,14 +20,14 @@ Repository& Repository::operator=(Repository &other)
     return *this;
 }
 
-void Repository::add(Movie mov)
+void Repository::add(const Movie& mov)
 {
     validator_class.validate_movie(mov);
     this->items.push_back(mov);
 
 }
 
-int Repository::del(string name)
+int Repository::del(const string& name)
 {
     int pos = getPosition(name);
 
@@ -37,7 +37,7 @@ int Repository::del(string name)
     return 1;
 }
 
-int Repository::update(Movie mov)
+int Repository::update(const Movie& mov)
 {
     int pos = getPosition(mov.getTitle());
     if (pos == -1)
@@ -47,7 +47,7 @@ int Repository::update(Movie mov)
     return 1;
 }
 
-int Repository::getPosition(string name)
+int Repository::getPosition(const string& name)
 {
     int counter = 0;
     for (Movie mov: items)

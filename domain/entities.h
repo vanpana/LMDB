@@ -17,12 +17,12 @@ private:
 public:
     using Counter<Movie>::GetTotal;
     using Counter<Movie>::GetAlive;
+
     //default constructor
     Movie();
 
     //constructor with parameters
-    //TODO const string&
-    Movie(string title, string genre, int year, int likes, string trailer);
+    Movie(const string& title, const string& genre, const int& year, const int& likes, const string& trailer);
 
     //copy constructor
     Movie(const Movie& mov);
