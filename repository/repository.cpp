@@ -7,21 +7,13 @@ using namespace std;
 
 // REPO //
 Repository::Repository()
-{
-    this->items = vector<Movie>();
+{   this->items = vector<Movie>();
     this->validator_class = Validator();
-}
-
-
-Repository::Repository(const Repository &other)
-{
-    this->items = other.items;
 }
 
 Repository& Repository::operator=(Repository &other)
 {
-    if (this == &other)
-        return *this;
+    if (this == &other) return *this;
 
     this->items = other.items;
 
@@ -30,16 +22,9 @@ Repository& Repository::operator=(Repository &other)
 
 void Repository::add(Movie mov)
 {
-    try
-    {
-        validator_class.validate_movie(mov);
-        this->items.push_back(mov);
-    }
-    catch(string err)
-    {
-        cout << err << endl;
-        throw err;
-    }
+    validator_class.validate_movie(mov);
+    this->items.push_back(mov);
+
 }
 
 int Repository::del(string name)
@@ -107,10 +92,6 @@ void FileRepository::saveToFile(string type)
 
         f.close();
     }
-    if (type == "html")
-    {
-        cout << "Not now";
-    }
 }
 
 FileRepository::FileRepository(const FileRepository &other) : Repository(other)
@@ -120,8 +101,7 @@ FileRepository::FileRepository(const FileRepository &other) : Repository(other)
 
 FileRepository& FileRepository::operator=(FileRepository& other)
 {
-    if (this == &other)
-        return *this;
+    if (this == &other) return *this;
 
     Repository::operator=(other);
     this->filename = other.filename;

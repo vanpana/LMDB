@@ -7,8 +7,11 @@
 
 void Validator::validate_movie(const Movie &mov)
 {
-    if (regex_match(mov.getGenre(), regex("[0-9]")))
-        throw "Genre can't contain numbers!";
+    if (mov.getTitle().size() == 0)
+        throw "Length can't be zero.";
+
+    if (mov.getGenre().size() == 0)
+        throw "Length can't be zero.";
 
     if (mov.getYear() < 1900)
         throw "Year must be greater than 1900!";

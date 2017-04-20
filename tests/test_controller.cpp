@@ -28,24 +28,31 @@ TEST_F(ControllerTest, test_add)
 {
     int initlength = ctrl->getLength();
     ctrl->add("Titlu","Gen",2010,700,"http://www.google.com");
-    //TODO check for exc
     ASSERT_EQ(ctrl->getLength(), initlength + 1);
+
+    ASSERT_ANY_THROW(ctrl->add("","Gen",2010,700,"http://www.google.com"));
+    ASSERT_ANY_THROW(ctrl->add("Titlu","",2010,700,"http://www.google.com"));
+    ASSERT_ANY_THROW(ctrl->add("Titlu","Gen",0,700,"http://www.google.com"));
+    ASSERT_ANY_THROW(ctrl->add("Titlu2","Gen",2017,-1,"http://www.google.com"));
+    ASSERT_ANY_THROW(ctrl->add("Titlu","Gen",2017,700,"google.com"));
 }
 
 TEST_F(ControllerTest, test_update)
 {
-    ctrl->add("asd","",0,0,"");
-    ctrl->update("asd","",0,2,"");
-    ASSERT_EQ(ctrl->getItems()[ctrl->getLength() - 1].getLikes(), 2);
+    ctrl->add("Titlu","Gen",2010,700,"http://www.google.com");
+    ctrl->update("Titlu","Gen",2010,730,"http://www.google.com");
+    ASSERT_EQ(ctrl->getItems()[ctrl->getLength() - 1].getLikes(), 730);
+
     ASSERT_EQ(ctrl->update("www","",0,0,""), 0);
 }
 
 TEST_F(ControllerTest, test_delete)
 {
     int initlength = ctrl->getLength();
-    ctrl->add("asd","",0,0,"");
-    ctrl->del("asd");
+    ctrl->add("Titlu","Gen",2010,700,"http://www.google.com");
+    ctrl->del("Titlu");
     ASSERT_EQ(ctrl->getLength(), initlength);
+
     ASSERT_EQ(ctrl->del("www"), 0);
 }
 
@@ -53,6 +60,7 @@ TEST_F(ControllerTest, test_getPosition)
 {
     string name = ctrl->getItems()[0].getTitle();
     ASSERT_EQ(ctrl->getPosition(name), 0);
+
     ASSERT_EQ(ctrl->getPosition("www"), -1);
 }
 

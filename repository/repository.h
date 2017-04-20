@@ -18,7 +18,7 @@ public:
     Repository();
 
     //copy constructor
-    Repository(const Repository& other);
+    Repository(const Repository& other) { this->items = other.items; }
 
     //assigment operator
     Repository& operator=(Repository& other);
