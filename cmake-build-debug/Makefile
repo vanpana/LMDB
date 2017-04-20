@@ -355,6 +355,21 @@ tests/test_controller.s:
 .PHONY : tests/test_controller.s
 
 # target to build an object file
+tests/test_entity.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/tests/test_entity.o
+.PHONY : tests/test_entity.o
+
+# target to preprocess a source file
+tests/test_entity.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/tests/test_entity.i
+.PHONY : tests/test_entity.i
+
+# target to generate assembly for a file
+tests/test_entity.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/tests/test_entity.s
+.PHONY : tests/test_entity.s
+
+# target to build an object file
 ui/console.o:
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/console.o
 .PHONY : ui/console.o
@@ -413,6 +428,9 @@ help:
 	@echo "... tests/test_controller.o"
 	@echo "... tests/test_controller.i"
 	@echo "... tests/test_controller.s"
+	@echo "... tests/test_entity.o"
+	@echo "... tests/test_entity.i"
+	@echo "... tests/test_entity.s"
 	@echo "... ui/console.o"
 	@echo "... ui/console.i"
 	@echo "... ui/console.s"
