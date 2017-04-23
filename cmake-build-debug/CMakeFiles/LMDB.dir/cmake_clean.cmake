@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LMDB.dir/tests/test_controller.o"
   "CMakeFiles/LMDB.dir/domain/validator.o"
   "CMakeFiles/LMDB.dir/tests/test_entity.o"
+  "CMakeFiles/LMDB.dir/tests/test_watchlist.o"
   "LMDB.pdb"
   "LMDB"
 )

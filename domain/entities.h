@@ -86,5 +86,5 @@ public:
     /*
      Function that increments the likes for the movie.
      */
-    void incLikes() { this->likes++; }
+    void incLikes() { cout<< this->likes <<endl; this->likes++; cout<< this->likes <<endl;}
 };

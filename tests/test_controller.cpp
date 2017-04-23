@@ -2,6 +2,8 @@
 #include <gmock/gmock.h>
 #include "../repository/repository.h"
 #include "../controller/controller.h"
+#include "../common/util.h"
+
 using testing::Eq;
 using namespace std;
 
@@ -69,4 +71,10 @@ TEST_F(ControllerTest, test_getArray)
     int initlength = ctrl->getLength();
     ASSERT_EQ(ctrl->getLength(), initlength);
 
+}
+
+TEST_F(ControllerTest, test_sort)
+{
+    vector<Movie> testsort = sortByGenre(ctrl->getItems());
+    ASSERT_EQ(1,1);
 }

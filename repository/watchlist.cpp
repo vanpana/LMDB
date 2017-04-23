@@ -5,19 +5,24 @@ using namespace std;
 
 WatchList::WatchList(int capacity)
 {
-    vector<Movie> suggestions = vector<Movie>(10);
+    this->movieList = vector<Movie>();
+    this->currentPos = 0;
+    this->maximumPos = 0;
+
 }
 
-void WatchList::add(Movie mov)
+void WatchList::add()
 {
-    //TODO Validate here!
-    this->movieList.push_back(mov);
+    this->movieList.push_back(this->suggestions[this->currentPos]);
+    this->suggestions.erase(this->suggestions.begin() + this->currentPos);
+    this->currentPos--;
+    this->maximumPos--;
 }
 
 int WatchList::getPosition(string name)
 {
     int counter = 0;
-    for (Movie mov: movieList)
+    for (Movie mov: this->movieList)
     {
         if (mov.getTitle() == name)
             return counter;
@@ -36,17 +41,43 @@ int WatchList::del(string title)
     return 1;
 }
 
-vector<Movie> WatchList::getSuggestions(vector<Movie> repo, string needle)
+//vector<Movie> WatchList::getSuggestions(vector<Movie> repo, string needle)
+//{
+//    if (needle == "")
+//        return repo;
+//    vector<Movie> suggestions = vector<Movie>();
+//    for (int i = 0; i < repo.size(); i++)
+//    {
+//        Movie mov = repo[i];
+//        if (mov.getGenre() == needle)
+//            suggestions.push_back(mov);
+//    }
+//
+//    return suggestions;
+//}
+
+void WatchList::getSuggestions(vector<Movie> repo, string needle)
 {
     if (needle == "")
-        return repo;
-    vector<Movie> suggestions = vector<Movie>(10);
-    for (int i = 0; i < repo.size(); i++)
+        this->suggestions = repo;
+    else
     {
-        Movie mov = repo[i];
-        if (mov.getGenre() == needle)
-            suggestions.push_back(mov);
+        vector<Movie> suggestions = vector<Movie>();
+        for (int i = 0; i < repo.size(); i++)
+        {
+            Movie mov = repo[i];
+            if (mov.getGenre() == needle)
+                suggestions.push_back(mov);
+        }
+        this->suggestions = suggestions;
     }
+    this->currentPos = -1;
+    this->maximumPos = suggestions.size();
+}
 
-    return suggestions;
+Movie WatchList::getCurrentMovie()
+{
+    if (this->currentPos == this->maximumPos - 1)
+        this->currentPos = -1;
+    return this->suggestions[++this->currentPos];
 }

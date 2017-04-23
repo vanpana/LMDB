@@ -185,41 +185,37 @@ void Console::uiGetSuggestions()
     needle = getString();
     needle.erase(remove(needle.begin(), needle.end(), '\n'), needle.end());
 
-    suggestions = this->wlist.getSuggestions(this->ctrl.getItems(), needle);
-    if (suggestions.size() == 0)
+    this->wlist.getSuggestions(this->ctrl.getItems(), needle);
+
+    if (wlist.getMaximumPos() == 0)
         cout<<"No suggestions for this genre, sorry!";
     else
     {
-        for (int i = 0; i < suggestions.size(); i++)
+        while(1)
         {
             int option;
-            Movie mov = suggestions[i];
+            Movie mov = wlist.getCurrentMovie();
+
             do{
                 printSuggestionMenu(mov);
                 option = getInteger();
             }while (option<1 && option>3);
+
             if (option == 1)
             {
                 string url = "open ";
                 url += mov.getTrailer();
                 system(url.c_str());
-                i--;
+                wlist.setCurrentPos(-1);
             }
             else if (option == 2)
-            {
-                this->wlist.add(mov);
-                if (i+1 == suggestions.size())
-                    i = -1;
-                suggestions.erase(suggestions.begin() + i);
-            }
+                this->wlist.add();
 
             else if (option == 3)
-            {
-                if (i+1 == suggestions.size())
-                    i = -1;
-            }
+                continue;
+
             else if (option == 0)
-                i = suggestions.size();
+                break;
         }
     }
     if (suggestions.size() == 0)
@@ -247,7 +243,11 @@ void Console::uiDeleteSuggestion()
         }while(liked != "yes" && liked != "no");
 
         if (liked == "yes")
-            this->ctrl.getItems()[this->ctrl.getPosition(title)].incLikes();
+        {
+            cout << this->ctrl.getItems()[this->ctrl.getPosition(title)].getLikes() << endl;
+            this->ctrl.incLikes(title);
+            cout << this->ctrl.getItems()[this->ctrl.getPosition(title)].getLikes() << endl;
+        }
     }
 }
 

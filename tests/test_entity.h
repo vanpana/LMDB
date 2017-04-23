@@ -12,9 +12,4 @@
 
 using testing::Eq;
 
-class test_entity {
-
-};
-
-
 #endif //LMDB_TEST_ENTITY_H

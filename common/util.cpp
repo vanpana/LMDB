@@ -15,18 +15,10 @@ string *splitString(string temp)
     return args;
 }
 
-bool genreBool(Movie a, Movie b)
-{
-    return a.getGenre() > b.getGenre();
-}
+bool genreBool(Movie a, Movie b) { return a.getGenre() > b.getGenre(); }
 
 vector<Movie> sortByGenre(vector<Movie> items)
 {
     sort(items.begin(), items.end(), genreBool);
     return items;
-}
-
-void test_functions()
-{
-
 }

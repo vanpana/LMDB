@@ -58,6 +58,8 @@ public:
     */
     int getPosition(const string& name);
 
+    void incLikes(string title) { this->items[getPosition(title)].incLikes(); }
+
     ~Repository() { };
 
 
@@ -75,7 +77,7 @@ public:
     FileRepository(const string& filename) : Repository() { this->filename = filename; loadFromFile(); };
 
     FileRepository(const FileRepository& other);
-    FileRepository& operator=(FileRepository& other);
+    FileRepository& operator=(const FileRepository& other);
 
     void saveToFile(string type);
 

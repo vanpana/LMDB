@@ -21,7 +21,7 @@ set(SOURCE_FILES
         ui/console.cpp
         ui/console.h
         main.cpp repository/watchlist.cpp repository/watchlist.h common/util.cpp common/util.h
-        tests/test_controller.h common/counter.cpp common/counter.h tests/test_controller.cpp domain/validator.cpp domain/validator.h tests/test_entity.cpp tests/test_entity.h)
+        tests/test_controller.h common/counter.cpp common/counter.h tests/test_controller.cpp domain/validator.cpp domain/validator.h tests/test_entity.cpp tests/test_entity.h tests/test_watchlist.cpp tests/test_watchlist.h)
 
 add_subdirectory(lib/googletest-master)
 include_directories(lib/googletest-master/googletest/include)

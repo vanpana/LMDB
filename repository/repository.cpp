@@ -85,10 +85,7 @@ void FileRepository::saveToFile(string type)
         ofstream f(this->filename);
 
         for (Movie i: items)
-        {
-            cout << i <<"\n";
             f << i << "\n";
-        }
 
         f.close();
     }
@@ -99,7 +96,7 @@ FileRepository::FileRepository(const FileRepository &other) : Repository(other)
     this->filename = other.filename;
 }
 
-FileRepository& FileRepository::operator=(FileRepository& other)
+FileRepository& FileRepository::operator=(const FileRepository& other)
 {
     if (this == &other) return *this;
 

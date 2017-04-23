@@ -49,6 +49,8 @@ public:
      */
     int getPosition(const string& title) { return this->repo.getPosition(title); }
 
+    void incLikes(string title) { this->repo.incLikes(title); }
+
     /*
      Function to get all the items in the array.
      Output: array of Movies

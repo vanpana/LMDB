@@ -370,6 +370,21 @@ tests/test_entity.s:
 .PHONY : tests/test_entity.s
 
 # target to build an object file
+tests/test_watchlist.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/tests/test_watchlist.o
+.PHONY : tests/test_watchlist.o
+
+# target to preprocess a source file
+tests/test_watchlist.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/tests/test_watchlist.i
+.PHONY : tests/test_watchlist.i
+
+# target to generate assembly for a file
+tests/test_watchlist.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/tests/test_watchlist.s
+.PHONY : tests/test_watchlist.s
+
+# target to build an object file
 ui/console.o:
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/console.o
 .PHONY : ui/console.o
@@ -431,6 +446,9 @@ help:
 	@echo "... tests/test_entity.o"
 	@echo "... tests/test_entity.i"
 	@echo "... tests/test_entity.s"
+	@echo "... tests/test_watchlist.o"
+	@echo "... tests/test_watchlist.i"
+	@echo "... tests/test_watchlist.s"
 	@echo "... ui/console.o"
 	@echo "... ui/console.i"
 	@echo "... ui/console.s"
