@@ -462,145 +462,145 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/array.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/array.cpp
 ../common/array.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/array.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/array.h
 ../domain/entities.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/entities.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/domain/entities.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/array.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/array.h
 string
 -
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/counter.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/counter.cpp
 counter.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/counter.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/counter.h
 ../domain/entities.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/entities.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/domain/entities.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/counter.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/counter.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/util.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/util.cpp
 util.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/util.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/util.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/util.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/util.h
 string
 -
 ../domain/entities.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/entities.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/domain/entities.h
 ../tests/test_controller.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_controller.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/tests/test_controller.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/controller/controller.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/controller/controller.h
 ../repository/repository.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/repository.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/repository/repository.h
 ../repository/watchlist.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/watchlist.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/repository/watchlist.h
 string
 -
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/entities.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/domain/entities.cpp
 entities.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/entities.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/domain/entities.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/entities.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/domain/entities.h
 string
 -
 iostream
 -
 ../common/counter.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/counter.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/counter.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/validator.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/domain/validator.cpp
 regex
 -
 validator.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/validator.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/domain/validator.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/validator.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/domain/validator.h
 exception
 -
 iostream
 -
 entities.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/entities.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/domain/entities.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/main.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/main.cpp
 iostream
 -
 repository/repository.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/repository.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/repository/repository.h
 controller/controller.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/controller/controller.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/controller/controller.h
 ui/console.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/console.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/ui/console.h
 common/util.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/util.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/util.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/repository.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/repository/repository.cpp
 repository.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/repository.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/repository/repository.h
 ../common/util.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/util.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/util.h
 ../domain/validator.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/validator.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/domain/validator.h
 fstream
 -
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/repository.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/repository/repository.h
 ../domain/entities.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/entities.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/domain/entities.h
 ../common/array.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/array.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/array.h
 ../domain/validator.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/validator.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/domain/validator.h
 vector
 -
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/watchlist.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/repository/watchlist.cpp
 vector
 -
 watchlist.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/watchlist.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/repository/watchlist.h
 vector
 -
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/watchlist.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/repository/watchlist.h
 ../domain/entities.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/entities.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/domain/entities.h
 ../common/array.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/array.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/array.h
 string
 -
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_controller.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/tests/test_controller.cpp
 gtest/gtest.h
 -
 gmock/gmock.h
 -
 ../repository/repository.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/repository.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/repository/repository.h
 ../controller/controller.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/controller/controller.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/controller/controller.h
 ../common/util.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/util.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/util.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_controller.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/tests/test_controller.h
 gtest/gtest.h
 -
 gmock/gmock.h
 -
 ../repository/repository.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/repository.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/repository/repository.h
 ../controller/controller.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/controller/controller.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/controller/controller.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_entity.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/tests/test_entity.cpp
 test_entity.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_entity.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/tests/test_entity.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_entity.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/tests/test_entity.h
 gmock/gmock-matchers.h
 -
 gtest/gtest.h
@@ -608,15 +608,15 @@ gtest/gtest.h
 gmock/gmock.h
 -
 ../domain/entities.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/entities.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/domain/entities.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_watchlist.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/tests/test_watchlist.cpp
 test_watchlist.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_watchlist.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/tests/test_watchlist.h
 test_controller.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_controller.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/tests/test_controller.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_watchlist.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/tests/test_watchlist.h
 gmock/gmock-matchers.h
 -
 gtest/gtest.h
@@ -624,13 +624,13 @@ gtest/gtest.h
 gmock/gmock.h
 -
 ../repository/watchlist.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/watchlist.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/repository/watchlist.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/console.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/ui/console.cpp
 console.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/console.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/ui/console.h
 ../common/util.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/util.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/common/util.h
 string
 -
 cstdlib
@@ -638,9 +638,9 @@ cstdlib
 regex
 -
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/console.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/ui/console.h
 iostream
 -
 ../controller/controller.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/controller/controller.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/controller/controller.h
 

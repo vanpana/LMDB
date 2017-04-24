@@ -14,7 +14,7 @@ public:
     void SetUp() override
     {
         wlist = WatchList();
-        repo = new FileRepository{"/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/data/movies.csv"};
+        repo = new FileRepository{"../data/movies.csv"};
     }
 
     void TearDown() override
@@ -30,24 +30,26 @@ TEST_F(WlistTest, test_add)
     int initlength = wlist.getArray().size();
 
     wlist.getCurrentMovie();
-    cout << "PREPARING TO ADD\n";
     wlist.add();
-    cout << "ADDED AN ITEM\n";
     ASSERT_EQ(wlist.getArray().size(), initlength + 1);
 }
 
-//TEST_F(WlistTest, test_del)
-//{
-//    int initlength = wlist.getArray().size();
-//
-//    wlist.getSuggestions(repo->getItems(), "");
-//
-//    wlist.del(wlist->getItems()[0].getTitle());
-//
-//    ASSERT_EQ(wlist.getArray().size(), initlength - 1);
-//
-//    ASSERT_EQ(wlist.del("foo"), 0);
-//}
+TEST_F(WlistTest, test_del)
+{
+    wlist.getSuggestions(repo->getItems(), "");
+    wlist.getCurrentMovie();
+    wlist.add();
+    wlist.getCurrentMovie();
+    wlist.add();
+
+    int initlength = wlist.getArray().size();
+    cout << wlist.getArray()[0].getTitle() << endl;
+    wlist.del(wlist.getArray()[0].getTitle());
+
+    ASSERT_EQ(wlist.getArray().size(), initlength - 1);
+
+    ASSERT_EQ(wlist.del("foo"), 0);
+}
 
 TEST_F(WlistTest, test_getSuggestions_all)
 {

@@ -15,7 +15,7 @@ public:
 
         void SetUp() override
         {
-            admin_repo = new FileRepository{"/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/data/movies.csv"};
+            admin_repo = new FileRepository{"../data/movies.csv"};
             ctrl = new Controller{*admin_repo};
         }
 

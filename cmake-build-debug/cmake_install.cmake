@@ -1,4 +1,4 @@
-# Install script for directory: /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB
+# Install script for directory: /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/cmake_install.cmake")
+  include("/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/cmake_install.cmake")
 
 endif()
 
@@ -41,5 +41,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

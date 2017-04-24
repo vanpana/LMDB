@@ -8,6 +8,7 @@ WatchList::WatchList(int capacity)
     this->movieList = vector<Movie>();
     this->currentPos = 0;
     this->maximumPos = 0;
+    this->suggestions = vector<Movie>();
 
 }
 

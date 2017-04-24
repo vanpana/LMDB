@@ -224,7 +224,6 @@ void Console::uiGetSuggestions()
 
 void Console::uiDeleteSuggestion()
 {
-    //TODO Check why it is deleted from the admin repo
     cout<<"Input title: ";
     string title = getString();
 

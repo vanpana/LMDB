@@ -1,4 +1,4 @@
-# Install script for directory: /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master
+# Install script for directory: /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/lib/googletest-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
+  include("/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
 
 endif()
 
