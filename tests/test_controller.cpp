@@ -70,11 +70,18 @@ TEST_F(ControllerTest, test_getArray)
 {
     int initlength = ctrl->getLength();
     ASSERT_EQ(ctrl->getLength(), initlength);
-
 }
 
 TEST_F(ControllerTest, test_sort)
 {
     vector<Movie> testsort = sortByGenre(ctrl->getItems());
     ASSERT_EQ(1,1);
+}
+
+TEST_F(ControllerTest, test_incLikes)
+{
+    int testlikes = ctrl->getItems()[0].getLikes();
+    ctrl->incLikes(ctrl->getItems()[0].getTitle());
+
+    ASSERT_EQ(ctrl->getItems()[0].getLikes(), testlikes + 1);
 }

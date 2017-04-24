@@ -34,5 +34,4 @@ int main(int argc, char **argv)
     delete admin_repo;
 
     cout << "Created & alive after exiting: " << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
-
 }

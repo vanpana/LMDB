@@ -37,6 +37,7 @@ TEST_F(WlistTest, test_add)
 TEST_F(WlistTest, test_del)
 {
     wlist.getSuggestions(repo->getItems(), "");
+
     wlist.getCurrentMovie();
     wlist.add();
     wlist.getCurrentMovie();
@@ -96,4 +97,13 @@ TEST_F(WlistTest, test_setPosition)
 
     wlist.setCurrentPos(1);
     wlist.setCurrentPos(-1);
+}
+
+TEST_F(WlistTest, test_loop)
+{
+    wlist.getSuggestions(repo->getItems(), "");
+    for (int i = 0; i < wlist.getMaximumPos() + 1; i++)
+        wlist.getCurrentMovie();
+
+    ASSERT_EQ(1,1);
 }
