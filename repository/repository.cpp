@@ -78,17 +78,14 @@ void FileRepository::loadFromFile()
     f.close();
 }
 
-void FileRepository::saveToFile(string type)
+void FileRepository::saveToFile()
 {
-    if (type == "csv")
-    {
-        ofstream f(this->filename);
+    ofstream f(this->filename);
 
-        for (Movie i: items)
-            f << i << "\n";
+    for (Movie i: items)
+        f << i << "\n";
 
-        f.close();
-    }
+    f.close();
 }
 
 FileRepository::FileRepository(const FileRepository &other) : Repository(other)

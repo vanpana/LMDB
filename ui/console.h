@@ -31,6 +31,7 @@ public:
     void uiGetSuggestions();
     void uiDeleteSuggestion();
     void uiPrintSuggestions();
+    void uiOpenInApp();
 
     void loop();
     void runApp();

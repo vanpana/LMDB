@@ -79,14 +79,7 @@ public:
     FileRepository(const FileRepository& other);
     FileRepository& operator=(const FileRepository& other);
 
-    void saveToFile(string type);
-
-//    vector<Movie> getItems() { return Repository::items; }
-//    int getLength() { return Repository::getLength(); }
-//    void add(Movie mov) { Repository::add(mov); }
-//    int del(string name) { return Repository::del(name); }
-//    int update(Movie mov) { return Repository::update(mov); }
-//    int getPosition(string name) { return Repository::getPosition(name); }
+    void saveToFile();
 
     ~FileRepository() { }
 };

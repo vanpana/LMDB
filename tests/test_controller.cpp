@@ -15,7 +15,7 @@ public:
 
         void SetUp() override
         {
-            admin_repo = new FileRepository{"../data/movies.csv"};
+            admin_repo = new FileRepository{"../data/movie_database.csv"};
             ctrl = new Controller{*admin_repo};
         }
 

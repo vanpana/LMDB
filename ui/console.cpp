@@ -38,6 +38,7 @@ void Console::printMenu(int mode)
         cout<<"1. Get movie suggestions.\n";
         cout<<"2. Delete watched movie.\n";
         cout<<"3. Print your watchlist.\n";
+        cout<<"4. Open file in app.\n";
     }
     cout<<"0. Exit\n";
 }
@@ -83,7 +84,6 @@ void Console::uiAdd()
     {
         cout<<"Input trailer: ";
         trailer = getString();
-        //TODO HTTP here
         if (!regex_match(trailer, regex("http://w\{3\}\..*\..*")) && !regex_match(trailer, regex("https://w\{3\}\..*\..*")))
             cout<<"Invalid trailer link\n";
     }while(!regex_match(trailer, regex("http://w\{3\}\..*\..*")) && !regex_match(trailer, regex("https://w\{3\}\..*\..*")));
@@ -266,6 +266,11 @@ void Console::uiPrintSuggestions()
     }
 }
 
+void Console::uiOpenInApp()
+{
+    system(("open ../data/watchlist." + this->wlist.getType()).c_str());
+}
+
 int Console::getInteger()
 {
     string tempS;
@@ -338,6 +343,8 @@ void Console::loop()
                     uiDeleteSuggestion();
                 if (option == 3)
                     uiPrintSuggestions();
+                if (option == 4)
+                    uiOpenInApp();
             }
         }
     }
@@ -346,7 +353,8 @@ void Console::loop()
 void Console::runApp()
 {
     loop();
-    this->ctrl.saveToFile("csv");
+    this->ctrl.saveToFile();
+    this->wlist.saveToFile();
 }
 
 Console::~Console()

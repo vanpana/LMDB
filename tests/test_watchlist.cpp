@@ -13,8 +13,8 @@ public:
 
     void SetUp() override
     {
-        wlist = WatchList();
-        repo = new FileRepository{"../data/movies.csv"};
+        wlist = WatchList("csv");
+        repo = new FileRepository{"../data/movie_database.csv"};
     }
 
     void TearDown() override

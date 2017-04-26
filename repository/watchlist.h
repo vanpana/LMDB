@@ -12,10 +12,12 @@ class WatchList
     vector<Movie> movieList;
     vector<Movie> suggestions;
     int currentPos, maximumPos;
+    string type;
 
 public:
+    WatchList() { }
     //constructor with parameters
-    WatchList(int capacity = 10);
+    WatchList(string type);
 
     //Function that adds a movie to the watchlist
     void add();
@@ -39,6 +41,10 @@ public:
     int getMaximumPos() const { return this->maximumPos; }
 
     void setCurrentPos(int value) { this->currentPos += value; }
+
+    void saveToFile();
+
+    string getType() const { return this->type; }
 };
 
 #endif //LMDB_WATCHLIST_H

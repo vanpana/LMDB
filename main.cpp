@@ -19,8 +19,17 @@ int main(int argc, char **argv)
     cout << "Created & alive after testing: " << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
 
     //app initialising
-    FileRepository *admin_repo = new FileRepository{"../data/movies.csv"};
-    WatchList *user_repo = new WatchList{30};
+    string type = "";
+    while (type != "csv" && type != "html")
+    {
+        cout << "Choose file type (csv or html): ";
+        getline(cin, type);
+    }
+
+    FileRepository *admin_repo = new FileRepository{"../data/movie_database.csv"};
+    //Repository *frepo = new FileRepository{"../data/movie_database.csv"};
+
+    WatchList *user_repo = new WatchList{type};
     Controller *admin_ctrl = new Controller{*admin_repo};
     Console *ui = new Console(*admin_ctrl, *user_repo);
 
