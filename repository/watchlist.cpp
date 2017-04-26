@@ -43,21 +43,6 @@ int WatchList::del(string title)
     return 1;
 }
 
-//vector<Movie> WatchList::getSuggestions(vector<Movie> repo, string needle)
-//{
-//    if (needle == "")
-//        return repo;
-//    vector<Movie> suggestions = vector<Movie>();
-//    for (int i = 0; i < repo.size(); i++)
-//    {
-//        Movie mov = repo[i];
-//        if (mov.getGenre() == needle)
-//            suggestions.push_back(mov);
-//    }
-//
-//    return suggestions;
-//}
-
 void WatchList::getSuggestions(vector<Movie> repo, string needle)
 {
     if (needle == "")
@@ -84,55 +69,61 @@ Movie WatchList::getCurrentMovie()
     return this->suggestions[++this->currentPos];
 }
 
-void WatchList::saveToFile()
+void CSVWatchList::saveToFile()
 {
-    if (this->type == "csv")
+    ofstream f("../data/watchlist.csv");
+    for (Movie mov: this->movieList)
+        f << mov << endl;
+
+    f.close();
+}
+
+void CSVWatchList::openInApp()
+{
+    system("open ../data/watchlist.csv");
+}
+
+void HTMLWatchList::saveToFile()
+{
+    ofstream f("../data/watchlist.html");
+    f << "<!DOCTYPE html>" << endl;
+    f << "<html>" << endl;
+
+    f << "<head>" << endl;
+    f << "<title>Playlist</title>" << endl;
+    f << "</head>" << endl;
+
+    f << "<body>" << endl;
+
+    f << "<table border=\"1\">" << endl;
+    //header
+    f << "<tr>" << endl;
+    f << "<td>Title</td>" << endl; f << "<td>Genre</td>" << endl; f << "<td>Year</td>" << endl; f << "<td>Likes</td>" << endl; f << "<td>Trailer</td>" << endl;
+    f << "</tr>" << endl;
+
+    for (Movie mov: this->movieList)
     {
-        ofstream f("../data/watchlist.csv");
-        for (Movie mov: this->movieList)
-            f << mov << endl;
-
-        f.close();
-    }
-
-    else if (this->type == "html")
-    {
-        //TODO html for watchlist
-        ofstream f("../data/watchlist.html");
-        f << "<!DOCTYPE html>" << endl;
-        f << "<html>" << endl;
-
-        f << "<head>" << endl;
-        f << "<title>Playlist</title>" << endl;
-        f << "</head>" << endl;
-
-        f << "<body>" << endl;
-
-        f << "<table border=\"1\">" << endl;
-        //header
         f << "<tr>" << endl;
-        f << "<td>Title</td>" << endl; f << "<td>Genre</td>" << endl; f << "<td>Year</td>" << endl; f << "<td>Likes</td>" << endl; f << "<td>Trailer</td>" << endl;
+
+        f << "<td>" << mov.getTitle() << "</td>" << endl;
+        f << "<td>" << mov.getGenre() << "</td>" << endl;
+        f << "<td>" << mov.getYear() << "</td>" << endl;
+        f << "<td>" << mov.getLikes() << "</td>" << endl;
+        f << "<td><a href =" << mov.getTrailer() << ">Link</a></td>";
+
         f << "</tr>" << endl;
-
-        for (Movie mov: this->movieList)
-        {
-            f << "<tr>" << endl;
-
-            f << "<td>" << mov.getTitle() << "</td>" << endl;
-            f << "<td>" << mov.getGenre() << "</td>" << endl;
-            f << "<td>" << mov.getYear() << "</td>" << endl;
-            f << "<td>" << mov.getLikes() << "</td>" << endl;
-            f << "<td><a href =" << mov.getTrailer() << ">Link</a></td>";
-
-            f << "</tr>" << endl;
-        }
-
-        f << "</table>" << endl;
-
-        f << "</body>" << endl;
-
-
-        f << "</html>" << endl;
-        f.close();
     }
+
+    f << "</table>" << endl;
+
+    f << "</body>" << endl;
+
+
+    f << "</html>" << endl;
+    f.close();
+}
+
+void HTMLWatchList::openInApp()
+{
+    system("open ../data/watchlist.html");
 }

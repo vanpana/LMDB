@@ -9,6 +9,7 @@ using namespace std;
 
 class WatchList
 {
+protected:
     vector<Movie> movieList;
     vector<Movie> suggestions;
     int currentPos, maximumPos;
@@ -42,9 +43,21 @@ public:
 
     void setCurrentPos(int value) { this->currentPos += value; }
 
-    void saveToFile();
+    virtual void saveToFile() = 0;
+    virtual void openInApp() = 0;
 
     string getType() const { return this->type; }
 };
 
+class CSVWatchList : public WatchList
+{
+    void saveToFile();
+    void openInApp();
+};
+
+class HTMLWatchList : public WatchList
+{
+    void saveToFile();
+    void openInApp();
+};
 #endif //LMDB_WATCHLIST_H

@@ -9,11 +9,11 @@ using namespace std;
 class Console
 {
     Controller ctrl;
-    WatchList wlist;
+    WatchList *wlist;
 
 public:
     Console();
-    Console(Controller ctrl, WatchList wlist);
+    Console(Controller ctrl, WatchList *wlist);
     int getInteger();
     string getString();
     void printModes();

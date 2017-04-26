@@ -5,7 +5,7 @@
 #include <regex>
 using namespace std;
 
-Console::Console(Controller ctrl, WatchList wlist)
+Console::Console(Controller ctrl, WatchList *wlist)
 {
     this->ctrl = ctrl;
     this->wlist = wlist;
@@ -185,16 +185,16 @@ void Console::uiGetSuggestions()
     needle = getString();
     needle.erase(remove(needle.begin(), needle.end(), '\n'), needle.end());
 
-    this->wlist.getSuggestions(this->ctrl.getItems(), needle);
+    this->wlist->getSuggestions(this->ctrl.getItems(), needle);
 
-    if (wlist.getMaximumPos() == 0)
+    if (wlist->getMaximumPos() == 0)
         cout<<"No suggestions for this genre, sorry!";
     else
     {
         while(1)
         {
             int option;
-            Movie mov = wlist.getCurrentMovie();
+            Movie mov = wlist->getCurrentMovie();
 
             do{
                 printSuggestionMenu(mov);
@@ -206,10 +206,10 @@ void Console::uiGetSuggestions()
                 string url = "open ";
                 url += mov.getTrailer();
                 system(url.c_str());
-                wlist.setCurrentPos(-1);
+                wlist->setCurrentPos(-1);
             }
             else if (option == 2)
-                this->wlist.add();
+                this->wlist->add();
 
             else if (option == 3)
                 continue;
@@ -227,7 +227,7 @@ void Console::uiDeleteSuggestion()
     cout<<"Input title: ";
     string title = getString();
 
-    if (this->wlist.del(title) == 0)
+    if (this->wlist->del(title) == 0)
         cout<<"Inexistent movie!\n";
     else
     {
@@ -252,7 +252,7 @@ void Console::uiDeleteSuggestion()
 
 void Console::uiPrintSuggestions()
 {
-    int length = this->wlist.getArray().size();
+    int length = this->wlist->getArray().size();
 
     if (length == 0)
         cout<<"\nThere are no movies yet!\n";
@@ -260,7 +260,7 @@ void Console::uiPrintSuggestions()
     {
         cout << "\nThe movies are:\n";
         for (int i = 0; i < length; i++) {
-            Movie mov = this->wlist.getArray()[i];
+            Movie mov = this->wlist->getArray()[i];
             mov.str();
         }
     }
@@ -268,7 +268,7 @@ void Console::uiPrintSuggestions()
 
 void Console::uiOpenInApp()
 {
-    system(("open ../data/watchlist." + this->wlist.getType()).c_str());
+    this->wlist->openInApp();
 }
 
 int Console::getInteger()
@@ -354,7 +354,7 @@ void Console::runApp()
 {
     loop();
     this->ctrl.saveToFile();
-    this->wlist.saveToFile();
+    this->wlist->saveToFile();
 }
 
 Console::~Console()
