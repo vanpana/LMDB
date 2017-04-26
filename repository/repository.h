@@ -9,19 +9,36 @@ using namespace std;
 
 class Repository
 {
+public:
+    Repository() { }
+
+    virtual vector<Movie> getItems() = 0;
+    virtual int getLength() = 0;
+    virtual void add(const Movie& mov) = 0;
+    virtual int del(const string& name) = 0;
+    virtual int update(const Movie& mov) = 0;
+    virtual int getPosition(const string& name) = 0;
+    virtual void incLikes(string title) = 0;
+    virtual void saveToFile() = 0;
+
+    ~Repository() { }
+};
+
+class MemoryRepository : public Repository
+{
 protected:
     vector<Movie> items;
     Validator validator_class;
 
 public:
     //default constructor
-    Repository();
+    MemoryRepository();
 
     //copy constructor
-    Repository(const Repository& other) { this->items = other.items; }
+    MemoryRepository(const MemoryRepository& other) { this->items = other.items; }
 
     //assigment operator
-    Repository& operator=(const Repository& other);
+    MemoryRepository& operator=(const MemoryRepository& other);
 
     //getters
     vector<Movie> getItems() { return this->items; }
@@ -60,13 +77,10 @@ public:
 
     void incLikes(string title) { this->items[getPosition(title)].incLikes(); }
 
-    ~Repository() { };
-
-
-
+    ~MemoryRepository() { };
 };
 
-class FileRepository : public Repository
+class FileRepository : public MemoryRepository
 {
 private:
     string filename;
@@ -74,12 +88,12 @@ private:
 
 public:
     FileRepository() { }
-    FileRepository(const string& filename) : Repository() { this->filename = filename; loadFromFile(); };
+    FileRepository(const string& filename) : MemoryRepository() { this->filename = filename; loadFromFile(); };
 
     FileRepository(const FileRepository& other);
     FileRepository& operator=(const FileRepository& other);
 
-    void saveToFile();
+    void saveToFile() override;
 
     ~FileRepository() { }
 };

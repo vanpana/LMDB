@@ -26,11 +26,11 @@ int main(int argc, char **argv)
         getline(cin, type);
     }
 
-    FileRepository *admin_repo = new FileRepository{"../data/movie_database.csv"};
-    //Repository *frepo = new FileRepository{"../data/movie_database.csv"};
+//    FileRepository *admin_repo = new FileRepository{"../data/movie_database.csv"};
+    MemoryRepository *admin_repo = new FileRepository{"../data/movie_database.csv"};
 
     WatchList *user_repo = new WatchList{type};
-    Controller *admin_ctrl = new Controller{*admin_repo};
+    Controller *admin_ctrl = new Controller{admin_repo};
     Console *ui = new Console(*admin_ctrl, *user_repo);
 
     cout << "Created & alive after initialising: " << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";

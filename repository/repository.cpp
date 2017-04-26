@@ -6,12 +6,12 @@
 using namespace std;
 
 // REPO //
-Repository::Repository()
+MemoryRepository::MemoryRepository()
 {   this->items = vector<Movie>();
     this->validator_class = Validator();
 }
 
-Repository& Repository::operator=(const Repository &other)
+MemoryRepository& MemoryRepository::operator=(const MemoryRepository &other)
 {
     if (this == &other) return *this;
 
@@ -20,14 +20,14 @@ Repository& Repository::operator=(const Repository &other)
     return *this;
 }
 
-void Repository::add(const Movie& mov)
+void MemoryRepository::add(const Movie& mov)
 {
     validator_class.validate_movie(mov);
     this->items.push_back(mov);
 
 }
 
-int Repository::del(const string& name)
+int MemoryRepository::del(const string& name)
 {
     int pos = getPosition(name);
 
@@ -37,7 +37,7 @@ int Repository::del(const string& name)
     return 1;
 }
 
-int Repository::update(const Movie& mov)
+int MemoryRepository::update(const Movie& mov)
 {
     int pos = getPosition(mov.getTitle());
     if (pos == -1)
@@ -47,7 +47,7 @@ int Repository::update(const Movie& mov)
     return 1;
 }
 
-int Repository::getPosition(const string& name)
+int MemoryRepository::getPosition(const string& name)
 {
     int counter = 0;
     for (Movie mov: items)
@@ -88,7 +88,7 @@ void FileRepository::saveToFile()
     f.close();
 }
 
-FileRepository::FileRepository(const FileRepository &other) : Repository(other)
+FileRepository::FileRepository(const FileRepository &other) : MemoryRepository(other)
 {
     this->filename = other.filename;
 }
@@ -97,7 +97,7 @@ FileRepository& FileRepository::operator=(const FileRepository& other)
 {
     if (this == &other) return *this;
 
-    Repository::operator=(other);
+    MemoryRepository::operator=(other);
     this->filename = other.filename;
 
     return *this;
