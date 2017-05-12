@@ -225,9 +225,33 @@ CMakeFiles/LMDB.dir/common/util.o.provides: CMakeFiles/LMDB.dir/common/util.o.re
 CMakeFiles/LMDB.dir/common/util.o.provides.build: CMakeFiles/LMDB.dir/common/util.o
 
 
+CMakeFiles/LMDB.dir/ui/gui.o: CMakeFiles/LMDB.dir/flags.make
+CMakeFiles/LMDB.dir/ui/gui.o: ../ui/gui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LMDB.dir/ui/gui.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/ui/gui.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.cpp"
+
+CMakeFiles/LMDB.dir/ui/gui.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LMDB.dir/ui/gui.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.cpp" > CMakeFiles/LMDB.dir/ui/gui.i
+
+CMakeFiles/LMDB.dir/ui/gui.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LMDB.dir/ui/gui.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.cpp" -o CMakeFiles/LMDB.dir/ui/gui.s
+
+CMakeFiles/LMDB.dir/ui/gui.o.requires:
+
+.PHONY : CMakeFiles/LMDB.dir/ui/gui.o.requires
+
+CMakeFiles/LMDB.dir/ui/gui.o.provides: CMakeFiles/LMDB.dir/ui/gui.o.requires
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui.o.provides.build
+.PHONY : CMakeFiles/LMDB.dir/ui/gui.o.provides
+
+CMakeFiles/LMDB.dir/ui/gui.o.provides.build: CMakeFiles/LMDB.dir/ui/gui.o
+
+
 CMakeFiles/LMDB.dir/common/counter.o: CMakeFiles/LMDB.dir/flags.make
 CMakeFiles/LMDB.dir/common/counter.o: ../common/counter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LMDB.dir/common/counter.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LMDB.dir/common/counter.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/common/counter.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/counter.cpp"
 
 CMakeFiles/LMDB.dir/common/counter.i: cmake_force
@@ -251,7 +275,7 @@ CMakeFiles/LMDB.dir/common/counter.o.provides.build: CMakeFiles/LMDB.dir/common/
 
 CMakeFiles/LMDB.dir/tests/test_controller.o: CMakeFiles/LMDB.dir/flags.make
 CMakeFiles/LMDB.dir/tests/test_controller.o: ../tests/test_controller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LMDB.dir/tests/test_controller.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/LMDB.dir/tests/test_controller.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/tests/test_controller.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_controller.cpp"
 
 CMakeFiles/LMDB.dir/tests/test_controller.i: cmake_force
@@ -275,7 +299,7 @@ CMakeFiles/LMDB.dir/tests/test_controller.o.provides.build: CMakeFiles/LMDB.dir/
 
 CMakeFiles/LMDB.dir/domain/validator.o: CMakeFiles/LMDB.dir/flags.make
 CMakeFiles/LMDB.dir/domain/validator.o: ../domain/validator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/LMDB.dir/domain/validator.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/LMDB.dir/domain/validator.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/domain/validator.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/validator.cpp"
 
 CMakeFiles/LMDB.dir/domain/validator.i: cmake_force
@@ -299,7 +323,7 @@ CMakeFiles/LMDB.dir/domain/validator.o.provides.build: CMakeFiles/LMDB.dir/domai
 
 CMakeFiles/LMDB.dir/tests/test_entity.o: CMakeFiles/LMDB.dir/flags.make
 CMakeFiles/LMDB.dir/tests/test_entity.o: ../tests/test_entity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/LMDB.dir/tests/test_entity.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/LMDB.dir/tests/test_entity.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/tests/test_entity.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_entity.cpp"
 
 CMakeFiles/LMDB.dir/tests/test_entity.i: cmake_force
@@ -323,7 +347,7 @@ CMakeFiles/LMDB.dir/tests/test_entity.o.provides.build: CMakeFiles/LMDB.dir/test
 
 CMakeFiles/LMDB.dir/tests/test_watchlist.o: CMakeFiles/LMDB.dir/flags.make
 CMakeFiles/LMDB.dir/tests/test_watchlist.o: ../tests/test_watchlist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/LMDB.dir/tests/test_watchlist.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/LMDB.dir/tests/test_watchlist.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/tests/test_watchlist.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_watchlist.cpp"
 
 CMakeFiles/LMDB.dir/tests/test_watchlist.i: cmake_force
@@ -345,6 +369,30 @@ CMakeFiles/LMDB.dir/tests/test_watchlist.o.provides: CMakeFiles/LMDB.dir/tests/t
 CMakeFiles/LMDB.dir/tests/test_watchlist.o.provides.build: CMakeFiles/LMDB.dir/tests/test_watchlist.o
 
 
+CMakeFiles/LMDB.dir/LMDB_automoc.o: CMakeFiles/LMDB.dir/flags.make
+CMakeFiles/LMDB.dir/LMDB_automoc.o: LMDB_automoc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/LMDB.dir/LMDB_automoc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/LMDB_automoc.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.cpp"
+
+CMakeFiles/LMDB.dir/LMDB_automoc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LMDB.dir/LMDB_automoc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.cpp" > CMakeFiles/LMDB.dir/LMDB_automoc.i
+
+CMakeFiles/LMDB.dir/LMDB_automoc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LMDB.dir/LMDB_automoc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.cpp" -o CMakeFiles/LMDB.dir/LMDB_automoc.s
+
+CMakeFiles/LMDB.dir/LMDB_automoc.o.requires:
+
+.PHONY : CMakeFiles/LMDB.dir/LMDB_automoc.o.requires
+
+CMakeFiles/LMDB.dir/LMDB_automoc.o.provides: CMakeFiles/LMDB.dir/LMDB_automoc.o.requires
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/LMDB_automoc.o.provides.build
+.PHONY : CMakeFiles/LMDB.dir/LMDB_automoc.o.provides
+
+CMakeFiles/LMDB.dir/LMDB_automoc.o.provides.build: CMakeFiles/LMDB.dir/LMDB_automoc.o
+
+
 # Object files for target LMDB
 LMDB_OBJECTS = \
 "CMakeFiles/LMDB.dir/common/array.o" \
@@ -354,11 +402,13 @@ LMDB_OBJECTS = \
 "CMakeFiles/LMDB.dir/main.o" \
 "CMakeFiles/LMDB.dir/repository/watchlist.o" \
 "CMakeFiles/LMDB.dir/common/util.o" \
+"CMakeFiles/LMDB.dir/ui/gui.o" \
 "CMakeFiles/LMDB.dir/common/counter.o" \
 "CMakeFiles/LMDB.dir/tests/test_controller.o" \
 "CMakeFiles/LMDB.dir/domain/validator.o" \
 "CMakeFiles/LMDB.dir/tests/test_entity.o" \
-"CMakeFiles/LMDB.dir/tests/test_watchlist.o"
+"CMakeFiles/LMDB.dir/tests/test_watchlist.o" \
+"CMakeFiles/LMDB.dir/LMDB_automoc.o"
 
 # External object files for target LMDB
 LMDB_EXTERNAL_OBJECTS =
@@ -370,17 +420,22 @@ LMDB: CMakeFiles/LMDB.dir/ui/console.o
 LMDB: CMakeFiles/LMDB.dir/main.o
 LMDB: CMakeFiles/LMDB.dir/repository/watchlist.o
 LMDB: CMakeFiles/LMDB.dir/common/util.o
+LMDB: CMakeFiles/LMDB.dir/ui/gui.o
 LMDB: CMakeFiles/LMDB.dir/common/counter.o
 LMDB: CMakeFiles/LMDB.dir/tests/test_controller.o
 LMDB: CMakeFiles/LMDB.dir/domain/validator.o
 LMDB: CMakeFiles/LMDB.dir/tests/test_entity.o
 LMDB: CMakeFiles/LMDB.dir/tests/test_watchlist.o
+LMDB: CMakeFiles/LMDB.dir/LMDB_automoc.o
 LMDB: CMakeFiles/LMDB.dir/build.make
+LMDB: /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/QtWidgets
 LMDB: lib/googletest-master/googlemock/gtest/libgtest.a
 LMDB: lib/googletest-master/googlemock/gtest/libgtest_main.a
+LMDB: /Applications/Qt/5.8/clang_64/lib/QtGui.framework/QtGui
+LMDB: /Applications/Qt/5.8/clang_64/lib/QtCore.framework/QtCore
 LMDB: lib/googletest-master/googlemock/gtest/libgtest.a
 LMDB: CMakeFiles/LMDB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable LMDB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable LMDB"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LMDB.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -395,11 +450,13 @@ CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/ui/console.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/main.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/repository/watchlist.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/common/util.o.requires
+CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/ui/gui.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/common/counter.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/tests/test_controller.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/domain/validator.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/tests/test_entity.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/tests/test_watchlist.o.requires
+CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/LMDB_automoc.o.requires
 
 .PHONY : CMakeFiles/LMDB.dir/requires
 

@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
+  "gtest_main_automoc.cpp"
+  "gtest_automoc.cpp"
   "CMakeFiles/gtest.dir/src/gtest-all.o"
+  "CMakeFiles/gtest.dir/gtest_automoc.o"
   "libgtest.pdb"
   "libgtest.a"
 )

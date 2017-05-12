@@ -129,11 +129,36 @@ lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.o.prov
 lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.o.provides.build: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.o
 
 
+lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.o: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make
+lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.o: lib/googletest-master/googlemock/gmock_main_automoc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.o"
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock_main.dir/gmock_main_automoc.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gmock_main_automoc.cpp"
+
+lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock_main.dir/gmock_main_automoc.i"
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gmock_main_automoc.cpp" > CMakeFiles/gmock_main.dir/gmock_main_automoc.i
+
+lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock_main.dir/gmock_main_automoc.s"
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gmock_main_automoc.cpp" -o CMakeFiles/gmock_main.dir/gmock_main_automoc.s
+
+lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.o.requires:
+
+.PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.o.requires
+
+lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.o.provides: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.o.requires
+	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.o.provides.build
+.PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.o.provides
+
+lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.o.provides.build: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.o
+
+
 # Object files for target gmock_main
 gmock_main_OBJECTS = \
 "CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.o" \
 "CMakeFiles/gmock_main.dir/src/gmock-all.o" \
-"CMakeFiles/gmock_main.dir/src/gmock_main.o"
+"CMakeFiles/gmock_main.dir/src/gmock_main.o" \
+"CMakeFiles/gmock_main.dir/gmock_main_automoc.o"
 
 # External object files for target gmock_main
 gmock_main_EXTERNAL_OBJECTS =
@@ -141,9 +166,10 @@ gmock_main_EXTERNAL_OBJECTS =
 lib/googletest-master/googlemock/libgmock_main.a: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.o
 lib/googletest-master/googlemock/libgmock_main.a: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.o
 lib/googletest-master/googlemock/libgmock_main.a: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.o
+lib/googletest-master/googlemock/libgmock_main.a: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.o
 lib/googletest-master/googlemock/libgmock_main.a: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make
 lib/googletest-master/googlemock/libgmock_main.a: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libgmock_main.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libgmock_main.a"
 	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock" && $(CMAKE_COMMAND) -P CMakeFiles/gmock_main.dir/cmake_clean_target.cmake
 	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gmock_main.dir/link.txt --verbose=$(VERBOSE)
 
@@ -155,6 +181,7 @@ lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build: lib/googletest
 lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/requires: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.o.requires
 lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/requires: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.o.requires
 lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/requires: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.o.requires
+lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/requires: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.o.requires
 
 .PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/requires
 

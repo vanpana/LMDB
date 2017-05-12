@@ -168,6 +168,19 @@ LMDB/fast:
 .PHONY : LMDB/fast
 
 #=============================================================================
+# Target rules for targets named LMDB_automoc
+
+# Build rule for target.
+LMDB_automoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LMDB_automoc
+.PHONY : LMDB_automoc
+
+# fast build rule for target.
+LMDB_automoc/fast:
+	$(MAKE) -f CMakeFiles/LMDB_automoc.dir/build.make CMakeFiles/LMDB_automoc.dir/build
+.PHONY : LMDB_automoc/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -194,6 +207,32 @@ gmock_main/fast:
 .PHONY : gmock_main/fast
 
 #=============================================================================
+# Target rules for targets named gmock_automoc
+
+# Build rule for target.
+gmock_automoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_automoc
+.PHONY : gmock_automoc
+
+# fast build rule for target.
+gmock_automoc/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/build
+.PHONY : gmock_automoc/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main_automoc
+
+# Build rule for target.
+gmock_main_automoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main_automoc
+.PHONY : gmock_main_automoc
+
+# fast build rule for target.
+gmock_main_automoc/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/build
+.PHONY : gmock_main_automoc/fast
+
+#=============================================================================
 # Target rules for targets named gtest_main
 
 # Build rule for target.
@@ -218,6 +257,47 @@ gtest: cmake_check_build_system
 gtest/fast:
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main_automoc
+
+# Build rule for target.
+gtest_main_automoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main_automoc
+.PHONY : gtest_main_automoc
+
+# fast build rule for target.
+gtest_main_automoc/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/build
+.PHONY : gtest_main_automoc/fast
+
+#=============================================================================
+# Target rules for targets named gtest_automoc
+
+# Build rule for target.
+gtest_automoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_automoc
+.PHONY : gtest_automoc
+
+# fast build rule for target.
+gtest_automoc/fast:
+	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/build
+.PHONY : gtest_automoc/fast
+
+# target to build an object file
+LMDB_automoc.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/LMDB_automoc.o
+.PHONY : LMDB_automoc.o
+
+# target to preprocess a source file
+LMDB_automoc.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/LMDB_automoc.i
+.PHONY : LMDB_automoc.i
+
+# target to generate assembly for a file
+LMDB_automoc.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/LMDB_automoc.s
+.PHONY : LMDB_automoc.s
 
 # target to build an object file
 common/array.o:
@@ -399,6 +479,21 @@ ui/console.s:
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/console.s
 .PHONY : ui/console.s
 
+# target to build an object file
+ui/gui.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui.o
+.PHONY : ui/gui.o
+
+# target to preprocess a source file
+ui/gui.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui.i
+.PHONY : ui/gui.i
+
+# target to generate assembly for a file
+ui/gui.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui.s
+.PHONY : ui/gui.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -412,10 +507,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... LMDB"
+	@echo "... LMDB_automoc"
 	@echo "... gmock"
 	@echo "... gmock_main"
+	@echo "... gmock_automoc"
+	@echo "... gmock_main_automoc"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... gtest_main_automoc"
+	@echo "... gtest_automoc"
+	@echo "... LMDB_automoc.o"
+	@echo "... LMDB_automoc.i"
+	@echo "... LMDB_automoc.s"
 	@echo "... common/array.o"
 	@echo "... common/array.i"
 	@echo "... common/array.s"
@@ -452,6 +555,9 @@ help:
 	@echo "... ui/console.o"
 	@echo "... ui/console.i"
 	@echo "... ui/console.s"
+	@echo "... ui/gui.o"
+	@echo "... ui/gui.i"
+	@echo "... ui/gui.s"
 .PHONY : help
 
 

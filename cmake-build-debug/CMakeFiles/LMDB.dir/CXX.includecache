@@ -462,6 +462,128 @@ cxxabi.h
 acxx_demangle.h
 -
 
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QApplication
+qapplication.h
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qapplication.h
+
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QMessageBox
+qmessagebox.h
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qmessagebox.h
+
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QPushButton
+qpushbutton.h
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qpushbutton.h
+
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QTextEdit
+qtextedit.h
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qtextedit.h
+
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QVBoxLayout
+qboxlayout.h
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qboxlayout.h
+
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QWidget
+qwidget.h
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qwidget.h
+
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qapplication.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtCore/qcoreapplication.h
+-
+QtGui/qwindowdefs.h
+-
+QtCore/qpoint.h
+-
+QtCore/qsize.h
+-
+QtGui/qcursor.h
+-
+QtWidgets/qdesktopwidget.h
+-
+QtGui/qguiapplication.h
+-
+
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qboxlayout.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qlayout.h
+-
+QtWidgets/qwidget.h
+-
+limits.h
+-
+
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qmessagebox.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qdialog.h
+-
+
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qpushbutton.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qabstractbutton.h
+-
+
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qtextedit.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qabstractscrollarea.h
+-
+QtGui/qtextdocument.h
+-
+QtGui/qtextoption.h
+-
+QtGui/qtextcursor.h
+-
+QtGui/qtextformat.h
+-
+
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qwidget.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtGui/qwindowdefs.h
+-
+QtCore/qobject.h
+-
+QtCore/qmargins.h
+-
+QtGui/qpaintdevice.h
+-
+QtGui/qpalette.h
+-
+QtGui/qfont.h
+-
+QtGui/qfontmetrics.h
+-
+QtGui/qfontinfo.h
+-
+QtWidgets/qsizepolicy.h
+-
+QtGui/qregion.h
+-
+QtGui/qbrush.h
+-
+QtGui/qcursor.h
+-
+QtGui/qkeysequence.h
+-
+QtGui/qevent.h
+-
+
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.cpp
+LMDB_automoc.dir/moc_gui_M32ZZFSZK75LEH.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.dir/moc_gui_M32ZZFSZK75LEH.cpp
+
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.dir/moc_gui_M32ZZFSZK75LEH.cpp
+../../ui/gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
 /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/array.cpp
 ../common/array.h
 /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/array.h
@@ -529,6 +651,10 @@ entities.h
 /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/main.cpp
 iostream
 -
+QApplication
+-
+QTextEdit
+-
 repository/repository.h
 /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/repository.h
 controller/controller.h
@@ -537,6 +663,8 @@ ui/console.h
 /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/console.h
 common/util.h
 /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/util.h
+ui/gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.h
 
 /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/repository.cpp
 repository.h
@@ -643,4 +771,34 @@ iostream
 -
 ../controller/controller.h
 /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/controller/controller.h
+
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.cpp
+gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.h
+QTextEdit
+-
+QPushButton
+-
+QVBoxLayout
+-
+QMessageBox
+-
+QApplication
+-
+
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.h
+QWidget
+-
+gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.h
+QTextEdit
+-
+QPushButton
+-
+QVBoxLayout
+-
+QMessageBox
+-
+QApplication
+-
 

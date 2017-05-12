@@ -65,9 +65,10 @@ CMAKE_BINARY_DIR = "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/L
 # All Build rule for target.
 CMakeFiles/LMDB.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/LMDB.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+CMakeFiles/LMDB.dir/all: CMakeFiles/LMDB_automoc.dir/all
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/depend
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target LMDB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target LMDB"
 .PHONY : CMakeFiles/LMDB.dir/all
 
 # Include target in all.
@@ -77,7 +78,7 @@ all: CMakeFiles/LMDB.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LMDB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 17
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 24
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LMDB.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/LMDB.dir/rule
@@ -94,6 +95,38 @@ CMakeFiles/LMDB.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/LMDB.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/LMDB_automoc.dir
+
+# All Build rule for target.
+CMakeFiles/LMDB_automoc.dir/all:
+	$(MAKE) -f CMakeFiles/LMDB_automoc.dir/build.make CMakeFiles/LMDB_automoc.dir/depend
+	$(MAKE) -f CMakeFiles/LMDB_automoc.dir/build.make CMakeFiles/LMDB_automoc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=16 "Built target LMDB_automoc"
+.PHONY : CMakeFiles/LMDB_automoc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/LMDB_automoc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LMDB_automoc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/LMDB_automoc.dir/rule
+
+# Convenience name for target.
+LMDB_automoc: CMakeFiles/LMDB_automoc.dir/rule
+
+.PHONY : LMDB_automoc
+
+# clean rule for target.
+CMakeFiles/LMDB_automoc.dir/clean:
+	$(MAKE) -f CMakeFiles/LMDB_automoc.dir/build.make CMakeFiles/LMDB_automoc.dir/clean
+.PHONY : CMakeFiles/LMDB_automoc.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/LMDB_automoc.dir/clean
 
 .PHONY : clean
 
@@ -128,6 +161,8 @@ lib/googletest-master/googlemock/all: lib/googletest-master/googlemock/gtest/all
 # Convenience name for "clean" pass in the directory.
 lib/googletest-master/googlemock/clean: lib/googletest-master/googlemock/CMakeFiles/gmock.dir/clean
 lib/googletest-master/googlemock/clean: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/clean
+lib/googletest-master/googlemock/clean: lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/clean
+lib/googletest-master/googlemock/clean: lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/clean
 lib/googletest-master/googlemock/clean: lib/googletest-master/googlemock/gtest/clean
 
 .PHONY : lib/googletest-master/googlemock/clean
@@ -141,10 +176,10 @@ lib/googletest-master/googlemock/preinstall: lib/googletest-master/googlemock/gt
 # Target rules for target lib/googletest-master/googlemock/CMakeFiles/gmock.dir
 
 # All Build rule for target.
-lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all:
+lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all: lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/all
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=14,15,16 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=17,18,19,20 "Built target gmock"
 .PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all
 
 # Include target in all.
@@ -154,7 +189,7 @@ all: lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 lib/googletest-master/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 5
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 0
 .PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock.dir/rule
@@ -178,10 +213,10 @@ clean: lib/googletest-master/googlemock/CMakeFiles/gmock.dir/clean
 # Target rules for target lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all:
+lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all: lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/all
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=17,18,19,20 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=22,23,24,25,26 "Built target gmock_main"
 .PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Include target in all.
@@ -191,7 +226,7 @@ all: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 6
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 0
 .PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/rule
@@ -212,6 +247,70 @@ clean: lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir
+
+# All Build rule for target.
+lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/all:
+	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/depend
+	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=21 "Built target gmock_automoc"
+.PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/all
+
+# Build rule for subdir invocation for target.
+lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 1
+	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 0
+.PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/rule
+
+# Convenience name for target.
+gmock_automoc: lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/rule
+
+.PHONY : gmock_automoc
+
+# clean rule for target.
+lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/clean:
+	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/clean
+.PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/clean
+
+# clean rule for target.
+clean: lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir
+
+# All Build rule for target.
+lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/all:
+	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/depend
+	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=27 "Built target gmock_main_automoc"
+.PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/all
+
+# Build rule for subdir invocation for target.
+lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 1
+	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 0
+.PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/rule
+
+# Convenience name for target.
+gmock_main_automoc: lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/rule
+
+.PHONY : gmock_main_automoc
+
+# clean rule for target.
+lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/clean:
+	$(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/clean
+.PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/clean
+
+# clean rule for target.
+clean: lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory lib/googletest-master/googlemock/gtest
 
 # Convenience name for "all" pass in the directory.
@@ -223,6 +322,8 @@ lib/googletest-master/googlemock/gtest/all: lib/googletest-master/googlemock/gte
 # Convenience name for "clean" pass in the directory.
 lib/googletest-master/googlemock/gtest/clean: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 lib/googletest-master/googlemock/gtest/clean: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/clean
+lib/googletest-master/googlemock/gtest/clean: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/clean
+lib/googletest-master/googlemock/gtest/clean: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/clean
 
 .PHONY : lib/googletest-master/googlemock/gtest/clean
 
@@ -236,9 +337,10 @@ lib/googletest-master/googlemock/gtest/preinstall:
 
 # All Build rule for target.
 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/all
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=23,24 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=32,33,34 "Built target gtest_main"
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Include target in all.
@@ -248,7 +350,7 @@ all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 8
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 0
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
@@ -272,10 +374,10 @@ clean: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 # Target rules for target lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir
 
 # All Build rule for target.
-lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all:
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/all
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=21,22 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=28,29,30 "Built target gtest"
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Include target in all.
@@ -285,7 +387,7 @@ all: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 4
 	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 0
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
@@ -302,6 +404,70 @@ lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/clean:
 
 # clean rule for target.
 clean: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir
+
+# All Build rule for target.
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/all:
+	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/depend
+	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=35 "Built target gtest_main_automoc"
+.PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/all
+
+# Build rule for subdir invocation for target.
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 1
+	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 0
+.PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/rule
+
+# Convenience name for target.
+gtest_main_automoc: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/rule
+
+.PHONY : gtest_main_automoc
+
+# clean rule for target.
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/clean:
+	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/clean
+.PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/clean
+
+# clean rule for target.
+clean: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main_automoc.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir
+
+# All Build rule for target.
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/all:
+	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/depend
+	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=31 "Built target gtest_automoc"
+.PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/all
+
+# Build rule for subdir invocation for target.
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 1
+	$(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" 0
+.PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/rule
+
+# Convenience name for target.
+gtest_automoc: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/rule
+
+.PHONY : gtest_automoc
+
+# clean rule for target.
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/clean:
+	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/clean
+.PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/clean
+
+# clean rule for target.
+clean: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_automoc.dir/clean
 
 .PHONY : clean
 

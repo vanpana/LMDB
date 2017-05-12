@@ -1,13 +1,27 @@
 #include <iostream>
+#include <QApplication>
+#include <QTextEdit>
+
+
 #include "repository/repository.h"
 #include "controller/controller.h"
 #include "ui/console.h"
 #include "common/util.h"
+#include "ui/gui.h"
+
 
 using namespace std;
 
 int main(int argc, char **argv)
 {
+
+    QApplication app(argc, argv);
+
+    gui *wid = new gui();
+    wid->show();
+    return app.exec();
+
+    /*
     //testing requirements
     system("find . -name \"*.gcda\" -print0 | xargs -0 rm");
     ::testing::InitGoogleTest(&argc, argv);
@@ -46,4 +60,5 @@ int main(int argc, char **argv)
     delete admin_repo;
 
     cout << "Created & alive after exiting: " << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
+     */
 }
