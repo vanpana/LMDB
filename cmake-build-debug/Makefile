@@ -480,19 +480,49 @@ ui/console.s:
 .PHONY : ui/console.s
 
 # target to build an object file
-ui/gui.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui.o
-.PHONY : ui/gui.o
+ui/gui/admin_gui.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/admin_gui.o
+.PHONY : ui/gui/admin_gui.o
 
 # target to preprocess a source file
-ui/gui.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui.i
-.PHONY : ui/gui.i
+ui/gui/admin_gui.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/admin_gui.i
+.PHONY : ui/gui/admin_gui.i
 
 # target to generate assembly for a file
-ui/gui.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui.s
-.PHONY : ui/gui.s
+ui/gui/admin_gui.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/admin_gui.s
+.PHONY : ui/gui/admin_gui.s
+
+# target to build an object file
+ui/gui/gui.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/gui.o
+.PHONY : ui/gui/gui.o
+
+# target to preprocess a source file
+ui/gui/gui.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/gui.i
+.PHONY : ui/gui/gui.i
+
+# target to generate assembly for a file
+ui/gui/gui.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/gui.s
+.PHONY : ui/gui/gui.s
+
+# target to build an object file
+ui/gui/showAll_gui.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o
+.PHONY : ui/gui/showAll_gui.o
+
+# target to preprocess a source file
+ui/gui/showAll_gui.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/showAll_gui.i
+.PHONY : ui/gui/showAll_gui.i
+
+# target to generate assembly for a file
+ui/gui/showAll_gui.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/showAll_gui.s
+.PHONY : ui/gui/showAll_gui.s
 
 # Help Target
 help:
@@ -555,9 +585,15 @@ help:
 	@echo "... ui/console.o"
 	@echo "... ui/console.i"
 	@echo "... ui/console.s"
-	@echo "... ui/gui.o"
-	@echo "... ui/gui.i"
-	@echo "... ui/gui.s"
+	@echo "... ui/gui/admin_gui.o"
+	@echo "... ui/gui/admin_gui.i"
+	@echo "... ui/gui/admin_gui.s"
+	@echo "... ui/gui/gui.o"
+	@echo "... ui/gui/gui.i"
+	@echo "... ui/gui/gui.s"
+	@echo "... ui/gui/showAll_gui.o"
+	@echo "... ui/gui/showAll_gui.i"
+	@echo "... ui/gui/showAll_gui.s"
 .PHONY : help
 
 

@@ -7,21 +7,13 @@
 #include "controller/controller.h"
 #include "ui/console.h"
 #include "common/util.h"
-#include "ui/gui.h"
+#include "ui/gui/gui.h"
 
 
 using namespace std;
 
 int main(int argc, char **argv)
 {
-
-    QApplication app(argc, argv);
-
-    gui *wid = new gui();
-    wid->show();
-    return app.exec();
-
-    /*
     //testing requirements
     system("find . -name \"*.gcda\" -print0 | xargs -0 rm");
     ::testing::InitGoogleTest(&argc, argv);
@@ -30,7 +22,7 @@ int main(int argc, char **argv)
     RUN_ALL_TESTS();
     cout << "\n";
 
-    cout << "Created & alive after testing: " << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
+    //cout << "Created & alive after testing: " << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
 
     //app initialising
     string type = "";
@@ -48,17 +40,26 @@ int main(int argc, char **argv)
     else user_repo = new HTMLWatchList();
 
     Controller *admin_ctrl = new Controller{admin_repo};
-    Console *ui = new Console(*admin_ctrl, user_repo);
+    //Console *ui = new Console(*admin_ctrl, user_repo);
 
-    cout << "Created & alive after initialising: " << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
+    //QT GUI Initialising
+    QApplication app(argc, argv);
 
-    ui->runApp();
+    gui *ui = new gui(*admin_ctrl, user_repo);
+    ui->show();
+
+    app.exec();
+
+    //cout << "Created & alive after initialising: " << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
+
+    //ui->runApp();
 
     delete ui;
     delete admin_ctrl;
     delete user_repo;
     delete admin_repo;
 
-    cout << "Created & alive after exiting: " << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
-     */
+    //cout << "Created & alive after exiting: " << Counter<Movie>::GetTotal() << " " << Counter<Movie>::GetAlive() << "\n";
+
+
 }

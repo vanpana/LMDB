@@ -564,10 +564,22 @@
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/console.h">
 			<Option target="LMDB"/>
 		</Unit>
-		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.cpp">
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.cpp">
 			<Option target="LMDB"/>
 		</Unit>
-		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.h">
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.h">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.cpp">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.h">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.cpp">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.h">
 			<Option target="LMDB"/>
 		</Unit>
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/CMakeLists.txt">

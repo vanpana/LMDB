@@ -466,6 +466,14 @@ acxx_demangle.h
 qapplication.h
 /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qapplication.h
 
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QHBoxLayout
+qboxlayout.h
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qboxlayout.h
+
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QListWidget
+qlistwidget.h
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qlistwidget.h
+
 /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QMessageBox
 qmessagebox.h
 /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qmessagebox.h
@@ -512,6 +520,18 @@ QtWidgets/qlayout.h
 QtWidgets/qwidget.h
 -
 limits.h
+-
+
+/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qlistwidget.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qlistview.h
+-
+QtCore/qvariant.h
+-
+QtCore/qvector.h
+-
+QtCore/qitemselectionmodel.h
 -
 
 /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qmessagebox.h
@@ -573,12 +593,32 @@ QtGui/qevent.h
 -
 
 /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.cpp
-LMDB_automoc.dir/moc_gui_M32ZZFSZK75LEH.cpp
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.dir/moc_gui_M32ZZFSZK75LEH.cpp
+LMDB_automoc.dir/moc_admin_gui_QFGBV3GGK23AFO.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.dir/moc_admin_gui_QFGBV3GGK23AFO.cpp
+LMDB_automoc.dir/moc_gui_6U2TT6PBF5XMCY.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.dir/moc_gui_6U2TT6PBF5XMCY.cpp
+LMDB_automoc.dir/moc_showAll_gui_56XSLYRAQLSHNC.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.dir/moc_showAll_gui_56XSLYRAQLSHNC.cpp
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.dir/moc_gui_M32ZZFSZK75LEH.cpp
-../../ui/gui.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.dir/moc_admin_gui_QFGBV3GGK23AFO.cpp
+../../ui/gui/admin_gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.dir/moc_gui_6U2TT6PBF5XMCY.cpp
+../../ui/gui/gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.dir/moc_showAll_gui_56XSLYRAQLSHNC.cpp
+../../ui/gui/showAll_gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.h
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
@@ -663,8 +703,8 @@ ui/console.h
 /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/console.h
 common/util.h
 /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/util.h
-ui/gui.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.h
+ui/gui/gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.h
 
 /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/repository.cpp
 repository.h
@@ -772,9 +812,27 @@ iostream
 ../controller/controller.h
 /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/controller/controller.h
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.cpp
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.cpp
+admin_gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.h
+showAll_gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.h
+
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.h
+QWidget
+-
+QPushButton
+-
+QVBoxLayout
+-
+../../tests/test_controller.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_controller.h
+
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.cpp
 gui.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.h
+admin_gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.h
 QTextEdit
 -
 QPushButton
@@ -786,11 +844,15 @@ QMessageBox
 QApplication
 -
 
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.h
 QWidget
 -
 gui.h
-/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.h
+../../tests/test_watchlist.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_watchlist.h
+../../tests/test_controller.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_controller.h
 QTextEdit
 -
 QPushButton
@@ -801,4 +863,20 @@ QMessageBox
 -
 QApplication
 -
+
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.cpp
+showAll_gui.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.h
+
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.h
+QWidget
+-
+QPushButton
+-
+QListWidget
+-
+QHBoxLayout
+-
+../../tests/test_controller.h
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_controller.h
 

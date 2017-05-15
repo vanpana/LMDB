@@ -80,8 +80,11 @@ public:
     /*
      Function that prints the content of the movie to the screen.
      */
-    void str() {cout << "Title: " << this->getTitle() << ", Genre: " << this->getGenre() << ", Year: " << this->getYear()
+    void str() { cout << "Title: " << this->getTitle() << ", Genre: " << this->getGenre() << ", Year: " << this->getYear()
                      << ", No. of likes: " << this->getLikes() << ", Trailer link: " << this->getTrailer() << "\n"; }
+
+    string toStr() { return "Title: " + this->getTitle() + ", Genre: " + this->getGenre() + //", Year: " + this->getYear()
+                                      /*+ ", No. of likes: " + this->getLikes() + */", Trailer link: " + this->getTrailer(); }
 
     /*
      Function that increments the likes for the movie.

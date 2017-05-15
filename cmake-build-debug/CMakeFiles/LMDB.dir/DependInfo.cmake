@@ -17,7 +17,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_entity.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/tests/test_entity.o"
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_watchlist.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/tests/test_watchlist.o"
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/console.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/ui/console.o"
-  "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/ui/gui.o"
+  "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/ui/gui/admin_gui.o"
+  "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/ui/gui/gui.o"
+  "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
