@@ -27,6 +27,7 @@ private:
     QPushButton *updateButton;
     QPushButton *removeButton;
     QPushButton *showAllButton;
+    QPushButton *displayShortButton;
 
 public:
 //    gui();
@@ -37,6 +38,7 @@ signals:
 
 public slots:
     void showAll();
+    void displayShort();
 
 };
 

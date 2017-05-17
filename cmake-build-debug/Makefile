@@ -495,6 +495,21 @@ ui/gui/admin_gui.s:
 .PHONY : ui/gui/admin_gui.s
 
 # target to build an object file
+ui/gui/displayShort_gui.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o
+.PHONY : ui/gui/displayShort_gui.o
+
+# target to preprocess a source file
+ui/gui/displayShort_gui.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.i
+.PHONY : ui/gui/displayShort_gui.i
+
+# target to generate assembly for a file
+ui/gui/displayShort_gui.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.s
+.PHONY : ui/gui/displayShort_gui.s
+
+# target to build an object file
 ui/gui/gui.o:
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/gui.o
 .PHONY : ui/gui/gui.o
@@ -523,6 +538,21 @@ ui/gui/showAll_gui.i:
 ui/gui/showAll_gui.s:
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/showAll_gui.s
 .PHONY : ui/gui/showAll_gui.s
+
+# target to build an object file
+ui/gui/user_gui.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/user_gui.o
+.PHONY : ui/gui/user_gui.o
+
+# target to preprocess a source file
+ui/gui/user_gui.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/user_gui.i
+.PHONY : ui/gui/user_gui.i
+
+# target to generate assembly for a file
+ui/gui/user_gui.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/user_gui.s
+.PHONY : ui/gui/user_gui.s
 
 # Help Target
 help:
@@ -588,12 +618,18 @@ help:
 	@echo "... ui/gui/admin_gui.o"
 	@echo "... ui/gui/admin_gui.i"
 	@echo "... ui/gui/admin_gui.s"
+	@echo "... ui/gui/displayShort_gui.o"
+	@echo "... ui/gui/displayShort_gui.i"
+	@echo "... ui/gui/displayShort_gui.s"
 	@echo "... ui/gui/gui.o"
 	@echo "... ui/gui/gui.i"
 	@echo "... ui/gui/gui.s"
 	@echo "... ui/gui/showAll_gui.o"
 	@echo "... ui/gui/showAll_gui.i"
 	@echo "... ui/gui/showAll_gui.s"
+	@echo "... ui/gui/user_gui.o"
+	@echo "... ui/gui/user_gui.i"
+	@echo "... ui/gui/user_gui.s"
 .PHONY : help
 
 

@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LMDB.dir/tests/test_watchlist.o"
   "CMakeFiles/LMDB.dir/ui/gui/admin_gui.o"
   "CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o"
+  "CMakeFiles/LMDB.dir/ui/gui/user_gui.o"
+  "CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o"
   "CMakeFiles/LMDB.dir/LMDB_automoc.o"
   "LMDB.pdb"
   "LMDB"
