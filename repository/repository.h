@@ -88,7 +88,7 @@ private:
 
 public:
     FileRepository() { }
-    FileRepository(const string& filename) : MemoryRepository() { this->filename = filename; loadFromFile(); };
+    FileRepository(const string& filename) : MemoryRepository() { this->filename = filename; loadFromFile(); }
 
     FileRepository(const FileRepository& other);
     FileRepository& operator=(const FileRepository& other);
