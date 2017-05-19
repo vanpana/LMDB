@@ -37,7 +37,7 @@ void MainWindow::on_userButton_clicked()
         wlist = new CSVWatchList();
     else wlist = new HTMLWatchList();
 
-    userMode *um = new userMode(wlist);
+    userMode *um = new userMode(this->ctrl, wlist);
     um->show();
 
 }
