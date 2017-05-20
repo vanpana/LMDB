@@ -6,7 +6,7 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = LMDB
 TEMPLATE = app
@@ -34,7 +34,9 @@ SOURCES += main.cpp\
     repository/watchlist.cpp \
     ui/console.cpp \
     adminmode.cpp \
-    usermode.cpp
+    usermode.cpp \
+    chart.cpp \
+    qcustomplot.cpp
 
 HEADERS  += mainwindow.h \
     common/array.h \
@@ -47,11 +49,14 @@ HEADERS  += mainwindow.h \
     repository/watchlist.h \
     ui/console.h \
     adminmode.h \
-    usermode.h
+    usermode.h \
+    chart.h \
+    qcustomplot.h
 
 FORMS    += mainwindow.ui \
     adminmode.ui \
-    usermode.ui
+    usermode.ui \
+    chart.ui
 
 DISTFILES += \
     data/movie_database.csv \

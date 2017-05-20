@@ -27,6 +27,8 @@ private slots:
 
     void on_userButton_clicked();
 
+    void on_chartButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     Controller ctrl;

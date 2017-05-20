@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "adminmode.h"
 #include "usermode.h"
+#include "chart.h"
 
 MainWindow::MainWindow(Controller ctrl, QWidget *parent) :
     QMainWindow(parent),
@@ -40,4 +41,10 @@ void MainWindow::on_userButton_clicked()
     userMode *um = new userMode(this->ctrl, wlist);
     um->show();
 
+}
+
+void MainWindow::on_chartButton_clicked()
+{
+    chart *c = new chart(this->ctrl);
+    c->show();
 }

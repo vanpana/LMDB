@@ -12,10 +12,10 @@ MAKEFILE      = Makefile
 
 CC            = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
 CXX           = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
-DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_QML_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
+DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_QML_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -mmacosx-version-min=10.9 $(EXPORT_QMAKE_XARCH_CFLAGS) -g -Wall -W -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -stdlib=libc++ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -mmacosx-version-min=10.9 $(EXPORT_QMAKE_XARCH_CFLAGS) -g -std=gnu++11 -Wall -W -fPIC $(DEFINES)
-INCPATH       = -I. -I/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers -I. -I/Applications/Qt/5.8/clang_64/mkspecs/macx-clang -F/Applications/Qt/5.8/clang_64/lib
+INCPATH       = -I. -I/Applications/Qt/5.8/clang_64/lib/QtPrintSupport.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers -I. -I/Applications/Qt/5.8/clang_64/mkspecs/macx-clang -F/Applications/Qt/5.8/clang_64/lib
 QMAKE         = /Applications/Qt/5.8/clang_64/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -36,7 +36,7 @@ DISTNAME      = LMDB1.0.0
 DISTDIR = /Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/.tmp/LMDB1.0.0
 LINK          = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
 LFLAGS        = -headerpad_max_install_names -stdlib=libc++ -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -mmacosx-version-min=10.9 $(EXPORT_QMAKE_XARCH_LFLAGS) -Wl,-rpath,/Applications/Qt/5.8/clang_64/lib
-LIBS          = $(SUBLIBS) -F/Applications/Qt/5.8/clang_64/lib -framework QtWidgets -framework QtGui -framework QtCore -framework DiskArbitration -framework IOKit -framework OpenGL -framework AGL 
+LIBS          = $(SUBLIBS) -F/Applications/Qt/5.8/clang_64/lib -framework QtPrintSupport -framework QtWidgets -framework QtGui -framework QtCore -framework DiskArbitration -framework IOKit -framework OpenGL -framework AGL 
 AR            = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar cq
 RANLIB        = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib -s
 SED           = sed
@@ -59,9 +59,13 @@ SOURCES       = main.cpp \
 		repository/watchlist.cpp \
 		ui/console.cpp \
 		adminmode.cpp \
-		usermode.cpp moc_mainwindow.cpp \
+		usermode.cpp \
+		chart.cpp \
+		qcustomplot.cpp moc_mainwindow.cpp \
 		moc_adminmode.cpp \
-		moc_usermode.cpp
+		moc_usermode.cpp \
+		moc_chart.cpp \
+		moc_qcustomplot.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
 		array.o \
@@ -74,9 +78,13 @@ OBJECTS       = main.o \
 		console.o \
 		adminmode.o \
 		usermode.o \
+		chart.o \
+		qcustomplot.o \
 		moc_mainwindow.o \
 		moc_adminmode.o \
-		moc_usermode.o
+		moc_usermode.o \
+		moc_chart.o \
+		moc_qcustomplot.o
 DIST          = data/movie_database.csv \
 		data/movies_backup.csv \
 		data/watchlist.csv \
@@ -245,7 +253,9 @@ DIST          = data/movie_database.csv \
 		repository/watchlist.h \
 		ui/console.h \
 		adminmode.h \
-		usermode.h main.cpp \
+		usermode.h \
+		chart.h \
+		qcustomplot.h main.cpp \
 		mainwindow.cpp \
 		common/array.cpp \
 		common/counter.cpp \
@@ -256,7 +266,9 @@ DIST          = data/movie_database.csv \
 		repository/watchlist.cpp \
 		ui/console.cpp \
 		adminmode.cpp \
-		usermode.cpp
+		usermode.cpp \
+		chart.cpp \
+		qcustomplot.cpp
 QMAKE_TARGET  = LMDB
 DESTDIR       = 
 TARGET        = LMDB.app/Contents/MacOS/LMDB
@@ -265,7 +277,7 @@ TARGET        = LMDB.app/Contents/MacOS/LMDB
 first: all
 ####### Build rules
 
-$(TARGET): ui_mainwindow.h ui_adminmode.h ui_usermode.h $(OBJECTS)  
+$(TARGET): ui_mainwindow.h ui_adminmode.h ui_usermode.h ui_chart.h $(OBJECTS)  
 	@test -d LMDB.app/Contents/MacOS/ || mkdir -p LMDB.app/Contents/MacOS/
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
@@ -423,6 +435,7 @@ Makefile: LMDB.pro /Applications/Qt/5.8/clang_64/mkspecs/macx-clang/qmake.conf /
 		/Applications/Qt/5.8/clang_64/mkspecs/features/yacc.prf \
 		/Applications/Qt/5.8/clang_64/mkspecs/features/lex.prf \
 		LMDB.pro \
+		/Applications/Qt/5.8/clang_64/lib/QtPrintSupport.framework/QtPrintSupport.prl \
 		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/QtWidgets.prl \
 		/Applications/Qt/5.8/clang_64/lib/QtGui.framework/QtGui.prl \
 		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/QtCore.prl
@@ -581,6 +594,7 @@ Makefile: LMDB.pro /Applications/Qt/5.8/clang_64/mkspecs/macx-clang/qmake.conf /
 /Applications/Qt/5.8/clang_64/mkspecs/features/yacc.prf:
 /Applications/Qt/5.8/clang_64/mkspecs/features/lex.prf:
 LMDB.pro:
+/Applications/Qt/5.8/clang_64/lib/QtPrintSupport.framework/QtPrintSupport.prl:
 /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/QtWidgets.prl:
 /Applications/Qt/5.8/clang_64/lib/QtGui.framework/QtGui.prl:
 /Applications/Qt/5.8/clang_64/lib/QtCore.framework/QtCore.prl:
@@ -614,9 +628,9 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /Applications/Qt/5.8/clang_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents mainwindow.h common/array.h common/counter.h common/util.h controller/controller.h domain/entities.h domain/validator.h repository/repository.h repository/watchlist.h ui/console.h adminmode.h usermode.h $(DISTDIR)/
-	$(COPY_FILE) --parents main.cpp mainwindow.cpp common/array.cpp common/counter.cpp common/util.cpp domain/entities.cpp domain/validator.cpp repository/repository.cpp repository/watchlist.cpp ui/console.cpp adminmode.cpp usermode.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents mainwindow.ui adminmode.ui usermode.ui $(DISTDIR)/
+	$(COPY_FILE) --parents mainwindow.h common/array.h common/counter.h common/util.h controller/controller.h domain/entities.h domain/validator.h repository/repository.h repository/watchlist.h ui/console.h adminmode.h usermode.h chart.h qcustomplot.h $(DISTDIR)/
+	$(COPY_FILE) --parents main.cpp mainwindow.cpp common/array.cpp common/counter.cpp common/util.cpp domain/entities.cpp domain/validator.cpp repository/repository.cpp repository/watchlist.cpp ui/console.cpp adminmode.cpp usermode.cpp chart.cpp qcustomplot.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents mainwindow.ui adminmode.ui usermode.ui chart.ui $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -647,9 +661,9 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /Applications/Qt/5.8/clang_64/mkspecs/features/data/dummy.cpp
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -pipe -stdlib=libc++ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -mmacosx-version-min=10.9 $(EXPORT_QMAKE_XARCH_CFLAGS) -g -std=gnu++11 -Wall -W -dM -E -o moc_predefs.h /Applications/Qt/5.8/clang_64/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_mainwindow.cpp moc_adminmode.cpp moc_usermode.cpp
+compiler_moc_header_make_all: moc_mainwindow.cpp moc_adminmode.cpp moc_usermode.cpp moc_chart.cpp moc_qcustomplot.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_mainwindow.cpp moc_adminmode.cpp moc_usermode.cpp
+	-$(DEL_FILE) moc_mainwindow.cpp moc_adminmode.cpp moc_usermode.cpp moc_chart.cpp moc_qcustomplot.cpp
 moc_mainwindow.cpp: /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
 		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qmainwindow.h \
 		repository/repository.h \
@@ -662,7 +676,7 @@ moc_mainwindow.cpp: /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Header
 		mainwindow.h \
 		moc_predefs.h \
 		/Applications/Qt/5.8/clang_64/bin/moc
-	/Applications/Qt/5.8/clang_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/Applications/Qt/5.8/clang_64/mkspecs/macx-clang -I'/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB' -I/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/Applications/Qt/5.8/clang_64/lib mainwindow.h -o moc_mainwindow.cpp
+	/Applications/Qt/5.8/clang_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/Applications/Qt/5.8/clang_64/mkspecs/macx-clang -I'/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB' -I/Applications/Qt/5.8/clang_64/lib/QtPrintSupport.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/Applications/Qt/5.8/clang_64/lib mainwindow.h -o moc_mainwindow.cpp
 
 moc_adminmode.cpp: /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QDialog \
 		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qdialog.h \
@@ -684,7 +698,7 @@ moc_adminmode.cpp: /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers
 		adminmode.h \
 		moc_predefs.h \
 		/Applications/Qt/5.8/clang_64/bin/moc
-	/Applications/Qt/5.8/clang_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/Applications/Qt/5.8/clang_64/mkspecs/macx-clang -I'/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB' -I/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/Applications/Qt/5.8/clang_64/lib adminmode.h -o moc_adminmode.cpp
+	/Applications/Qt/5.8/clang_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/Applications/Qt/5.8/clang_64/mkspecs/macx-clang -I'/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB' -I/Applications/Qt/5.8/clang_64/lib/QtPrintSupport.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/Applications/Qt/5.8/clang_64/lib adminmode.h -o moc_adminmode.cpp
 
 moc_usermode.cpp: /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QDialog \
 		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qdialog.h \
@@ -698,13 +712,28 @@ moc_usermode.cpp: /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/
 		usermode.h \
 		moc_predefs.h \
 		/Applications/Qt/5.8/clang_64/bin/moc
-	/Applications/Qt/5.8/clang_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/Applications/Qt/5.8/clang_64/mkspecs/macx-clang -I'/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB' -I/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/Applications/Qt/5.8/clang_64/lib usermode.h -o moc_usermode.cpp
+	/Applications/Qt/5.8/clang_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/Applications/Qt/5.8/clang_64/mkspecs/macx-clang -I'/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB' -I/Applications/Qt/5.8/clang_64/lib/QtPrintSupport.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/Applications/Qt/5.8/clang_64/lib usermode.h -o moc_usermode.cpp
+
+moc_chart.cpp: /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QDialog \
+		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qdialog.h \
+		chart.h \
+		moc_predefs.h \
+		/Applications/Qt/5.8/clang_64/bin/moc
+	/Applications/Qt/5.8/clang_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/Applications/Qt/5.8/clang_64/mkspecs/macx-clang -I'/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB' -I/Applications/Qt/5.8/clang_64/lib/QtPrintSupport.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/Applications/Qt/5.8/clang_64/lib chart.h -o moc_chart.cpp
+
+moc_qcustomplot.cpp: /Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/qmath.h \
+		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/qnumeric.h \
+		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/QtNumeric \
+		qcustomplot.h \
+		moc_predefs.h \
+		/Applications/Qt/5.8/clang_64/bin/moc
+	/Applications/Qt/5.8/clang_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/Applications/Qt/5.8/clang_64/mkspecs/macx-clang -I'/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB' -I/Applications/Qt/5.8/clang_64/lib/QtPrintSupport.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/8.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include -F/Applications/Qt/5.8/clang_64/lib qcustomplot.h -o moc_qcustomplot.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_mainwindow.h ui_adminmode.h ui_usermode.h
+compiler_uic_make_all: ui_mainwindow.h ui_adminmode.h ui_usermode.h ui_chart.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_mainwindow.h ui_adminmode.h ui_usermode.h
+	-$(DEL_FILE) ui_mainwindow.h ui_adminmode.h ui_usermode.h ui_chart.h
 ui_mainwindow.h: mainwindow.ui \
 		/Applications/Qt/5.8/clang_64/bin/uic
 	/Applications/Qt/5.8/clang_64/bin/uic mainwindow.ui -o ui_mainwindow.h
@@ -716,6 +745,14 @@ ui_adminmode.h: adminmode.ui \
 ui_usermode.h: usermode.ui \
 		/Applications/Qt/5.8/clang_64/bin/uic
 	/Applications/Qt/5.8/clang_64/bin/uic usermode.ui -o ui_usermode.h
+
+ui_chart.h: chart.ui \
+		/Applications/Qt/5.8/clang_64/bin/uic \
+		qcustomplot.h \
+		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/qmath.h \
+		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/qnumeric.h \
+		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/QtNumeric
+	/Applications/Qt/5.8/clang_64/bin/uic chart.ui -o ui_chart.h
 
 compiler_rez_source_make_all:
 compiler_rez_source_clean:
@@ -767,7 +804,8 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qpushbutton.h \
 		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QComboBox \
 		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qcombobox.h \
-		usermode.h
+		usermode.h \
+		chart.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o mainwindow.cpp
 
 array.o: common/array.cpp common/array.h \
@@ -854,6 +892,18 @@ usermode.o: usermode.cpp usermode.h \
 		ui_usermode.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o usermode.o usermode.cpp
 
+chart.o: chart.cpp chart.h \
+		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QDialog \
+		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qdialog.h \
+		ui_chart.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o chart.o chart.cpp
+
+qcustomplot.o: qcustomplot.cpp qcustomplot.h \
+		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/qmath.h \
+		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/qnumeric.h \
+		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/QtNumeric
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qcustomplot.o qcustomplot.cpp
+
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp
 
@@ -862,6 +912,12 @@ moc_adminmode.o: moc_adminmode.cpp
 
 moc_usermode.o: moc_usermode.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_usermode.o moc_usermode.cpp
+
+moc_chart.o: moc_chart.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_chart.o moc_chart.cpp
+
+moc_qcustomplot.o: moc_qcustomplot.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_qcustomplot.o moc_qcustomplot.cpp
 
 ####### Install
 

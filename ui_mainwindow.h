@@ -32,6 +32,7 @@ public:
     QPushButton *userButton;
     QPushButton *quitButton;
     QComboBox *saver;
+    QPushButton *chartButton;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -40,7 +41,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(177, 227);
+        MainWindow->resize(177, 283);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         adminButton = new QPushButton(centralWidget);
@@ -51,10 +52,13 @@ public:
         userButton->setGeometry(QRect(10, 60, 151, 32));
         quitButton = new QPushButton(centralWidget);
         quitButton->setObjectName(QStringLiteral("quitButton"));
-        quitButton->setGeometry(QRect(10, 130, 151, 32));
+        quitButton->setGeometry(QRect(10, 180, 151, 32));
         saver = new QComboBox(centralWidget);
         saver->setObjectName(QStringLiteral("saver"));
         saver->setGeometry(QRect(20, 90, 131, 26));
+        chartButton = new QPushButton(centralWidget);
+        chartButton->setObjectName(QStringLiteral("chartButton"));
+        chartButton->setGeometry(QRect(10, 140, 151, 32));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -78,6 +82,7 @@ public:
         adminButton->setText(QApplication::translate("MainWindow", "Administrator Mode", Q_NULLPTR));
         userButton->setText(QApplication::translate("MainWindow", "User Mode", Q_NULLPTR));
         quitButton->setText(QApplication::translate("MainWindow", "Quit", Q_NULLPTR));
+        chartButton->setText(QApplication::translate("MainWindow", "Chart", Q_NULLPTR));
     } // retranslateUi
 
 };
