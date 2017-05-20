@@ -22,8 +22,17 @@ MemoryRepository& MemoryRepository::operator=(const MemoryRepository &other)
 
 void MemoryRepository::add(const Movie& mov)
 {
-    validator_class.validate_movie(mov);
-    this->items.push_back(mov);
+    try {
+        validator_class.validate_movie(mov);
+        this->items.push_back(mov);
+    }
+
+    catch(string exc)
+    {
+        throw("Unable to add!");
+    }
+
+
 
 }
 

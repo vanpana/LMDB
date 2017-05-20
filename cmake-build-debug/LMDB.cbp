@@ -5,7 +5,7 @@
 		<Option title="LMDB"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\googletest-master\;CMake Files\lib\googletest-master\googlemock\;CMake Files\lib\googletest-master\googletest\;CMake Files\lib\googletest-master\googletest\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\Applications\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Core\;CMake Files\lib\;CMake Files\lib\googletest-master\;CMake Files\lib\googletest-master\googlemock\;CMake Files\lib\googletest-master\googletest\;CMake Files\lib\googletest-master\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug"/>
@@ -84,6 +84,17 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/./mkspecs/macx-clang"/>
+					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/include"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googlemock/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -108,6 +119,17 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/./mkspecs/macx-clang"/>
+					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/include"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googlemock/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -125,6 +147,16 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="LMDB_automoc">
+				<Option working_dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 LMDB_automoc"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="gmock">
 				<Option output="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock"/>
@@ -132,6 +164,14 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/./mkspecs/macx-clang"/>
+					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googlemock/include"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googlemock"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/include"/>
@@ -158,6 +198,14 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/./mkspecs/macx-clang"/>
+					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googlemock/include"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googlemock"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/include"/>
@@ -184,6 +232,14 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/./mkspecs/macx-clang"/>
+					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googlemock/include"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googlemock"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/include"/>
@@ -210,6 +266,14 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/./mkspecs/macx-clang"/>
+					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googlemock/include"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googlemock"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/include"/>
@@ -229,6 +293,26 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="gmock_automoc">
+				<Option working_dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_automoc"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main_automoc">
+				<Option working_dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_main_automoc"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="gtest_main">
 				<Option output="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
@@ -236,6 +320,14 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/./mkspecs/macx-clang"/>
+					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/include"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -260,6 +352,14 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/./mkspecs/macx-clang"/>
+					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/include"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -284,6 +384,14 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/./mkspecs/macx-clang"/>
+					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/include"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -308,6 +416,14 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/./mkspecs/macx-clang"/>
+					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/include"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -325,7 +441,42 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="gtest_main_automoc">
+				<Option working_dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main_automoc"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_automoc">
+				<Option working_dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_automoc"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/vanpana/Google\ Drive/Uni/An\ 1/Semestrul\ 2\ -\ Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.cpp">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gmock_automoc.cpp">
+			<Option target="gmock"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gmock_main_automoc.cpp">
+			<Option target="gmock_main"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest_automoc.cpp">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest_main_automoc.cpp">
+			<Option target="gtest_main"/>
+		</Unit>
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/array.cpp">
 			<Option target="LMDB"/>
 		</Unit>
@@ -413,8 +564,113 @@
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/console.h">
 			<Option target="LMDB"/>
 		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.cpp">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.h">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/displayShort_gui.cpp">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/displayShort_gui.h">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.cpp">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.h">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.cpp">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.h">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/user_gui.cpp">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/user_gui.h">
+			<Option target="LMDB"/>
+		</Unit>
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QCocoaIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QMacJp2Plugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Core\"/>
 		</Unit>
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\"/>

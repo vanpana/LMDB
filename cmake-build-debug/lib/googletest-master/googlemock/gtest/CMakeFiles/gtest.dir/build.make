@@ -81,17 +81,43 @@ lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.o.prov
 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.o.provides.build: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.o
 
 
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/gtest_automoc.o: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/gtest_automoc.o: lib/googletest-master/googlemock/gtest/gtest_automoc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/gtest_automoc.o"
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtest.dir/gtest_automoc.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest_automoc.cpp"
+
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/gtest_automoc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest.dir/gtest_automoc.i"
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest_automoc.cpp" > CMakeFiles/gtest.dir/gtest_automoc.i
+
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/gtest_automoc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest.dir/gtest_automoc.s"
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest_automoc.cpp" -o CMakeFiles/gtest.dir/gtest_automoc.s
+
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/gtest_automoc.o.requires:
+
+.PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/gtest_automoc.o.requires
+
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/gtest_automoc.o.provides: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/gtest_automoc.o.requires
+	$(MAKE) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/gtest_automoc.o.provides.build
+.PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/gtest_automoc.o.provides
+
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/gtest_automoc.o.provides.build: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/gtest_automoc.o
+
+
 # Object files for target gtest
 gtest_OBJECTS = \
-"CMakeFiles/gtest.dir/src/gtest-all.o"
+"CMakeFiles/gtest.dir/src/gtest-all.o" \
+"CMakeFiles/gtest.dir/gtest_automoc.o"
 
 # External object files for target gtest
 gtest_EXTERNAL_OBJECTS =
 
 lib/googletest-master/googlemock/gtest/libgtest.a: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.o
+lib/googletest-master/googlemock/gtest/libgtest.a: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/gtest_automoc.o
 lib/googletest-master/googlemock/gtest/libgtest.a: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make
 lib/googletest-master/googlemock/gtest/libgtest.a: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libgtest.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libgtest.a"
 	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest" && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean_target.cmake
 	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest.dir/link.txt --verbose=$(VERBOSE)
 
@@ -101,6 +127,7 @@ lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build: lib/googletes
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
 
 lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/requires: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.o.requires
+lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/requires: lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/gtest_automoc.o.requires
 
 .PHONY : lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/requires
 

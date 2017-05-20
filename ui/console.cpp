@@ -297,56 +297,63 @@ string Console::getString()
 
 void Console::loop()
 {
-    while(1)
+    try
     {
-        int mode, option;
-        do
+        while(1)
         {
-            printModes();
-            mode = getInteger();
-            if (mode == -1 || (mode != 0 && mode != 1 && mode != 2))
-                cout<<"Invalid command!\n";
-        }while (mode == -1 || (mode != 0 && mode != 1 && mode != 2));
-        if (mode == 0)
-            break;
-        else
-        {
-            do {
-                printMenu(mode);
-                option = getInteger();
-                if ((mode == 1 && (option < 0 || option > 5)) || (mode == 2 && (option < 0 || option > 4)))
-                    cout << "Invalid command!\n";
-            } while ((mode == 1 && (option < 0 || option > 5)) || (mode == 2 && (option < 0 || option > 4)));
-            if (mode == 1)
+            int mode, option;
+            do
             {
-                if (option == 0)
-                    continue;
-                else if (option == 1)
-                    uiAdd();
-                else if (option == 2)
-                    uiUpdate();
-                else if (option == 3)
-                    uiDelete();
-                else if (option == 4)
-                    uiPrintAll();
-                else if (option == 5)
-                    uiPrintAllByGenre();
-            }
+                printModes();
+                mode = getInteger();
+                if (mode == -1 || (mode != 0 && mode != 1 && mode != 2))
+                    cout<<"Invalid command!\n";
+            }while (mode == -1 || (mode != 0 && mode != 1 && mode != 2));
+            if (mode == 0)
+                break;
+            else
+            {
+                do {
+                    printMenu(mode);
+                    option = getInteger();
+                    if ((mode == 1 && (option < 0 || option > 5)) || (mode == 2 && (option < 0 || option > 4)))
+                        cout << "Invalid command!\n";
+                } while ((mode == 1 && (option < 0 || option > 5)) || (mode == 2 && (option < 0 || option > 4)));
+                if (mode == 1)
+                {
+                    if (option == 0)
+                        continue;
+                    else if (option == 1)
+                        uiAdd();
+                    else if (option == 2)
+                        uiUpdate();
+                    else if (option == 3)
+                        uiDelete();
+                    else if (option == 4)
+                        uiPrintAll();
+                    else if (option == 5)
+                        uiPrintAllByGenre();
+                }
 
-            if (mode == 2)
-            {
-                if (option == 0)
-                    continue;
-                if (option == 1)
-                    uiGetSuggestions();
-                if (option == 2)
-                    uiDeleteSuggestion();
-                if (option == 3)
-                    uiPrintSuggestions();
-                if (option == 4)
-                    uiOpenInApp();
+                if (mode == 2)
+                {
+                    if (option == 0)
+                        continue;
+                    if (option == 1)
+                        uiGetSuggestions();
+                    if (option == 2)
+                        uiDeleteSuggestion();
+                    if (option == 3)
+                        uiPrintSuggestions();
+                    if (option == 4)
+                        uiOpenInApp();
+                }
             }
         }
+    }
+    catch (string exc)
+    {
+        cout << "Exception raised: " << exc << endl;
     }
 }
 

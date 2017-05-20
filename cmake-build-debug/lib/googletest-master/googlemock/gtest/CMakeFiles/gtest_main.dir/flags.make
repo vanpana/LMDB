@@ -6,5 +6,5 @@ CXX_FLAGS = -g -O0 -Wall -fprofile-arcs -ftest-coverage -g   -g -O0 -Wall -fprof
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/include" -I"/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest" 
+CXX_INCLUDES = -F/Applications/Qt/5.8/clang_64/lib -I/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtGui.framework/Headers -I/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers -I/Applications/Qt/5.8/clang_64/./mkspecs/macx-clang -I/System/Library/Frameworks/OpenGL.framework/Headers -I"/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/include" -I"/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest" 
 

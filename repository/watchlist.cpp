@@ -71,7 +71,7 @@ Movie WatchList::getCurrentMovie()
 
 void CSVWatchList::saveToFile()
 {
-    ofstream f("../data/watchlist.csv");
+    ofstream f("/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/data/watchlist.csv");
     for (Movie mov: this->movieList)
         f << mov << endl;
 
@@ -80,12 +80,12 @@ void CSVWatchList::saveToFile()
 
 void CSVWatchList::openInApp()
 {
-    system("open ../data/watchlist.csv");
+    system("open ../../../../LMDB/data/watchlist.csv");
 }
 
 void HTMLWatchList::saveToFile()
 {
-    ofstream f("../data/watchlist.html");
+    ofstream f("/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/data/watchlist.html");
     f << "<!DOCTYPE html>" << endl;
     f << "<html>" << endl;
 
@@ -125,5 +125,5 @@ void HTMLWatchList::saveToFile()
 
 void HTMLWatchList::openInApp()
 {
-    system("open ../data/watchlist.html");
+    system("open ../../../../LMDB/data/watchlist.html");
 }

@@ -2,8 +2,8 @@
 #define LMDB_UTIL_H
 
 #include <string>
+#include <vector>
 #include "../domain/entities.h"
-#include "../tests/test_controller.h"
 
 using namespace std;
 

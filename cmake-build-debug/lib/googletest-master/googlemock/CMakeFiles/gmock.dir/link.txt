@@ -1,2 +1,2 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libgmock.a  CMakeFiles/gmock.dir/__/googletest/src/gtest-all.o CMakeFiles/gmock.dir/src/gmock-all.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libgmock.a  CMakeFiles/gmock.dir/__/googletest/src/gtest-all.o CMakeFiles/gmock.dir/src/gmock-all.o CMakeFiles/gmock.dir/gmock_automoc.o
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libgmock.a

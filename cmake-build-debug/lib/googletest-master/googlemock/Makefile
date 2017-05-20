@@ -184,6 +184,36 @@ gmock_main/fast:
 	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build
 .PHONY : gmock_main/fast
 
+# Convenience name for target.
+lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/rule:
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/rule
+.PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/rule
+
+# Convenience name for target.
+gmock_automoc: lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/rule
+
+.PHONY : gmock_automoc
+
+# fast build rule for target.
+gmock_automoc/fast:
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_automoc.dir/build
+.PHONY : gmock_automoc/fast
+
+# Convenience name for target.
+lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/rule:
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/rule
+.PHONY : lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/rule
+
+# Convenience name for target.
+gmock_main_automoc: lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/rule
+
+.PHONY : gmock_main_automoc
+
+# fast build rule for target.
+gmock_main_automoc/fast:
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main_automoc.dir/build
+.PHONY : gmock_main_automoc/fast
+
 # target to build an object file
 __/googletest/src/gtest-all.o:
 	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.o
@@ -201,6 +231,36 @@ __/googletest/src/gtest-all.s:
 	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.s
 	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.s
 .PHONY : __/googletest/src/gtest-all.s
+
+# target to build an object file
+gmock_automoc.o:
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/gmock_automoc.o
+.PHONY : gmock_automoc.o
+
+# target to preprocess a source file
+gmock_automoc.i:
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/gmock_automoc.i
+.PHONY : gmock_automoc.i
+
+# target to generate assembly for a file
+gmock_automoc.s:
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/gmock_automoc.s
+.PHONY : gmock_automoc.s
+
+# target to build an object file
+gmock_main_automoc.o:
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.o
+.PHONY : gmock_main_automoc.o
+
+# target to preprocess a source file
+gmock_main_automoc.i:
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.i
+.PHONY : gmock_main_automoc.i
+
+# target to generate assembly for a file
+gmock_main_automoc.s:
+	cd "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug" && $(MAKE) -f lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/gmock_main_automoc.s
+.PHONY : gmock_main_automoc.s
 
 # target to build an object file
 src/gmock-all.o:
@@ -249,9 +309,17 @@ help:
 	@echo "... edit_cache"
 	@echo "... gmock_main"
 	@echo "... list_install_components"
+	@echo "... gmock_automoc"
+	@echo "... gmock_main_automoc"
 	@echo "... __/googletest/src/gtest-all.o"
 	@echo "... __/googletest/src/gtest-all.i"
 	@echo "... __/googletest/src/gtest-all.s"
+	@echo "... gmock_automoc.o"
+	@echo "... gmock_automoc.i"
+	@echo "... gmock_automoc.s"
+	@echo "... gmock_main_automoc.o"
+	@echo "... gmock_main_automoc.i"
+	@echo "... gmock_main_automoc.s"
 	@echo "... src/gmock-all.o"
 	@echo "... src/gmock-all.i"
 	@echo "... src/gmock-all.s"

@@ -540,6 +540,8 @@ sys/types.h
 src/gtest-internal-inl.h
 ../lib/googletest-master/googletest/src/src/gtest-internal-inl.h
 
+/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest_automoc.cpp
+
 /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/src/gtest-all.cc
 gtest/gtest.h
 /Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/src/gtest/gtest.h
