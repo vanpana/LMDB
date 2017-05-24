@@ -2,10 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <repository/repository.h>
-#include <repository/watchlist.h>
-#include <controller/controller.h>
-#include <domain/entities.h>
+#include "repository/repository.h"
+#include "repository/watchlist.h"
+#include "controller/controller.h"
+#include "domain/entities.h"
 
 namespace Ui {
 class MainWindow;

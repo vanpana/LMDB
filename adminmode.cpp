@@ -118,3 +118,10 @@ void adminMode::on_deleteButton_clicked()
 
     switchItems(ui->choice->currentIndex());
 }
+
+void adminMode::on_undoButton_clicked()
+{
+    this->ctrl.undo();
+    switchItems(ui->choice->currentIndex());
+    cout << "Clicked undo.";
+}

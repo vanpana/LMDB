@@ -225,33 +225,129 @@ CMakeFiles/LMDB.dir/common/util.o.provides: CMakeFiles/LMDB.dir/common/util.o.re
 CMakeFiles/LMDB.dir/common/util.o.provides.build: CMakeFiles/LMDB.dir/common/util.o
 
 
-CMakeFiles/LMDB.dir/ui/gui/gui.o: CMakeFiles/LMDB.dir/flags.make
-CMakeFiles/LMDB.dir/ui/gui/gui.o: ../ui/gui/gui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LMDB.dir/ui/gui/gui.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/ui/gui/gui.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.cpp"
+CMakeFiles/LMDB.dir/mainwindow.o: CMakeFiles/LMDB.dir/flags.make
+CMakeFiles/LMDB.dir/mainwindow.o: ../mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LMDB.dir/mainwindow.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/mainwindow.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/mainwindow.cpp"
 
-CMakeFiles/LMDB.dir/ui/gui/gui.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LMDB.dir/ui/gui/gui.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.cpp" > CMakeFiles/LMDB.dir/ui/gui/gui.i
+CMakeFiles/LMDB.dir/mainwindow.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LMDB.dir/mainwindow.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/mainwindow.cpp" > CMakeFiles/LMDB.dir/mainwindow.i
 
-CMakeFiles/LMDB.dir/ui/gui/gui.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LMDB.dir/ui/gui/gui.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.cpp" -o CMakeFiles/LMDB.dir/ui/gui/gui.s
+CMakeFiles/LMDB.dir/mainwindow.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LMDB.dir/mainwindow.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/mainwindow.cpp" -o CMakeFiles/LMDB.dir/mainwindow.s
 
-CMakeFiles/LMDB.dir/ui/gui/gui.o.requires:
+CMakeFiles/LMDB.dir/mainwindow.o.requires:
 
-.PHONY : CMakeFiles/LMDB.dir/ui/gui/gui.o.requires
+.PHONY : CMakeFiles/LMDB.dir/mainwindow.o.requires
 
-CMakeFiles/LMDB.dir/ui/gui/gui.o.provides: CMakeFiles/LMDB.dir/ui/gui/gui.o.requires
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/gui.o.provides.build
-.PHONY : CMakeFiles/LMDB.dir/ui/gui/gui.o.provides
+CMakeFiles/LMDB.dir/mainwindow.o.provides: CMakeFiles/LMDB.dir/mainwindow.o.requires
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/mainwindow.o.provides.build
+.PHONY : CMakeFiles/LMDB.dir/mainwindow.o.provides
 
-CMakeFiles/LMDB.dir/ui/gui/gui.o.provides.build: CMakeFiles/LMDB.dir/ui/gui/gui.o
+CMakeFiles/LMDB.dir/mainwindow.o.provides.build: CMakeFiles/LMDB.dir/mainwindow.o
+
+
+CMakeFiles/LMDB.dir/adminmode.o: CMakeFiles/LMDB.dir/flags.make
+CMakeFiles/LMDB.dir/adminmode.o: ../adminmode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LMDB.dir/adminmode.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/adminmode.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/adminmode.cpp"
+
+CMakeFiles/LMDB.dir/adminmode.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LMDB.dir/adminmode.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/adminmode.cpp" > CMakeFiles/LMDB.dir/adminmode.i
+
+CMakeFiles/LMDB.dir/adminmode.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LMDB.dir/adminmode.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/adminmode.cpp" -o CMakeFiles/LMDB.dir/adminmode.s
+
+CMakeFiles/LMDB.dir/adminmode.o.requires:
+
+.PHONY : CMakeFiles/LMDB.dir/adminmode.o.requires
+
+CMakeFiles/LMDB.dir/adminmode.o.provides: CMakeFiles/LMDB.dir/adminmode.o.requires
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/adminmode.o.provides.build
+.PHONY : CMakeFiles/LMDB.dir/adminmode.o.provides
+
+CMakeFiles/LMDB.dir/adminmode.o.provides.build: CMakeFiles/LMDB.dir/adminmode.o
+
+
+CMakeFiles/LMDB.dir/usermode.o: CMakeFiles/LMDB.dir/flags.make
+CMakeFiles/LMDB.dir/usermode.o: ../usermode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/LMDB.dir/usermode.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/usermode.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/usermode.cpp"
+
+CMakeFiles/LMDB.dir/usermode.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LMDB.dir/usermode.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/usermode.cpp" > CMakeFiles/LMDB.dir/usermode.i
+
+CMakeFiles/LMDB.dir/usermode.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LMDB.dir/usermode.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/usermode.cpp" -o CMakeFiles/LMDB.dir/usermode.s
+
+CMakeFiles/LMDB.dir/usermode.o.requires:
+
+.PHONY : CMakeFiles/LMDB.dir/usermode.o.requires
+
+CMakeFiles/LMDB.dir/usermode.o.provides: CMakeFiles/LMDB.dir/usermode.o.requires
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/usermode.o.provides.build
+.PHONY : CMakeFiles/LMDB.dir/usermode.o.provides
+
+CMakeFiles/LMDB.dir/usermode.o.provides.build: CMakeFiles/LMDB.dir/usermode.o
+
+
+CMakeFiles/LMDB.dir/chart.o: CMakeFiles/LMDB.dir/flags.make
+CMakeFiles/LMDB.dir/chart.o: ../chart.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/LMDB.dir/chart.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/chart.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/chart.cpp"
+
+CMakeFiles/LMDB.dir/chart.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LMDB.dir/chart.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/chart.cpp" > CMakeFiles/LMDB.dir/chart.i
+
+CMakeFiles/LMDB.dir/chart.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LMDB.dir/chart.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/chart.cpp" -o CMakeFiles/LMDB.dir/chart.s
+
+CMakeFiles/LMDB.dir/chart.o.requires:
+
+.PHONY : CMakeFiles/LMDB.dir/chart.o.requires
+
+CMakeFiles/LMDB.dir/chart.o.provides: CMakeFiles/LMDB.dir/chart.o.requires
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/chart.o.provides.build
+.PHONY : CMakeFiles/LMDB.dir/chart.o.provides
+
+CMakeFiles/LMDB.dir/chart.o.provides.build: CMakeFiles/LMDB.dir/chart.o
+
+
+CMakeFiles/LMDB.dir/qcustomplot.o: CMakeFiles/LMDB.dir/flags.make
+CMakeFiles/LMDB.dir/qcustomplot.o: ../qcustomplot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/LMDB.dir/qcustomplot.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/qcustomplot.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/qcustomplot.cpp"
+
+CMakeFiles/LMDB.dir/qcustomplot.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LMDB.dir/qcustomplot.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/qcustomplot.cpp" > CMakeFiles/LMDB.dir/qcustomplot.i
+
+CMakeFiles/LMDB.dir/qcustomplot.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LMDB.dir/qcustomplot.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/qcustomplot.cpp" -o CMakeFiles/LMDB.dir/qcustomplot.s
+
+CMakeFiles/LMDB.dir/qcustomplot.o.requires:
+
+.PHONY : CMakeFiles/LMDB.dir/qcustomplot.o.requires
+
+CMakeFiles/LMDB.dir/qcustomplot.o.provides: CMakeFiles/LMDB.dir/qcustomplot.o.requires
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/qcustomplot.o.provides.build
+.PHONY : CMakeFiles/LMDB.dir/qcustomplot.o.provides
+
+CMakeFiles/LMDB.dir/qcustomplot.o.provides.build: CMakeFiles/LMDB.dir/qcustomplot.o
 
 
 CMakeFiles/LMDB.dir/common/counter.o: CMakeFiles/LMDB.dir/flags.make
 CMakeFiles/LMDB.dir/common/counter.o: ../common/counter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LMDB.dir/common/counter.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/LMDB.dir/common/counter.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/common/counter.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/counter.cpp"
 
 CMakeFiles/LMDB.dir/common/counter.i: cmake_force
@@ -275,7 +371,7 @@ CMakeFiles/LMDB.dir/common/counter.o.provides.build: CMakeFiles/LMDB.dir/common/
 
 CMakeFiles/LMDB.dir/tests/test_controller.o: CMakeFiles/LMDB.dir/flags.make
 CMakeFiles/LMDB.dir/tests/test_controller.o: ../tests/test_controller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/LMDB.dir/tests/test_controller.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/LMDB.dir/tests/test_controller.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/tests/test_controller.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_controller.cpp"
 
 CMakeFiles/LMDB.dir/tests/test_controller.i: cmake_force
@@ -299,7 +395,7 @@ CMakeFiles/LMDB.dir/tests/test_controller.o.provides.build: CMakeFiles/LMDB.dir/
 
 CMakeFiles/LMDB.dir/domain/validator.o: CMakeFiles/LMDB.dir/flags.make
 CMakeFiles/LMDB.dir/domain/validator.o: ../domain/validator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/LMDB.dir/domain/validator.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/LMDB.dir/domain/validator.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/domain/validator.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/validator.cpp"
 
 CMakeFiles/LMDB.dir/domain/validator.i: cmake_force
@@ -323,7 +419,7 @@ CMakeFiles/LMDB.dir/domain/validator.o.provides.build: CMakeFiles/LMDB.dir/domai
 
 CMakeFiles/LMDB.dir/tests/test_entity.o: CMakeFiles/LMDB.dir/flags.make
 CMakeFiles/LMDB.dir/tests/test_entity.o: ../tests/test_entity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/LMDB.dir/tests/test_entity.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/LMDB.dir/tests/test_entity.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/tests/test_entity.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_entity.cpp"
 
 CMakeFiles/LMDB.dir/tests/test_entity.i: cmake_force
@@ -347,7 +443,7 @@ CMakeFiles/LMDB.dir/tests/test_entity.o.provides.build: CMakeFiles/LMDB.dir/test
 
 CMakeFiles/LMDB.dir/tests/test_watchlist.o: CMakeFiles/LMDB.dir/flags.make
 CMakeFiles/LMDB.dir/tests/test_watchlist.o: ../tests/test_watchlist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/LMDB.dir/tests/test_watchlist.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/LMDB.dir/tests/test_watchlist.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/tests/test_watchlist.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_watchlist.cpp"
 
 CMakeFiles/LMDB.dir/tests/test_watchlist.i: cmake_force
@@ -367,102 +463,6 @@ CMakeFiles/LMDB.dir/tests/test_watchlist.o.provides: CMakeFiles/LMDB.dir/tests/t
 .PHONY : CMakeFiles/LMDB.dir/tests/test_watchlist.o.provides
 
 CMakeFiles/LMDB.dir/tests/test_watchlist.o.provides.build: CMakeFiles/LMDB.dir/tests/test_watchlist.o
-
-
-CMakeFiles/LMDB.dir/ui/gui/admin_gui.o: CMakeFiles/LMDB.dir/flags.make
-CMakeFiles/LMDB.dir/ui/gui/admin_gui.o: ../ui/gui/admin_gui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/LMDB.dir/ui/gui/admin_gui.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/ui/gui/admin_gui.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.cpp"
-
-CMakeFiles/LMDB.dir/ui/gui/admin_gui.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LMDB.dir/ui/gui/admin_gui.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.cpp" > CMakeFiles/LMDB.dir/ui/gui/admin_gui.i
-
-CMakeFiles/LMDB.dir/ui/gui/admin_gui.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LMDB.dir/ui/gui/admin_gui.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.cpp" -o CMakeFiles/LMDB.dir/ui/gui/admin_gui.s
-
-CMakeFiles/LMDB.dir/ui/gui/admin_gui.o.requires:
-
-.PHONY : CMakeFiles/LMDB.dir/ui/gui/admin_gui.o.requires
-
-CMakeFiles/LMDB.dir/ui/gui/admin_gui.o.provides: CMakeFiles/LMDB.dir/ui/gui/admin_gui.o.requires
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/admin_gui.o.provides.build
-.PHONY : CMakeFiles/LMDB.dir/ui/gui/admin_gui.o.provides
-
-CMakeFiles/LMDB.dir/ui/gui/admin_gui.o.provides.build: CMakeFiles/LMDB.dir/ui/gui/admin_gui.o
-
-
-CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o: CMakeFiles/LMDB.dir/flags.make
-CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o: ../ui/gui/showAll_gui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.cpp"
-
-CMakeFiles/LMDB.dir/ui/gui/showAll_gui.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LMDB.dir/ui/gui/showAll_gui.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.cpp" > CMakeFiles/LMDB.dir/ui/gui/showAll_gui.i
-
-CMakeFiles/LMDB.dir/ui/gui/showAll_gui.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LMDB.dir/ui/gui/showAll_gui.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.cpp" -o CMakeFiles/LMDB.dir/ui/gui/showAll_gui.s
-
-CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o.requires:
-
-.PHONY : CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o.requires
-
-CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o.provides: CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o.requires
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o.provides.build
-.PHONY : CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o.provides
-
-CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o.provides.build: CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o
-
-
-CMakeFiles/LMDB.dir/ui/gui/user_gui.o: CMakeFiles/LMDB.dir/flags.make
-CMakeFiles/LMDB.dir/ui/gui/user_gui.o: ../ui/gui/user_gui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/LMDB.dir/ui/gui/user_gui.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/ui/gui/user_gui.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/user_gui.cpp"
-
-CMakeFiles/LMDB.dir/ui/gui/user_gui.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LMDB.dir/ui/gui/user_gui.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/user_gui.cpp" > CMakeFiles/LMDB.dir/ui/gui/user_gui.i
-
-CMakeFiles/LMDB.dir/ui/gui/user_gui.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LMDB.dir/ui/gui/user_gui.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/user_gui.cpp" -o CMakeFiles/LMDB.dir/ui/gui/user_gui.s
-
-CMakeFiles/LMDB.dir/ui/gui/user_gui.o.requires:
-
-.PHONY : CMakeFiles/LMDB.dir/ui/gui/user_gui.o.requires
-
-CMakeFiles/LMDB.dir/ui/gui/user_gui.o.provides: CMakeFiles/LMDB.dir/ui/gui/user_gui.o.requires
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/user_gui.o.provides.build
-.PHONY : CMakeFiles/LMDB.dir/ui/gui/user_gui.o.provides
-
-CMakeFiles/LMDB.dir/ui/gui/user_gui.o.provides.build: CMakeFiles/LMDB.dir/ui/gui/user_gui.o
-
-
-CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o: CMakeFiles/LMDB.dir/flags.make
-CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o: ../ui/gui/displayShort_gui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o -c "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/displayShort_gui.cpp"
-
-CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/displayShort_gui.cpp" > CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.i
-
-CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/displayShort_gui.cpp" -o CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.s
-
-CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o.requires:
-
-.PHONY : CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o.requires
-
-CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o.provides: CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o.requires
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o.provides.build
-.PHONY : CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o.provides
-
-CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o.provides.build: CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o
 
 
 CMakeFiles/LMDB.dir/LMDB_automoc.o: CMakeFiles/LMDB.dir/flags.make
@@ -498,16 +498,16 @@ LMDB_OBJECTS = \
 "CMakeFiles/LMDB.dir/main.o" \
 "CMakeFiles/LMDB.dir/repository/watchlist.o" \
 "CMakeFiles/LMDB.dir/common/util.o" \
-"CMakeFiles/LMDB.dir/ui/gui/gui.o" \
+"CMakeFiles/LMDB.dir/mainwindow.o" \
+"CMakeFiles/LMDB.dir/adminmode.o" \
+"CMakeFiles/LMDB.dir/usermode.o" \
+"CMakeFiles/LMDB.dir/chart.o" \
+"CMakeFiles/LMDB.dir/qcustomplot.o" \
 "CMakeFiles/LMDB.dir/common/counter.o" \
 "CMakeFiles/LMDB.dir/tests/test_controller.o" \
 "CMakeFiles/LMDB.dir/domain/validator.o" \
 "CMakeFiles/LMDB.dir/tests/test_entity.o" \
 "CMakeFiles/LMDB.dir/tests/test_watchlist.o" \
-"CMakeFiles/LMDB.dir/ui/gui/admin_gui.o" \
-"CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o" \
-"CMakeFiles/LMDB.dir/ui/gui/user_gui.o" \
-"CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o" \
 "CMakeFiles/LMDB.dir/LMDB_automoc.o"
 
 # External object files for target LMDB
@@ -520,21 +520,22 @@ LMDB: CMakeFiles/LMDB.dir/ui/console.o
 LMDB: CMakeFiles/LMDB.dir/main.o
 LMDB: CMakeFiles/LMDB.dir/repository/watchlist.o
 LMDB: CMakeFiles/LMDB.dir/common/util.o
-LMDB: CMakeFiles/LMDB.dir/ui/gui/gui.o
+LMDB: CMakeFiles/LMDB.dir/mainwindow.o
+LMDB: CMakeFiles/LMDB.dir/adminmode.o
+LMDB: CMakeFiles/LMDB.dir/usermode.o
+LMDB: CMakeFiles/LMDB.dir/chart.o
+LMDB: CMakeFiles/LMDB.dir/qcustomplot.o
 LMDB: CMakeFiles/LMDB.dir/common/counter.o
 LMDB: CMakeFiles/LMDB.dir/tests/test_controller.o
 LMDB: CMakeFiles/LMDB.dir/domain/validator.o
 LMDB: CMakeFiles/LMDB.dir/tests/test_entity.o
 LMDB: CMakeFiles/LMDB.dir/tests/test_watchlist.o
-LMDB: CMakeFiles/LMDB.dir/ui/gui/admin_gui.o
-LMDB: CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o
-LMDB: CMakeFiles/LMDB.dir/ui/gui/user_gui.o
-LMDB: CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o
 LMDB: CMakeFiles/LMDB.dir/LMDB_automoc.o
 LMDB: CMakeFiles/LMDB.dir/build.make
-LMDB: /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/QtWidgets
+LMDB: /Applications/Qt/5.8/clang_64/lib/QtPrintSupport.framework/QtPrintSupport
 LMDB: lib/googletest-master/googlemock/gtest/libgtest.a
 LMDB: lib/googletest-master/googlemock/gtest/libgtest_main.a
+LMDB: /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/QtWidgets
 LMDB: /Applications/Qt/5.8/clang_64/lib/QtGui.framework/QtGui
 LMDB: /Applications/Qt/5.8/clang_64/lib/QtCore.framework/QtCore
 LMDB: lib/googletest-master/googlemock/gtest/libgtest.a
@@ -554,16 +555,16 @@ CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/ui/console.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/main.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/repository/watchlist.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/common/util.o.requires
-CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/ui/gui/gui.o.requires
+CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/mainwindow.o.requires
+CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/adminmode.o.requires
+CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/usermode.o.requires
+CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/chart.o.requires
+CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/qcustomplot.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/common/counter.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/tests/test_controller.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/domain/validator.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/tests/test_entity.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/tests/test_watchlist.o.requires
-CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/ui/gui/admin_gui.o.requires
-CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o.requires
-CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/ui/gui/user_gui.o.requires
-CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o.requires
 CMakeFiles/LMDB.dir/requires: CMakeFiles/LMDB.dir/LMDB_automoc.o.requires
 
 .PHONY : CMakeFiles/LMDB.dir/requires

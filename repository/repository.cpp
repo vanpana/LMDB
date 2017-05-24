@@ -69,7 +69,7 @@ int MemoryRepository::getPosition(const string& name)
 }
 
 // FILE REPO //
-void FileRepository::loadFromFile()
+void UndoRepository::loadFromFile()
 {
     ifstream f(this->filename);
     string temp;
@@ -82,7 +82,6 @@ void FileRepository::loadFromFile()
 
         args = splitString(temp);
         add(Movie{args[0], args[1], stoi(args[2]), stoi(args[3]), args[4]});
-
     }
     f.close();
 }

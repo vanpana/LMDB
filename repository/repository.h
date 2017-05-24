@@ -20,6 +20,7 @@ public:
     virtual int getPosition(const string& name) = 0;
     virtual void incLikes(string title) = 0;
     virtual void saveToFile() = 0;
+    virtual void undo() = 0;
 
     ~Repository() { }
 };
@@ -49,7 +50,7 @@ public:
     Input: mov - Movie
     Output: mov is added to the items list
     */
-    void add(const Movie& mov);
+    void add(const Movie& mov) override;
 
     /*
     Deletes a movie by name from the list.
@@ -57,7 +58,7 @@ public:
     Output: new list without the movie
     returns: 0 if the movie does not exist, 1 if it was deleted.
     */
-    int del(const string& name);
+    int del(const string& name) override;
 
     /*
     Updates a movie which is found by name.
@@ -66,7 +67,7 @@ public:
     Output: new list with updated movie
     returns: 0 if the movie does not exist, 1 if it was updated.
     */
-    int update(const Movie& mov);
+    int update(const Movie& mov) override;
 
     /*
     Gets the position of a movie by name.
@@ -82,13 +83,12 @@ public:
 
 class FileRepository : public MemoryRepository
 {
-private:
+protected:
     string filename;
-    void loadFromFile();
 
 public:
     FileRepository() { }
-    FileRepository(const string& filename) : MemoryRepository() { this->filename = filename; loadFromFile(); }
+    FileRepository(const string& filename) : MemoryRepository() { this->filename = filename;}
 
     FileRepository(const FileRepository& other);
     FileRepository& operator=(const FileRepository& other);
@@ -96,6 +96,28 @@ public:
     void saveToFile() override;
 
     ~FileRepository() { }
+};
+
+class UndoRepository : public FileRepository
+{
+private:
+    typedef FileRepository super;
+    vector<vector<Movie>> backupList;
+    void loadFromFile();
+
+public:
+    UndoRepository(const string& filename) : super(filename) { backupList = vector<vector<Movie>>{}; loadFromFile(); }
+
+    void add(const Movie& mov) override { backupList.push_back(getItems()); super::add(mov); };
+    int del(const string& name) override { backupList.push_back(getItems()); super::del(name); }
+    int update(const Movie& mov) override { backupList.push_back(getItems()); super::update(mov); }
+
+
+
+    void undo() { this->items = backupList[backupList.size() - 1]; backupList.pop_back(); };
+
+
+    ~UndoRepository() { }
 };
 
 #endif

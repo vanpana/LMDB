@@ -48,6 +48,7 @@ chart::chart(Controller ctrl, QWidget *parent) :
         ticks << i;
         labels << QString::fromStdString(genres[i-1]);
     }
+
     QSharedPointer<QCPAxisTickerText> textTicker(new QCPAxisTickerText);
     textTicker->addTicks(ticks, labels);
     ui->customPlot->xAxis->setTicker(textTicker);

@@ -5,23 +5,23 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/LMDB_automoc.o"
+  "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/adminmode.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/adminmode.o"
+  "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/chart.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/chart.o"
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/array.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/common/array.o"
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/counter.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/common/counter.o"
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/common/util.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/common/util.o"
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/entities.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/domain/entities.o"
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/domain/validator.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/domain/validator.o"
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/main.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/main.o"
+  "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/mainwindow.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/mainwindow.o"
+  "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/qcustomplot.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/qcustomplot.o"
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/repository.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/repository/repository.o"
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/watchlist.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/repository/watchlist.o"
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_controller.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/tests/test_controller.o"
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_entity.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/tests/test_entity.o"
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/tests/test_watchlist.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/tests/test_watchlist.o"
   "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/console.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/ui/console.o"
-  "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/ui/gui/admin_gui.o"
-  "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/displayShort_gui.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o"
-  "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/ui/gui/gui.o"
-  "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o"
-  "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/user_gui.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/ui/gui/user_gui.o"
+  "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/usermode.cpp" "/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/CMakeFiles/LMDB.dir/usermode.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -29,6 +29,7 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "QT_CORE_LIB"
   "QT_GUI_LIB"
+  "QT_PRINTSUPPORT_LIB"
   "QT_WIDGETS_LIB"
   )
 
@@ -44,6 +45,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/System/Library/Frameworks/OpenGL.framework/Headers"
   "../lib/googletest-master/googletest/include"
   "../lib/googletest-master/googlemock/include"
+  "../QTBuild"
+  "/Applications/Qt/5.8/clang_64/lib/QtPrintSupport.framework"
+  "/Applications/Qt/5.8/clang_64/lib/QtPrintSupport.framework/Headers"
   )
 
 # Targets to which this target links.

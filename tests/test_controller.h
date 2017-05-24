@@ -3,7 +3,5 @@
 
 #include "../repository/repository.h"
 #include "../controller/controller.h"
-using testing::Eq;
-
 
 #endif

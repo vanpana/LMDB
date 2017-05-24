@@ -2,8 +2,8 @@
 #define USERMODE_H
 
 #include <QDialog>
-#include <repository/watchlist.h>
-#include <controller/controller.h>
+#include "repository/watchlist.h"
+#include "controller/controller.h"
 
 namespace Ui {
 class userMode;

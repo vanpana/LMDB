@@ -15,7 +15,7 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHeaderView>
-#include <qcustomplot.h>
+#include "qcustomplot.h"
 
 QT_BEGIN_NAMESPACE
 

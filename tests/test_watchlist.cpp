@@ -14,7 +14,7 @@ public:
     void SetUp() override
     {
         wlist = new CSVWatchList();
-        repo = new FileRepository{"../data/movie_database.csv"};
+        repo = new UndoRepository{"../data/movie_database.csv"};
     }
 
     void TearDown() override

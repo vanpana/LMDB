@@ -219,6 +219,9 @@ Qt5Declarative_DIR:PATH=Qt5Declarative_DIR-NOTFOUND
 //The directory containing a CMake configuration file for Qt5Gui.
 Qt5Gui_DIR:PATH=/Applications/Qt/5.8/clang_64/lib/cmake/Qt5Gui
 
+//The directory containing a CMake configuration file for Qt5PrintSupport.
+Qt5PrintSupport_DIR:PATH=/Applications/Qt/5.8/clang_64/lib/cmake/Qt5PrintSupport
+
 //The directory containing a CMake configuration file for Qt5Widgets.
 Qt5Widgets_DIR:PATH=/Applications/Qt/5.8/clang_64/lib/cmake/Qt5Widgets
 

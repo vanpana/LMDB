@@ -36,6 +36,7 @@ public:
     QPushButton *deleteButton;
     QComboBox *choice;
     QListWidget *items;
+    QPushButton *undoButton;
 
     void setupUi(QDialog *adminMode)
     {
@@ -71,10 +72,13 @@ public:
         deleteButton->setGeometry(QRect(170, 170, 113, 32));
         choice = new QComboBox(adminMode);
         choice->setObjectName(QStringLiteral("choice"));
-        choice->setGeometry(QRect(10, 210, 271, 26));
+        choice->setGeometry(QRect(10, 210, 151, 26));
         items = new QListWidget(adminMode);
         items->setObjectName(QStringLiteral("items"));
         items->setGeometry(QRect(290, 10, 441, 221));
+        undoButton = new QPushButton(adminMode);
+        undoButton->setObjectName(QStringLiteral("undoButton"));
+        undoButton->setGeometry(QRect(170, 210, 113, 32));
 
         retranslateUi(adminMode);
 
@@ -87,6 +91,7 @@ public:
         addButton->setText(QApplication::translate("adminMode", "Add", Q_NULLPTR));
         updateButton->setText(QApplication::translate("adminMode", "Update", Q_NULLPTR));
         deleteButton->setText(QApplication::translate("adminMode", "Delete", Q_NULLPTR));
+        undoButton->setText(QApplication::translate("adminMode", "Undo", Q_NULLPTR));
     } // retranslateUi
 
 };

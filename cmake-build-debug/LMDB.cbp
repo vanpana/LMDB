@@ -5,7 +5,7 @@
 		<Option title="LMDB"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\Applications\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Core\;CMake Files\lib\;CMake Files\lib\googletest-master\;CMake Files\lib\googletest-master\googlemock\;CMake Files\lib\googletest-master\googletest\;CMake Files\lib\googletest-master\googletest\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\Applications\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5PrintSupport\;CMake Files\lib\;CMake Files\lib\googletest-master\;CMake Files\lib\googletest-master\googlemock\;CMake Files\lib\googletest-master\googletest\;CMake Files\lib\googletest-master\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug"/>
@@ -87,6 +87,7 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_PRINTSUPPORT_LIB"/>
 					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
 					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
 					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework"/>
@@ -97,6 +98,9 @@
 					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/include"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googlemock/include"/>
+					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/QTBuild"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtPrintSupport.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtPrintSupport.framework/Headers"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
@@ -122,6 +126,7 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_PRINTSUPPORT_LIB"/>
 					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework"/>
 					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers"/>
 					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtGui.framework"/>
@@ -132,6 +137,9 @@
 					<Add directory="/System/Library/Frameworks/OpenGL.framework/Headers"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googletest/include"/>
 					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/googlemock/include"/>
+					<Add directory="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/QTBuild"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtPrintSupport.framework"/>
+					<Add directory="/Applications/Qt/5.8/clang_64/lib/QtPrintSupport.framework/Headers"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
@@ -462,6 +470,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/adminmode.cpp">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/adminmode.h">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/chart.cpp">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/chart.h">
+			<Option target="LMDB"/>
+		</Unit>
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/cmake-build-debug/LMDB_automoc.cpp">
 			<Option target="LMDB"/>
 		</Unit>
@@ -528,6 +548,18 @@
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/main.cpp">
 			<Option target="LMDB"/>
 		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/mainwindow.cpp">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/mainwindow.h">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/qcustomplot.cpp">
+			<Option target="LMDB"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/qcustomplot.h">
+			<Option target="LMDB"/>
+		</Unit>
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/repository/repository.cpp">
 			<Option target="LMDB"/>
 		</Unit>
@@ -564,34 +596,22 @@
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/console.h">
 			<Option target="LMDB"/>
 		</Unit>
-		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.cpp">
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui_adminmode.h">
 			<Option target="LMDB"/>
 		</Unit>
-		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/admin_gui.h">
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui_chart.h">
 			<Option target="LMDB"/>
 		</Unit>
-		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/displayShort_gui.cpp">
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui_mainwindow.h">
 			<Option target="LMDB"/>
 		</Unit>
-		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/displayShort_gui.h">
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui_usermode.h">
 			<Option target="LMDB"/>
 		</Unit>
-		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.cpp">
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/usermode.cpp">
 			<Option target="LMDB"/>
 		</Unit>
-		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/gui.h">
-			<Option target="LMDB"/>
-		</Unit>
-		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.cpp">
-			<Option target="LMDB"/>
-		</Unit>
-		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/showAll_gui.h">
-			<Option target="LMDB"/>
-		</Unit>
-		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/user_gui.cpp">
-			<Option target="LMDB"/>
-		</Unit>
-		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/ui/gui/user_gui.h">
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/usermode.h">
 			<Option target="LMDB"/>
 		</Unit>
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/CMakeLists.txt">
@@ -671,6 +691,15 @@
 		</Unit>
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5PrintSupport/Qt5PrintSupportConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5PrintSupport\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5PrintSupport/Qt5PrintSupportConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5PrintSupport\"/>
+		</Unit>
+		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/../../../../../../../../Applications/Qt/5.8/clang_64/lib/cmake/Qt5PrintSupport/Qt5PrintSupport_QCocoaPrinterSupportPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\Applications\Qt\5.8\clang_64\lib\cmake\Qt5PrintSupport\"/>
 		</Unit>
 		<Unit filename="/Users/vanpana/Google Drive/Uni/An 1/Semestrul 2 - Mac/OOP/LMDB/lib/googletest-master/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\"/>

@@ -300,6 +300,36 @@ LMDB_automoc.s:
 .PHONY : LMDB_automoc.s
 
 # target to build an object file
+adminmode.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/adminmode.o
+.PHONY : adminmode.o
+
+# target to preprocess a source file
+adminmode.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/adminmode.i
+.PHONY : adminmode.i
+
+# target to generate assembly for a file
+adminmode.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/adminmode.s
+.PHONY : adminmode.s
+
+# target to build an object file
+chart.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/chart.o
+.PHONY : chart.o
+
+# target to preprocess a source file
+chart.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/chart.i
+.PHONY : chart.i
+
+# target to generate assembly for a file
+chart.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/chart.s
+.PHONY : chart.s
+
+# target to build an object file
 common/array.o:
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/common/array.o
 .PHONY : common/array.o
@@ -388,6 +418,36 @@ main.i:
 main.s:
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/main.s
 .PHONY : main.s
+
+# target to build an object file
+mainwindow.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/mainwindow.o
+.PHONY : mainwindow.o
+
+# target to preprocess a source file
+mainwindow.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/mainwindow.i
+.PHONY : mainwindow.i
+
+# target to generate assembly for a file
+mainwindow.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/mainwindow.s
+.PHONY : mainwindow.s
+
+# target to build an object file
+qcustomplot.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/qcustomplot.o
+.PHONY : qcustomplot.o
+
+# target to preprocess a source file
+qcustomplot.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/qcustomplot.i
+.PHONY : qcustomplot.i
+
+# target to generate assembly for a file
+qcustomplot.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/qcustomplot.s
+.PHONY : qcustomplot.s
 
 # target to build an object file
 repository/repository.o:
@@ -480,79 +540,19 @@ ui/console.s:
 .PHONY : ui/console.s
 
 # target to build an object file
-ui/gui/admin_gui.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/admin_gui.o
-.PHONY : ui/gui/admin_gui.o
+usermode.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/usermode.o
+.PHONY : usermode.o
 
 # target to preprocess a source file
-ui/gui/admin_gui.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/admin_gui.i
-.PHONY : ui/gui/admin_gui.i
+usermode.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/usermode.i
+.PHONY : usermode.i
 
 # target to generate assembly for a file
-ui/gui/admin_gui.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/admin_gui.s
-.PHONY : ui/gui/admin_gui.s
-
-# target to build an object file
-ui/gui/displayShort_gui.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.o
-.PHONY : ui/gui/displayShort_gui.o
-
-# target to preprocess a source file
-ui/gui/displayShort_gui.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.i
-.PHONY : ui/gui/displayShort_gui.i
-
-# target to generate assembly for a file
-ui/gui/displayShort_gui.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/displayShort_gui.s
-.PHONY : ui/gui/displayShort_gui.s
-
-# target to build an object file
-ui/gui/gui.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/gui.o
-.PHONY : ui/gui/gui.o
-
-# target to preprocess a source file
-ui/gui/gui.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/gui.i
-.PHONY : ui/gui/gui.i
-
-# target to generate assembly for a file
-ui/gui/gui.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/gui.s
-.PHONY : ui/gui/gui.s
-
-# target to build an object file
-ui/gui/showAll_gui.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/showAll_gui.o
-.PHONY : ui/gui/showAll_gui.o
-
-# target to preprocess a source file
-ui/gui/showAll_gui.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/showAll_gui.i
-.PHONY : ui/gui/showAll_gui.i
-
-# target to generate assembly for a file
-ui/gui/showAll_gui.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/showAll_gui.s
-.PHONY : ui/gui/showAll_gui.s
-
-# target to build an object file
-ui/gui/user_gui.o:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/user_gui.o
-.PHONY : ui/gui/user_gui.o
-
-# target to preprocess a source file
-ui/gui/user_gui.i:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/user_gui.i
-.PHONY : ui/gui/user_gui.i
-
-# target to generate assembly for a file
-ui/gui/user_gui.s:
-	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/ui/gui/user_gui.s
-.PHONY : ui/gui/user_gui.s
+usermode.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/usermode.s
+.PHONY : usermode.s
 
 # Help Target
 help:
@@ -579,6 +579,12 @@ help:
 	@echo "... LMDB_automoc.o"
 	@echo "... LMDB_automoc.i"
 	@echo "... LMDB_automoc.s"
+	@echo "... adminmode.o"
+	@echo "... adminmode.i"
+	@echo "... adminmode.s"
+	@echo "... chart.o"
+	@echo "... chart.i"
+	@echo "... chart.s"
 	@echo "... common/array.o"
 	@echo "... common/array.i"
 	@echo "... common/array.s"
@@ -597,6 +603,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mainwindow.o"
+	@echo "... mainwindow.i"
+	@echo "... mainwindow.s"
+	@echo "... qcustomplot.o"
+	@echo "... qcustomplot.i"
+	@echo "... qcustomplot.s"
 	@echo "... repository/repository.o"
 	@echo "... repository/repository.i"
 	@echo "... repository/repository.s"
@@ -615,21 +627,9 @@ help:
 	@echo "... ui/console.o"
 	@echo "... ui/console.i"
 	@echo "... ui/console.s"
-	@echo "... ui/gui/admin_gui.o"
-	@echo "... ui/gui/admin_gui.i"
-	@echo "... ui/gui/admin_gui.s"
-	@echo "... ui/gui/displayShort_gui.o"
-	@echo "... ui/gui/displayShort_gui.i"
-	@echo "... ui/gui/displayShort_gui.s"
-	@echo "... ui/gui/gui.o"
-	@echo "... ui/gui/gui.i"
-	@echo "... ui/gui/gui.s"
-	@echo "... ui/gui/showAll_gui.o"
-	@echo "... ui/gui/showAll_gui.i"
-	@echo "... ui/gui/showAll_gui.s"
-	@echo "... ui/gui/user_gui.o"
-	@echo "... ui/gui/user_gui.i"
-	@echo "... ui/gui/user_gui.s"
+	@echo "... usermode.o"
+	@echo "... usermode.i"
+	@echo "... usermode.s"
 .PHONY : help
 
 

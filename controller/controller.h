@@ -59,6 +59,8 @@ public:
 
     void saveToFile() { this->repo->saveToFile(); }
 
+    void undo() { this->repo->undo(); }
+
     //destructor
     ~Controller() {}
 };

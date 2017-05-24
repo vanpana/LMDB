@@ -117,7 +117,7 @@
     <rect>
      <x>10</x>
      <y>210</y>
-     <width>271</width>
+     <width>151</width>
      <height>26</height>
     </rect>
    </property>
@@ -130,6 +130,19 @@
      <width>441</width>
      <height>221</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="undoButton">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>210</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Undo</string>
    </property>
   </widget>
  </widget>

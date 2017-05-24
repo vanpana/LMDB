@@ -2,7 +2,7 @@
 #define CHART_H
 
 #include <QDialog>
-#include <controller/controller.h>
+#include "controller/controller.h"
 
 namespace Ui {
 class chart;
