@@ -2,6 +2,9 @@
 #include "ui_usermode.h"
 #include "MovieTableModel.h"
 
+void userMode::updateTable()
+ { MovieTableModel *mymodel = new MovieTableModel(wlist); ui->tableView->setModel(mymodel); }
+
 userMode::userMode(Controller ctrl, WatchList *wlist, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::userMode)
@@ -93,6 +96,18 @@ void userMode::on_deleteButton_clicked()
         this->ctrl.incLikes(title);
 
     ui->items->clear();
+    for (Movie mov: wlist->getArray())
+        ui->items->addItem(QString::fromStdString(mov.toStr()));
+
+    this->updateTable();
+}
+
+void userMode::on_undoButton_clicked()
+{
+    this->wlist->undo();
+
+    ui->items->clear();
+
     for (Movie mov: wlist->getArray())
         ui->items->addItem(QString::fromStdString(mov.toStr()));
 

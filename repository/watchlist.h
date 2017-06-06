@@ -12,6 +12,7 @@ class WatchList
 protected:
     vector<Movie> movieList;
     vector<Movie> suggestions;
+    vector<vector<Movie> > backupList;
     int currentPos, maximumPos;
     string type;
 
@@ -47,6 +48,8 @@ public:
     virtual void openInApp() = 0;
 
     string getType() const { return this->type; }
+
+    void undo() { this->movieList = backupList[backupList.size() - 1]; backupList.pop_back(); };
 };
 
 class CSVWatchList : public WatchList

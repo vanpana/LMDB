@@ -39,6 +39,7 @@ public:
     QListWidget *items;
     QPushButton *openButton;
     QTableView *tableView;
+    QPushButton *undoButton;
 
     void setupUi(QDialog *userMode)
     {
@@ -82,6 +83,9 @@ public:
         tableView = new QTableView(userMode);
         tableView->setObjectName(QStringLiteral("tableView"));
         tableView->setGeometry(QRect(70, 210, 256, 192));
+        undoButton = new QPushButton(userMode);
+        undoButton->setObjectName(QStringLiteral("undoButton"));
+        undoButton->setGeometry(QRect(10, 390, 61, 32));
 
         retranslateUi(userMode);
 
@@ -98,6 +102,7 @@ public:
         addButton->setText(QApplication::translate("userMode", "Add Movie", Q_NULLPTR));
         nextButton->setText(QApplication::translate("userMode", "Next Movie", Q_NULLPTR));
         openButton->setText(QApplication::translate("userMode", "Open in App", Q_NULLPTR));
+        undoButton->setText(QApplication::translate("userMode", "Undo", Q_NULLPTR));
     } // retranslateUi
 
 };

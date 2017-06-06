@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "repository/watchlist.h"
 #include "controller/controller.h"
+#include "MovieTableModel.h"
 
 namespace Ui {
 class userMode;
@@ -13,9 +14,14 @@ class userMode : public QDialog
 {
     Q_OBJECT
 
+private:
+    Ui::userMode *ui;
+    Controller ctrl;
+    WatchList *wlist;
+
 public:
     explicit userMode(Controller ctrl, WatchList *wlist, QWidget *parent = 0);
-    void updateTable() { MovieTableModel *mymodel = new MovieTableModel(wlist); ui->tableView->setModel(mymodel); }
+    void updateTable();
     ~userMode();
 
 private slots:
@@ -31,10 +37,9 @@ private slots:
 
     void on_deleteButton_clicked();
 
-private:
-    Ui::userMode *ui;
-    Controller ctrl;
-    WatchList *wlist;
+    void on_undoButton_clicked();
+
+
 };
 
 #endif // USERMODE_H

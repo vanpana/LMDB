@@ -7,6 +7,7 @@ using namespace std;
 WatchList::WatchList(string type)
 {
     this->movieList = vector<Movie>();
+    this->backupList = vector<vector<Movie> >();
     this->currentPos = 0;
     this->maximumPos = 0;
     this->suggestions = vector<Movie>();
@@ -15,6 +16,7 @@ WatchList::WatchList(string type)
 
 void WatchList::add()
 {
+    backupList.push_back(getArray());
     this->movieList.push_back(this->suggestions[this->currentPos]);
     this->suggestions.erase(this->suggestions.begin() + this->currentPos);
     this->currentPos--;
@@ -35,6 +37,7 @@ int WatchList::getPosition(string name)
 
 int WatchList::del(string title)
 {
+    backupList.push_back(getArray());
     int pos = getPosition(title);
 
     if (pos == -1)

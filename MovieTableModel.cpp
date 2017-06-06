@@ -3,6 +3,8 @@
 //
 
 #include "MovieTableModel.h"
+#include <string>
+
 using namespace std;
 
 QVariant MovieTableModel::data(const QModelIndex &index, int role) const
@@ -26,7 +28,7 @@ QVariant MovieTableModel::data(const QModelIndex &index, int role) const
             case 1:
                 return QString::fromStdString(currentMovie.getGenre());
             case 2:
-                return QString::fromStdString(to_string(currentMovie.getLikes()));
+                return QString::fromStdString(currentMovie.getTrailer());
         }
     }
 
