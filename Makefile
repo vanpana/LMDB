@@ -61,7 +61,8 @@ SOURCES       = main.cpp \
 		adminmode.cpp \
 		usermode.cpp \
 		chart.cpp \
-		qcustomplot.cpp moc_mainwindow.cpp \
+		qcustomplot.cpp \
+		MovieTableModel.cpp moc_mainwindow.cpp \
 		moc_adminmode.cpp \
 		moc_usermode.cpp \
 		moc_chart.cpp \
@@ -80,6 +81,7 @@ OBJECTS       = main.o \
 		usermode.o \
 		chart.o \
 		qcustomplot.o \
+		MovieTableModel.o \
 		moc_mainwindow.o \
 		moc_adminmode.o \
 		moc_usermode.o \
@@ -255,7 +257,8 @@ DIST          = data/movie_database.csv \
 		adminmode.h \
 		usermode.h \
 		chart.h \
-		qcustomplot.h main.cpp \
+		qcustomplot.h \
+		MovieTableModel.h main.cpp \
 		mainwindow.cpp \
 		common/array.cpp \
 		common/counter.cpp \
@@ -268,7 +271,8 @@ DIST          = data/movie_database.csv \
 		adminmode.cpp \
 		usermode.cpp \
 		chart.cpp \
-		qcustomplot.cpp
+		qcustomplot.cpp \
+		MovieTableModel.cpp
 QMAKE_TARGET  = LMDB
 DESTDIR       = 
 TARGET        = LMDB.app/Contents/MacOS/LMDB
@@ -628,8 +632,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /Applications/Qt/5.8/clang_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents mainwindow.h common/array.h common/counter.h common/util.h controller/controller.h domain/entities.h domain/validator.h repository/repository.h repository/watchlist.h ui/console.h adminmode.h usermode.h chart.h qcustomplot.h $(DISTDIR)/
-	$(COPY_FILE) --parents main.cpp mainwindow.cpp common/array.cpp common/counter.cpp common/util.cpp domain/entities.cpp domain/validator.cpp repository/repository.cpp repository/watchlist.cpp ui/console.cpp adminmode.cpp usermode.cpp chart.cpp qcustomplot.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents mainwindow.h common/array.h common/counter.h common/util.h controller/controller.h domain/entities.h domain/validator.h repository/repository.h repository/watchlist.h ui/console.h adminmode.h usermode.h chart.h qcustomplot.h MovieTableModel.h $(DISTDIR)/
+	$(COPY_FILE) --parents main.cpp mainwindow.cpp common/array.cpp common/counter.cpp common/util.cpp domain/entities.cpp domain/validator.cpp repository/repository.cpp repository/watchlist.cpp ui/console.cpp adminmode.cpp usermode.cpp chart.cpp qcustomplot.cpp MovieTableModel.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents mainwindow.ui adminmode.ui usermode.ui chart.ui $(DISTDIR)/
 
 
@@ -716,6 +720,13 @@ moc_usermode.cpp: /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/
 
 moc_chart.cpp: /Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QDialog \
 		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qdialog.h \
+		controller/controller.h \
+		repository/repository.h \
+		domain/entities.h \
+		common/counter.h \
+		common/array.h \
+		domain/validator.h \
+		repository/watchlist.h \
 		chart.h \
 		moc_predefs.h \
 		/Applications/Qt/5.8/clang_64/bin/moc
@@ -776,8 +787,7 @@ main.o: main.cpp mainwindow.h \
 		domain/validator.h \
 		repository/watchlist.h \
 		controller/controller.h \
-		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/Qdir \
-		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/qdir.h \
+		tests/test_controller.h \
 		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QApplication \
 		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
@@ -895,7 +905,21 @@ usermode.o: usermode.cpp usermode.h \
 chart.o: chart.cpp chart.h \
 		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QDialog \
 		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qdialog.h \
-		ui_chart.h
+		controller/controller.h \
+		repository/repository.h \
+		domain/entities.h \
+		common/counter.h \
+		common/array.h \
+		domain/validator.h \
+		repository/watchlist.h \
+		ui_chart.h \
+		qcustomplot.h \
+		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/qmath.h \
+		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/qnumeric.h \
+		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/QtNumeric \
+		common/util.h \
+		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/QMessageBox \
+		/Applications/Qt/5.8/clang_64/lib/QtWidgets.framework/Headers/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o chart.o chart.cpp
 
 qcustomplot.o: qcustomplot.cpp qcustomplot.h \
@@ -903,6 +927,18 @@ qcustomplot.o: qcustomplot.cpp qcustomplot.h \
 		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/qnumeric.h \
 		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/QtNumeric
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qcustomplot.o qcustomplot.cpp
+
+MovieTableModel.o: MovieTableModel.cpp MovieTableModel.h \
+		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/QAbstractTableModel \
+		/Applications/Qt/5.8/clang_64/lib/QtCore.framework/Headers/qabstractitemmodel.h \
+		tests/test_watchlist.h \
+		repository/watchlist.h \
+		domain/entities.h \
+		common/counter.h \
+		common/array.h \
+		repository/repository.h \
+		domain/validator.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o MovieTableModel.o MovieTableModel.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp

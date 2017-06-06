@@ -31,7 +31,7 @@ set(SOURCE_FILES
         ui_usermode.h
         ui_chart.h
 
-        tests/test_controller.h common/counter.cpp common/counter.h tests/test_controller.cpp domain/validator.cpp domain/validator.h tests/test_entity.cpp tests/test_entity.h tests/test_watchlist.cpp tests/test_watchlist.h)
+        tests/test_controller.h common/counter.cpp common/counter.h tests/test_controller.cpp domain/validator.cpp domain/validator.h tests/test_entity.cpp tests/test_entity.h tests/test_watchlist.cpp tests/test_watchlist.h MovieTableModel.cpp MovieTableModel.h)
 
 find_package(Qt5Widgets REQUIRED)
 include_directories(${Qt5Widgets_INCLUDE_DIRS})

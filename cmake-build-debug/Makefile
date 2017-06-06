@@ -300,6 +300,21 @@ LMDB_automoc.s:
 .PHONY : LMDB_automoc.s
 
 # target to build an object file
+MovieTableModel.o:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/MovieTableModel.o
+.PHONY : MovieTableModel.o
+
+# target to preprocess a source file
+MovieTableModel.i:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/MovieTableModel.i
+.PHONY : MovieTableModel.i
+
+# target to generate assembly for a file
+MovieTableModel.s:
+	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/MovieTableModel.s
+.PHONY : MovieTableModel.s
+
+# target to build an object file
 adminmode.o:
 	$(MAKE) -f CMakeFiles/LMDB.dir/build.make CMakeFiles/LMDB.dir/adminmode.o
 .PHONY : adminmode.o
@@ -579,6 +594,9 @@ help:
 	@echo "... LMDB_automoc.o"
 	@echo "... LMDB_automoc.i"
 	@echo "... LMDB_automoc.s"
+	@echo "... MovieTableModel.o"
+	@echo "... MovieTableModel.i"
+	@echo "... MovieTableModel.s"
 	@echo "... adminmode.o"
 	@echo "... adminmode.i"
 	@echo "... adminmode.s"

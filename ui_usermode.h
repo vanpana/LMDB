@@ -19,6 +19,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QTextEdit>
 
 QT_BEGIN_NAMESPACE
@@ -37,6 +38,7 @@ public:
     QPushButton *nextButton;
     QListWidget *items;
     QPushButton *openButton;
+    QTableView *tableView;
 
     void setupUi(QDialog *userMode)
     {
@@ -77,6 +79,9 @@ public:
         openButton = new QPushButton(userMode);
         openButton->setObjectName(QStringLiteral("openButton"));
         openButton->setGeometry(QRect(310, 390, 113, 32));
+        tableView = new QTableView(userMode);
+        tableView->setObjectName(QStringLiteral("tableView"));
+        tableView->setGeometry(QRect(70, 210, 256, 192));
 
         retranslateUi(userMode);
 

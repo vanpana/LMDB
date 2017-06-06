@@ -15,6 +15,7 @@ class userMode : public QDialog
 
 public:
     explicit userMode(Controller ctrl, WatchList *wlist, QWidget *parent = 0);
+    void updateTable() { MovieTableModel *mymodel = new MovieTableModel(wlist); ui->tableView->setModel(mymodel); }
     ~userMode();
 
 private slots:

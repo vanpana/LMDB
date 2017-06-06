@@ -1,5 +1,6 @@
 #include "usermode.h"
 #include "ui_usermode.h"
+#include "MovieTableModel.h"
 
 userMode::userMode(Controller ctrl, WatchList *wlist, QWidget *parent) :
     QDialog(parent),
@@ -12,6 +13,11 @@ userMode::userMode(Controller ctrl, WatchList *wlist, QWidget *parent) :
 
     ui->liked->addItem("Liked it");
     ui->liked->addItem("Disliked it");
+
+    this->updateTable();
+
+    //ui->listView = new MovieTableModel(wlist);
+    //ui->items = new MovieTableModel(wlist);
 }
 
 userMode::~userMode()
@@ -62,6 +68,8 @@ void userMode::on_addButton_clicked()
     for (Movie mov: wlist->getArray())
         ui->items->addItem(QString::fromStdString(mov.toStr()));
 
+    this->updateTable();
+
     on_nextButton_clicked();
 }
 
@@ -87,4 +95,6 @@ void userMode::on_deleteButton_clicked()
     ui->items->clear();
     for (Movie mov: wlist->getArray())
         ui->items->addItem(QString::fromStdString(mov.toStr()));
+
+    this->updateTable();
 }

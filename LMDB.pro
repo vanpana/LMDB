@@ -36,7 +36,8 @@ SOURCES += main.cpp\
     adminmode.cpp \
     usermode.cpp \
     chart.cpp \
-    qcustomplot.cpp
+    qcustomplot.cpp \
+    MovieTableModel.cpp
 
 HEADERS  += mainwindow.h \
     common/array.h \
@@ -51,7 +52,8 @@ HEADERS  += mainwindow.h \
     adminmode.h \
     usermode.h \
     chart.h \
-    qcustomplot.h
+    qcustomplot.h \
+    MovieTableModel.h
 
 FORMS    += mainwindow.ui \
     adminmode.ui \

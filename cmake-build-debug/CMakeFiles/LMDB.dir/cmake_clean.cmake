@@ -17,6 +17,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LMDB.dir/domain/validator.o"
   "CMakeFiles/LMDB.dir/tests/test_entity.o"
   "CMakeFiles/LMDB.dir/tests/test_watchlist.o"
+  "CMakeFiles/LMDB.dir/MovieTableModel.o"
   "CMakeFiles/LMDB.dir/LMDB_automoc.o"
   "LMDB.pdb"
   "LMDB"
